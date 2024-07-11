@@ -1,0 +1,6 @@
+framework module Pods_SmartVPN {
+  umbrella header "Pods-SmartVPN-umbrella.h"
+
+  export *
+  module * { export * }
+}

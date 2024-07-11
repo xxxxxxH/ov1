@@ -1,0 +1,51 @@
+{
+  "originHash" : "712c81b7eaccc62cae4466fd9963a12b82d9882231411650946acd849589bb7e",
+  "pins" : [
+    {
+      "identity" : "openssl-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/passepartoutvpn/openssl-apple",
+      "state" : {
+        "revision" : "757c074af45e4f2514fe63f649ccdde966183e90",
+        "version" : "1.1.11700"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver",
+      "state" : {
+        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
+        "version" : "1.9.6"
+      }
+    },
+    {
+      "identity" : "wireguard-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/passepartoutvpn/wireguard-apple",
+      "state" : {
+        "revision" : "73d9152fa0cb661db0348a1ac11dbbf998422a50",
+        "version" : "1.0.17"
+      }
+    },
+    {
+      "identity" : "zzbase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CZ410/ZZBase.git",
+      "state" : {
+        "revision" : "c5fdf9ff8c5df8a3c81d88ed4e28aba93b1ded32",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "zzcustomcontrol",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CZ410/ZZCustomControl.git",
+      "state" : {
+        "revision" : "f076a1b260da0b95119e53803d8358d082a40b3a",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}

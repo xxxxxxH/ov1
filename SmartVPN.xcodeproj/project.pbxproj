@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */; };
+		BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5038912C3E5D2E00EE2819 /* ContentView.swift */; };
+		BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5038932C3E5D3000EE2819 /* Assets.xcassets */; };
+		BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5038962C3E5D3000EE2819 /* Preview Assets.xcassets */; };
+		BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC5038FF2C3E6ED700EE2819 /* TunnelKit */; };
+		BC5039022C3E6ED700EE2819 /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039012C3E6ED700EE2819 /* TunnelKitOpenVPN */; };
+		BC50390B2C3E760100EE2819 /* Dev.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50390A2C3E760100EE2819 /* Dev.swift */; };
+		BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */; };
+		BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039102C3E84CD00EE2819 /* Downloadx.swift */; };
+		BC5039132C3E876200EE2819 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039122C3E876200EE2819 /* Config.swift */; };
+		BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */; };
+		BC50391E2C3F6DBC00EE2819 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */; };
+		BC5039232C3F6DBC00EE2819 /* SmartT.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC5039282C3F6E3500EE2819 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039272C3F6E3500EE2819 /* TunnelKit */; };
+		BC50392A2C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039292C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension */; };
+		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC5039212C3F6DBC00EE2819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC5038842C3E5D2D00EE2819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC5039192C3F6DBC00EE2819;
+			remoteInfo = SmartT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC5038C22C3E5F2000EE2819 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC5039232C3F6DBC00EE2819 /* SmartT.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.release.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.release.xcconfig"; sourceTree = "<group>"; };
+		3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVPNApp.swift; sourceTree = "<group>"; };
+		BC5038912C3E5D2E00EE2819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC5038932C3E5D3000EE2819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC5038962C3E5D3000EE2819 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC5038AA2C3E5DD800EE2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BC5038F62C3E66B700EE2819 /* SmartVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartVPN.entitlements; sourceTree = "<group>"; };
+		BC50390A2C3E760100EE2819 /* Dev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dev.swift; sourceTree = "<group>"; };
+		BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEntity.swift; sourceTree = "<group>"; };
+		BC5039102C3E84CD00EE2819 /* Downloadx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloadx.swift; sourceTree = "<group>"; };
+		BC5039122C3E876200EE2819 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BC50391A2C3F6DBC00EE2819 /* SmartT.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartT.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		BC50391F2C3F6DBC00EE2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5039202C3F6DBC00EE2819 /* SmartT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartT.entitlements; sourceTree = "<group>"; };
+		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC5038892C3E5D2D00EE2819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */,
+				BC5039022C3E6ED700EE2819 /* TunnelKitOpenVPN in Frameworks */,
+				BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5039172C3F6DBC00EE2819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */,
+				BC5039282C3F6E3500EE2819 /* TunnelKit in Frameworks */,
+				BC50392A2C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1130ECD98BD1E42E3E07CF91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */,
+				27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		852F2C006FF81A11CDD23015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */,
+				BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5038832C3E5D2D00EE2819 = {
+			isa = PBXGroup;
+			children = (
+				BC50388E2C3E5D2E00EE2819 /* SmartVPN */,
+				BC50391C2C3F6DBC00EE2819 /* SmartT */,
+				BC50388D2C3E5D2D00EE2819 /* Products */,
+				1130ECD98BD1E42E3E07CF91 /* Pods */,
+				852F2C006FF81A11CDD23015 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC50388D2C3E5D2D00EE2819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */,
+				BC50391A2C3F6DBC00EE2819 /* SmartT.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC50388E2C3E5D2E00EE2819 /* SmartVPN */ = {
+			isa = PBXGroup;
+			children = (
+				BC50390D2C3E79F200EE2819 /* data */,
+				BC50390C2C3E766000EE2819 /* config */,
+				BC5039092C3E75F000EE2819 /* dev */,
+				BC5038F62C3E66B700EE2819 /* SmartVPN.entitlements */,
+				BC5038AA2C3E5DD800EE2819 /* Info.plist */,
+				BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */,
+				BC5038912C3E5D2E00EE2819 /* ContentView.swift */,
+				BC5038932C3E5D3000EE2819 /* Assets.xcassets */,
+				BC5038952C3E5D3000EE2819 /* Preview Content */,
+			);
+			path = SmartVPN;
+			sourceTree = "<group>";
+		};
+		BC5038952C3E5D3000EE2819 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC5038962C3E5D3000EE2819 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC5039092C3E75F000EE2819 /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				BC50390A2C3E760100EE2819 /* Dev.swift */,
+				BC5039102C3E84CD00EE2819 /* Downloadx.swift */,
+				BC5039122C3E876200EE2819 /* Config.swift */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		BC50390C2C3E766000EE2819 /* config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		BC50390D2C3E79F200EE2819 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		BC50391C2C3F6DBC00EE2819 /* SmartT */ = {
+			isa = PBXGroup;
+			children = (
+				BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */,
+				BC50391F2C3F6DBC00EE2819 /* Info.plist */,
+				BC5039202C3F6DBC00EE2819 /* SmartT.entitlements */,
+			);
+			path = SmartT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC50388B2C3E5D2D00EE2819 /* SmartVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC50389A2C3E5D3000EE2819 /* Build configuration list for PBXNativeTarget "SmartVPN" */;
+			buildPhases = (
+				3D73BDE5EE3CE02BF7ACCA31 /* [CP] Check Pods Manifest.lock */,
+				BC5038882C3E5D2D00EE2819 /* Sources */,
+				BC5038892C3E5D2D00EE2819 /* Frameworks */,
+				BC50388A2C3E5D2D00EE2819 /* Resources */,
+				BC5038C22C3E5F2000EE2819 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5039222C3F6DBC00EE2819 /* PBXTargetDependency */,
+			);
+			name = SmartVPN;
+			packageProductDependencies = (
+				BC5038FF2C3E6ED700EE2819 /* TunnelKit */,
+				BC5039012C3E6ED700EE2819 /* TunnelKitOpenVPN */,
+			);
+			productName = SmartVPN;
+			productReference = BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC5039192C3F6DBC00EE2819 /* SmartT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5039242C3F6DBC00EE2819 /* Build configuration list for PBXNativeTarget "SmartT" */;
+			buildPhases = (
+				BC5039162C3F6DBC00EE2819 /* Sources */,
+				BC5039172C3F6DBC00EE2819 /* Frameworks */,
+				BC5039182C3F6DBC00EE2819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartT;
+			packageProductDependencies = (
+				BC5039272C3F6E3500EE2819 /* TunnelKit */,
+				BC5039292C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension */,
+			);
+			productName = SmartT;
+			productReference = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC5038842C3E5D2D00EE2819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BC50388B2C3E5D2D00EE2819 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BC5039192C3F6DBC00EE2819 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BC5038872C3E5D2D00EE2819 /* Build configuration list for PBXProject "SmartVPN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC5038832C3E5D2D00EE2819;
+			packageReferences = (
+				BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */,
+				BC5039032C3E70DE00EE2819 /* XCRemoteSwiftPackageReference "ZZCustomControl" */,
+				BC5039062C3E714C00EE2819 /* XCRemoteSwiftPackageReference "ZZBase" */,
+			);
+			productRefGroup = BC50388D2C3E5D2D00EE2819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC50388B2C3E5D2D00EE2819 /* SmartVPN */,
+				BC5039192C3F6DBC00EE2819 /* SmartT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC50388A2C3E5D2D00EE2819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */,
+				BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5039182C3F6DBC00EE2819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D73BDE5EE3CE02BF7ACCA31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartVPN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC5038882C3E5D2D00EE2819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
+				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
+				BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */,
+				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
+				BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */,
+				BC5039132C3E876200EE2819 /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5039162C3F6DBC00EE2819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC50391E2C3F6DBC00EE2819 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC5039222C3F6DBC00EE2819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC5039192C3F6DBC00EE2819 /* SmartT */;
+			targetProxy = BC5039212C3F6DBC00EE2819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC5038982C3E5D3000EE2819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC5038992C3E5D3000EE2819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC50389B2C3E5D3000EE2819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartVPN/SmartVPN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRKM42D778;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC50389C2C3E5D3000EE2819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartVPN/SmartVPN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRKM42D778;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC5039252C3F6DBC00EE2819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRKM42D778;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC5039262C3F6DBC00EE2819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRKM42D778;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC5038872C3E5D2D00EE2819 /* Build configuration list for PBXProject "SmartVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5038982C3E5D3000EE2819 /* Debug */,
+				BC5038992C3E5D3000EE2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC50389A2C3E5D3000EE2819 /* Build configuration list for PBXNativeTarget "SmartVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC50389B2C3E5D3000EE2819 /* Debug */,
+				BC50389C2C3E5D3000EE2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5039242C3F6DBC00EE2819 /* Build configuration list for PBXNativeTarget "SmartT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5039252C3F6DBC00EE2819 /* Debug */,
+				BC5039262C3F6DBC00EE2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../tunnelkit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC5039032C3E70DE00EE2819 /* XCRemoteSwiftPackageReference "ZZCustomControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CZ410/ZZCustomControl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		BC5039062C3E714C00EE2819 /* XCRemoteSwiftPackageReference "ZZBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CZ410/ZZBase.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC5038FF2C3E6ED700EE2819 /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TunnelKit;
+		};
+		BC5039012C3E6ED700EE2819 /* TunnelKitOpenVPN */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TunnelKitOpenVPN;
+		};
+		BC5039272C3F6E3500EE2819 /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */;
+			productName = TunnelKit;
+		};
+		BC5039292C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */;
+			productName = TunnelKitOpenVPNAppExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BC5038842C3E5D2D00EE2819 /* Project object */;
+}
