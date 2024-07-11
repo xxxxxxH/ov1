@@ -7,17 +7,19 @@
 
 import SwiftUI
 import TunnelKitManager
+import NetworkExtension
+import TunnelKit
 
 struct ContentView: View {
     private let vpn = NetworkExtensionVPN()
+    @StateObject private var vpnStatusManager = VPNStatusManager()
+    
     var body: some View {
         VStack {
             Button("connect", action: {
                 guard let cfg = Config.makeConfig() else { return }
                 Task {
                     let extra = NetworkExtensionExtra()
-                    print("cfg = \(cfg)")
-                    print("extra = \(extra)")
                     try await vpn.reconnect(
                         "com.apps.smartx.SmartVPN.SmartT",
                         configuration: cfg,
@@ -25,7 +27,16 @@ struct ContentView: View {
                         after: .seconds(2)
                     )
                 }
-            })
+            }).padding()
+            
+            Button("disconnect", action: {
+                Task {
+                    await vpn.disconnect()
+                }
+            }).padding()
+            
+            Text("VPN Status: \(vpnStatusManager.statusDescription(for: vpnStatusManager.vpnStatus))")
+                            .padding()
         }.onAppear(){
             // 示例用法
             let fileURLString = "https://hapixi.com/vpServerConfig/client.ovpn"
@@ -40,6 +51,7 @@ struct ContentView: View {
             }
         }
     }
+    
 }
 
 #Preview {

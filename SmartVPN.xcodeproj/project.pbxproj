@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648E4B28E7119A08AFF03A1B /* Pods_SmartT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */; };
 		BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */; };
 		BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5038912C3E5D2E00EE2819 /* ContentView.swift */; };
 		BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5038932C3E5D3000EE2819 /* Assets.xcassets */; };
@@ -22,6 +23,13 @@
 		BC5039232C3F6DBC00EE2819 /* SmartT.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BC5039282C3F6E3500EE2819 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039272C3F6E3500EE2819 /* TunnelKit */; };
 		BC50392A2C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039292C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension */; };
+		BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */; };
+		BC50392E2C3FA71100EE2819 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50392D2C3FA71100EE2819 /* Color.swift */; };
+		BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039302C3FA74100EE2819 /* LaunchPage.swift */; };
+		BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039332C3FAC5000EE2819 /* Lottie */; };
+		BC5039452C3FB6C500EE2819 /* abc.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039442C3FB6C500EE2819 /* abc.json */; };
+		BC5039472C3FBBFB00EE2819 /* aaa.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039462C3FBBFB00EE2819 /* aaa.json */; };
+		BC5039492C3FBC6200EE2819 /* xh.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039482C3FBC6200EE2819 /* xh.json */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +60,9 @@
 /* Begin PBXFileReference section */
 		27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.release.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.release.xcconfig"; sourceTree = "<group>"; };
 		3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartT.debug.xcconfig"; path = "Target Support Files/Pods-SmartT/Pods-SmartT.debug.xcconfig"; sourceTree = "<group>"; };
+		580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartT.release.xcconfig"; path = "Target Support Files/Pods-SmartT/Pods-SmartT.release.xcconfig"; sourceTree = "<group>"; };
 		BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVPNApp.swift; sourceTree = "<group>"; };
 		BC5038912C3E5D2E00EE2819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +79,12 @@
 		BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		BC50391F2C3F6DBC00EE2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5039202C3F6DBC00EE2819 /* SmartT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartT.entitlements; sourceTree = "<group>"; };
+		BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusManager.swift; sourceTree = "<group>"; };
+		BC50392D2C3FA71100EE2819 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BC5039302C3FA74100EE2819 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
+		BC5039442C3FB6C500EE2819 /* abc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = abc.json; path = ../../../../../../Downloads/abc.json; sourceTree = "<group>"; };
+		BC5039462C3FBBFB00EE2819 /* aaa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = aaa.json; path = ../../../../../../Downloads/aaa.json; sourceTree = "<group>"; };
+		BC5039482C3FBC6200EE2819 /* xh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = xh.json; path = ../../../../../../Downloads/xh.json; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +96,7 @@
 				F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */,
 				BC5039022C3E6ED700EE2819 /* TunnelKitOpenVPN in Frameworks */,
 				BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */,
+				BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +107,7 @@
 				BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */,
 				BC5039282C3F6E3500EE2819 /* TunnelKit in Frameworks */,
 				BC50392A2C3F6E3500EE2819 /* TunnelKitOpenVPNAppExtension in Frameworks */,
+				648E4B28E7119A08AFF03A1B /* Pods_SmartT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +119,8 @@
 			children = (
 				F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */,
 				27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */,
+				4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */,
+				B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 			children = (
 				3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */,
 				BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */,
+				580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +158,8 @@
 		BC50388E2C3E5D2E00EE2819 /* SmartVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BC5039352C3FACCE00EE2819 /* anim */,
+				BC50392F2C3FA73200EE2819 /* ui */,
 				BC50390D2C3E79F200EE2819 /* data */,
 				BC50390C2C3E766000EE2819 /* config */,
 				BC5039092C3E75F000EE2819 /* dev */,
@@ -163,6 +187,8 @@
 				BC50390A2C3E760100EE2819 /* Dev.swift */,
 				BC5039102C3E84CD00EE2819 /* Downloadx.swift */,
 				BC5039122C3E876200EE2819 /* Config.swift */,
+				BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */,
+				BC50392D2C3FA71100EE2819 /* Color.swift */,
 			);
 			path = dev;
 			sourceTree = "<group>";
@@ -192,6 +218,24 @@
 			path = SmartT;
 			sourceTree = "<group>";
 		};
+		BC50392F2C3FA73200EE2819 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				BC5039302C3FA74100EE2819 /* LaunchPage.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		BC5039352C3FACCE00EE2819 /* anim */ = {
+			isa = PBXGroup;
+			children = (
+				BC5039482C3FBC6200EE2819 /* xh.json */,
+				BC5039462C3FBBFB00EE2819 /* aaa.json */,
+				BC5039442C3FB6C500EE2819 /* abc.json */,
+			);
+			path = anim;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +258,7 @@
 			packageProductDependencies = (
 				BC5038FF2C3E6ED700EE2819 /* TunnelKit */,
 				BC5039012C3E6ED700EE2819 /* TunnelKitOpenVPN */,
+				BC5039332C3FAC5000EE2819 /* Lottie */,
 			);
 			productName = SmartVPN;
 			productReference = BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */;
@@ -223,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC5039242C3F6DBC00EE2819 /* Build configuration list for PBXNativeTarget "SmartT" */;
 			buildPhases = (
+				B977A7096EC7507D1445F292 /* [CP] Check Pods Manifest.lock */,
 				BC5039162C3F6DBC00EE2819 /* Sources */,
 				BC5039172C3F6DBC00EE2819 /* Frameworks */,
 				BC5039182C3F6DBC00EE2819 /* Resources */,
@@ -271,6 +317,7 @@
 				BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */,
 				BC5039032C3E70DE00EE2819 /* XCRemoteSwiftPackageReference "ZZCustomControl" */,
 				BC5039062C3E714C00EE2819 /* XCRemoteSwiftPackageReference "ZZBase" */,
+				BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = BC50388D2C3E5D2D00EE2819 /* Products */;
 			projectDirPath = "";
@@ -287,7 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5039492C3FBC6200EE2819 /* xh.json in Resources */,
+				BC5039472C3FBBFB00EE2819 /* aaa.json in Resources */,
 				BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */,
+				BC5039452C3FB6C500EE2819 /* abc.json in Resources */,
 				BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +374,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B977A7096EC7507D1445F292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,7 +406,10 @@
 				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
 				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
 				BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */,
+				BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */,
 				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
+				BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */,
+				BC50392E2C3FA71100EE2819 /* Color.swift in Sources */,
 				BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */,
 				BC5039132C3E876200EE2819 /* Config.swift in Sources */,
 			);
@@ -560,6 +635,7 @@
 		};
 		BC5039252C3F6DBC00EE2819 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -570,6 +646,7 @@
 				INFOPLIST_FILE = SmartT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,6 +664,7 @@
 		};
 		BC5039262C3F6DBC00EE2819 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -597,6 +675,7 @@
 				INFOPLIST_FILE = SmartT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,6 +747,14 @@
 				minimumVersion = 0.3.0;
 			};
 		};
+		BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -688,6 +775,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BC5038AB2C3E5E4700EE2819 /* XCLocalSwiftPackageReference "../../tunnelkit" */;
 			productName = TunnelKitOpenVPNAppExtension;
+		};
+		BC5039332C3FAC5000EE2819 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

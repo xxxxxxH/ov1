@@ -11,7 +11,7 @@ import SwiftUI
 struct SmartVPNApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchPage()
         }
     }
 }

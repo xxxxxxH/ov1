@@ -8,3 +8,8 @@ target 'SmartVPN' do
   # Pods for SmartVPN
 
 end
+
+target 'SmartT' do
+  
+  use_frameworks!
+end
