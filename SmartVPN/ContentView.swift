@@ -21,7 +21,7 @@ struct ContentView: View {
                 Task {
                     let extra = NetworkExtensionExtra()
                     try await vpn.reconnect(
-                        "com.apps.smartx.SmartVPN.SmartT",
+                        Dev.extPkg,
                         configuration: cfg,
                         extra: extra,
                         after: .seconds(2)
@@ -38,22 +38,10 @@ struct ContentView: View {
             Text("VPN Status: \(vpnStatusManager.statusDescription(for: vpnStatusManager.vpnStatus))")
                             .padding()
         }.onAppear(){
-            // 示例用法
-            let fileURLString = "https://hapixi.com/vpServerConfig/client.ovpn"
 
-            Downloadx.downloadFileToDocuments(from: fileURLString) { result in
-                switch result {
-                case .success(let filePath):
-                    print("File downloaded and saved to: \(filePath)")
-                case .failure(let error):
-                    print("Error downloading file: \(error)")
-                }
-            }
+            //Downloadx.downloadFileToDocuments(from: Dev.nodeInfo!.hotUrl)
         }
     }
     
 }
 
-#Preview {
-    ContentView()
-}

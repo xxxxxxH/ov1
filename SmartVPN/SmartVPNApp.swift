@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-
 @main
 struct SmartVPNApp: App {
+   
     var body: some Scene {
         WindowGroup {
             LaunchPage()

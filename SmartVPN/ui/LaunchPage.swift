@@ -18,35 +18,35 @@ struct LaunchPage: View {
                 Color.pageBackground.edgesIgnoringSafeArea(.all)
                 VStack{
                     
-                
-                    LottieView(animation: .named("xh"))
-                      .playing()
-                      .looping()
                     
-                      
-                    Text("Loading...")
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .font(.system(.largeTitle)).padding()
+                    LottieView(animation: .named("xh"))
+                        .playing()
+                        .looping()
+                        .frame(width: 300,height: 300)
+                    
+                    
                 }
                 
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: HomePageVIew(),
                     isActive: $jump
                 ) {
                     EmptyView()
                 }
             }
             .onAppear {
+                Dev.fetchHotData(){
+                    Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].hotUrl)
+                }
+                Dev.buildChaterList()
+                Dev.recommendWord()
+                Dev.settingList()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                    //jump = true
+                    jump = true
                 }
             }
         }
     }
 }
 
-#Preview {
-    LaunchPage()
-}
 

@@ -34,19 +34,22 @@ class VPNStatusManager: ObservableObject {
     func statusDescription(for status: NEVPNStatus) -> String {
         switch status {
         case .invalid:
-            return "Invalid"
+            return "Click to\nconnect"
         case .disconnected:
-            return "Disconnected"
+            Dev.connecting =  false
+            return "Click to\nconnect"
         case .connecting:
             return "Connecting"
         case .connected:
+            Dev.connecting =  false
             return "Connected"
         case .reasserting:
             return "Reasserting"
         case .disconnecting:
             return "Disconnecting"
         @unknown default:
-            return "Unknown"
+            Dev.connecting =  false
+            return "Disconnected"
         }
     }
 

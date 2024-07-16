@@ -12,7 +12,8 @@ struct HotDataResponse: Codable {
     let result: [HotData]
 }
 
-struct HotData: Codable {
+struct HotData: Codable,Identifiable {
+    let id = UUID()
     let hotId: Int
     let hotName: String
     let hotUrl: String

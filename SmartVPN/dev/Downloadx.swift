@@ -18,9 +18,9 @@ class Downloadx{
         return documentsURL
     }
     
-    static  func downloadFileToDocuments(from urlString: String, completion: @escaping (Result<String, Error>) -> Void) {
+    static  func downloadFileToDocuments(from urlString: String) {
         guard let url = URL(string: urlString) else {
-            completion(.failure(NSError(domain: "Invalid URL", code: -1, userInfo: nil)))
+           
             return
         }
         
@@ -29,12 +29,12 @@ class Downloadx{
         
         let task = URLSession.shared.downloadTask(with: url) { (tempFileURL, response, error) in
             if let error = error {
-                completion(.failure(error))
+                
                 return
             }
             
             guard let tempFileURL = tempFileURL else {
-                completion(.failure(NSError(domain: "Download Error", code: -1, userInfo: nil)))
+                
                 return
             }
             
@@ -46,9 +46,9 @@ class Downloadx{
                 try fileManager.moveItem(at: tempFileURL, to: destinationURL)
                 config_path = destinationURL.path
                 config_url = destinationURL
-                completion(.success(destinationURL.path))
+                
             } catch {
-                completion(.failure(error))
+                print("download error \(error)")
             }
         }
         task.resume()

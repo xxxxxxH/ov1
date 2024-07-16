@@ -27,9 +27,29 @@
 		BC50392E2C3FA71100EE2819 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50392D2C3FA71100EE2819 /* Color.swift */; };
 		BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039302C3FA74100EE2819 /* LaunchPage.swift */; };
 		BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039332C3FAC5000EE2819 /* Lottie */; };
-		BC5039452C3FB6C500EE2819 /* abc.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039442C3FB6C500EE2819 /* abc.json */; };
-		BC5039472C3FBBFB00EE2819 /* aaa.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039462C3FBBFB00EE2819 /* aaa.json */; };
 		BC5039492C3FBC6200EE2819 /* xh.json in Resources */ = {isa = PBXBuildFile; fileRef = BC5039482C3FBC6200EE2819 /* xh.json */; };
+		BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50394A2C3FC6BD00EE2819 /* HomePage.swift */; };
+		BC50394D2C3FC93600EE2819 /* connect.json in Resources */ = {isa = PBXBuildFile; fileRef = BC50394C2C3FC93500EE2819 /* connect.json */; };
+		BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50394E2C3FCDC600EE2819 /* CarouselView.swift */; };
+		BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039542C40FA6400EE2819 /* ChaterEntity.swift */; };
+		BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039582C41045B00EE2819 /* ChatPage.swift */; };
+		BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */; };
+		BC50395D2C411F3400EE2819 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395C2C411F3400EE2819 /* Message.swift */; };
+		BC5039602C411F5600EE2819 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395F2C411F5600EE2819 /* ChatViewModel.swift */; };
+		BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039612C411FF700EE2819 /* ChatBubble.swift */; };
+		BC5039642C41200C00EE2819 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039632C41200C00EE2819 /* ChatView.swift */; };
+		BC5039662C41270300EE2819 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039652C41270300EE2819 /* Toast.swift */; };
+		BC5039682C4129C300EE2819 /* OverlappingImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039672C4129C300EE2819 /* OverlappingImagesView.swift */; };
+		BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039692C412D8500EE2819 /* ChaterListPage.swift */; };
+		BC50396C2C412E9D00EE2819 /* ChaterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50396B2C412E9D00EE2819 /* ChaterItem.swift */; };
+		BC50396E2C41335400EE2819 /* NotificationBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50396D2C41335400EE2819 /* NotificationBubbleView.swift */; };
+		BC5039742C44FE8D00EE2819 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039732C44FE8D00EE2819 /* LocalData.swift */; };
+		BC5039762C4504A300EE2819 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039752C4504A300EE2819 /* SettingPage.swift */; };
+		BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039772C45051F00EE2819 /* SettingItem.swift */; };
+		BC50397A2C45060500EE2819 /* SettingItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039792C45060500EE2819 /* SettingItemData.swift */; };
+		BC50397E2C45264900EE2819 /* FbPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397D2C45264900EE2819 /* FbPage.swift */; };
+		BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397F2C4609AF00EE2819 /* NodePage.swift */; };
+		BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039812C460A4E00EE2819 /* NodeItem.swift */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,9 +102,29 @@
 		BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusManager.swift; sourceTree = "<group>"; };
 		BC50392D2C3FA71100EE2819 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC5039302C3FA74100EE2819 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
-		BC5039442C3FB6C500EE2819 /* abc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = abc.json; path = ../../../../../../Downloads/abc.json; sourceTree = "<group>"; };
-		BC5039462C3FBBFB00EE2819 /* aaa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = aaa.json; path = ../../../../../../Downloads/aaa.json; sourceTree = "<group>"; };
 		BC5039482C3FBC6200EE2819 /* xh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = xh.json; path = ../../../../../../Downloads/xh.json; sourceTree = "<group>"; };
+		BC50394A2C3FC6BD00EE2819 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		BC50394C2C3FC93500EE2819 /* connect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = connect.json; path = ../../../../../../Downloads/connect.json; sourceTree = "<group>"; };
+		BC50394E2C3FCDC600EE2819 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		BC5039542C40FA6400EE2819 /* ChaterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaterEntity.swift; sourceTree = "<group>"; };
+		BC5039582C41045B00EE2819 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
+		BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVIew.swift; sourceTree = "<group>"; };
+		BC50395C2C411F3400EE2819 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BC50395F2C411F5600EE2819 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		BC5039612C411FF700EE2819 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		BC5039632C41200C00EE2819 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BC5039652C41270300EE2819 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		BC5039672C4129C300EE2819 /* OverlappingImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingImagesView.swift; sourceTree = "<group>"; };
+		BC5039692C412D8500EE2819 /* ChaterListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaterListPage.swift; sourceTree = "<group>"; };
+		BC50396B2C412E9D00EE2819 /* ChaterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaterItem.swift; sourceTree = "<group>"; };
+		BC50396D2C41335400EE2819 /* NotificationBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBubbleView.swift; sourceTree = "<group>"; };
+		BC5039732C44FE8D00EE2819 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		BC5039752C4504A300EE2819 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		BC5039772C45051F00EE2819 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		BC5039792C45060500EE2819 /* SettingItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemData.swift; sourceTree = "<group>"; };
+		BC50397D2C45264900EE2819 /* FbPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbPage.swift; sourceTree = "<group>"; };
+		BC50397F2C4609AF00EE2819 /* NodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePage.swift; sourceTree = "<group>"; };
+		BC5039812C460A4E00EE2819 /* NodeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeItem.swift; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +198,7 @@
 		BC50388E2C3E5D2E00EE2819 /* SmartVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BC50395E2C411F4700EE2819 /* viewmodel */,
 				BC5039352C3FACCE00EE2819 /* anim */,
 				BC50392F2C3FA73200EE2819 /* ui */,
 				BC50390D2C3E79F200EE2819 /* data */,
@@ -189,6 +230,7 @@
 				BC5039122C3E876200EE2819 /* Config.swift */,
 				BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */,
 				BC50392D2C3FA71100EE2819 /* Color.swift */,
+				BC5039732C44FE8D00EE2819 /* LocalData.swift */,
 			);
 			path = dev;
 			sourceTree = "<group>";
@@ -204,6 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */,
+				BC5039542C40FA6400EE2819 /* ChaterEntity.swift */,
+				BC50395C2C411F3400EE2819 /* Message.swift */,
+				BC5039792C45060500EE2819 /* SettingItemData.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -222,6 +267,22 @@
 			isa = PBXGroup;
 			children = (
 				BC5039302C3FA74100EE2819 /* LaunchPage.swift */,
+				BC50394A2C3FC6BD00EE2819 /* HomePage.swift */,
+				BC50394E2C3FCDC600EE2819 /* CarouselView.swift */,
+				BC5039582C41045B00EE2819 /* ChatPage.swift */,
+				BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */,
+				BC5039612C411FF700EE2819 /* ChatBubble.swift */,
+				BC5039632C41200C00EE2819 /* ChatView.swift */,
+				BC5039652C41270300EE2819 /* Toast.swift */,
+				BC5039672C4129C300EE2819 /* OverlappingImagesView.swift */,
+				BC5039692C412D8500EE2819 /* ChaterListPage.swift */,
+				BC50396B2C412E9D00EE2819 /* ChaterItem.swift */,
+				BC50396D2C41335400EE2819 /* NotificationBubbleView.swift */,
+				BC5039752C4504A300EE2819 /* SettingPage.swift */,
+				BC5039772C45051F00EE2819 /* SettingItem.swift */,
+				BC50397D2C45264900EE2819 /* FbPage.swift */,
+				BC50397F2C4609AF00EE2819 /* NodePage.swift */,
+				BC5039812C460A4E00EE2819 /* NodeItem.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -229,11 +290,18 @@
 		BC5039352C3FACCE00EE2819 /* anim */ = {
 			isa = PBXGroup;
 			children = (
+				BC50394C2C3FC93500EE2819 /* connect.json */,
 				BC5039482C3FBC6200EE2819 /* xh.json */,
-				BC5039462C3FBBFB00EE2819 /* aaa.json */,
-				BC5039442C3FB6C500EE2819 /* abc.json */,
 			);
 			path = anim;
+			sourceTree = "<group>";
+		};
+		BC50395E2C411F4700EE2819 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				BC50395F2C411F5600EE2819 /* ChatViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5039492C3FBC6200EE2819 /* xh.json in Resources */,
-				BC5039472C3FBBFB00EE2819 /* aaa.json in Resources */,
 				BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */,
-				BC5039452C3FB6C500EE2819 /* abc.json in Resources */,
+				BC50394D2C3FC93600EE2819 /* connect.json in Resources */,
 				BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,12 +471,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
+				BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */,
+				BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */,
+				BC5039662C41270300EE2819 /* Toast.swift in Sources */,
+				BC50397E2C45264900EE2819 /* FbPage.swift in Sources */,
 				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
+				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
+				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
+				BC50396E2C41335400EE2819 /* NotificationBubbleView.swift in Sources */,
+				BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */,
+				BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */,
+				BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */,
+				BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */,
 				BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */,
 				BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */,
 				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
+				BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */,
 				BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */,
+				BC50396C2C412E9D00EE2819 /* ChaterItem.swift in Sources */,
+				BC5039742C44FE8D00EE2819 /* LocalData.swift in Sources */,
+				BC50397A2C45060500EE2819 /* SettingItemData.swift in Sources */,
 				BC50392E2C3FA71100EE2819 /* Color.swift in Sources */,
+				BC5039602C411F5600EE2819 /* ChatViewModel.swift in Sources */,
+				BC5039682C4129C300EE2819 /* OverlappingImagesView.swift in Sources */,
+				BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */,
+				BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */,
+				BC5039762C4504A300EE2819 /* SettingPage.swift in Sources */,
+				BC50395D2C411F3400EE2819 /* Message.swift in Sources */,
 				BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */,
 				BC5039132C3E876200EE2819 /* Config.swift in Sources */,
 			);
@@ -656,9 +744,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -685,9 +777,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
