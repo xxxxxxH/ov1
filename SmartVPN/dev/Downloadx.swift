@@ -18,9 +18,8 @@ class Downloadx{
         return documentsURL
     }
     
-    static  func downloadFileToDocuments(from urlString: String) {
+    static  func downloadFileToDocuments(from urlString: String,success:@escaping()->Void) {
         guard let url = URL(string: urlString) else {
-           
             return
         }
         
@@ -29,12 +28,12 @@ class Downloadx{
         
         let task = URLSession.shared.downloadTask(with: url) { (tempFileURL, response, error) in
             if let error = error {
-                
+                print("xxxxxxH->Error dowanload data: \(error)")
                 return
             }
             
             guard let tempFileURL = tempFileURL else {
-                
+                print("xxxxxxH->Error dowanload tempFileURL")
                 return
             }
             
@@ -46,9 +45,10 @@ class Downloadx{
                 try fileManager.moveItem(at: tempFileURL, to: destinationURL)
                 config_path = destinationURL.path
                 config_url = destinationURL
-                
+                print("xxxxxxH->下载配置文件成功 \(config_path) \(String(describing: config_url))")
+                success()
             } catch {
-                print("download error \(error)")
+                print("xxxxxxH->下载配置文件失败 \(error)")
             }
         }
         task.resume()

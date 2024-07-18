@@ -11,59 +11,39 @@ struct ChatPage: View {
     @State var content = ""
     @Environment(\.presentationMode) var presentationMode
     @State var chater:ChaterEntity?
+    @State private var isIPhoneXOrLater: Bool = false
     
-    init() {
-        //        let appearance = UINavigationBarAppearance()
-        //        appearance.configureWithTransparentBackground()
-        //        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        //        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        //        appearance.backgroundColor = UIColor.clear
-        //        appearance.titleTextAttributes = [
-        //            .foregroundColor: UIColor.white,
-        //            .font: UIFont.systemFont(ofSize: 24, weight: .bold)
-        //        ]
-        //        appearance.shadowColor = .clear
-        //        UINavigationBar.appearance().standardAppearance = appearance
-        //        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        //        UINavigationBar.appearance().compactAppearance = appearance
-        //        UINavigationBar.appearance().tintColor = .white
-    }
     var body: some View {
-        ZStack{
-            VStack{
-                HStack{
-                    Button(action: {
-                        Dev.update = false
-                        presentationMode.wrappedValue.dismiss()
-                    }, label: {
-                        Image(systemName: "chevron.backward")
-                            .foregroundColor(.white)
-                    }).padding()
-                    Spacer()
-                    Text(Dev.currentChater!.name).foregroundColor(.white).bold().font(.title)
-                    Spacer()
-                    OverlappingImagesView(images: Array(Dev.chaterList.shuffled().prefix(3))).padding()
-                    
-                }.frame(width: UIScreen().bounds.width, height: 100)
-                ChatView().background(Color.clear)
-                    .clipped()
-                
-            }.frame(width: .infinity, height: .infinity)
-                .onAppear{
-                    self.chater = Dev.currentChater
+            ZStack{
+                Color.pageBackground.edgesIgnoringSafeArea(.all)
+                if chater != nil {
+                    Image(chater!.background)
+                        .resizable()
+                        .scaledToFill().ignoresSafeArea()
                 }
-            if chater != nil {
-                Image(chater!.background)
-                    .resizable()
-                    .scaledToFill()
-            }
-            
-            
-            
-            
-        }.edgesIgnoringSafeArea(.all)
-            .navigationBarHidden(true)
+                
+                VStack{
+                    CustomNavigationBar(title: Dev.currentChater!.name, backAction: {
+                        presentationMode.wrappedValue.dismiss()
+                    },overlay:true)
+                    ChatView()
+                }.frame(width: .infinity, height: .infinity).padding(.horizontal, isIPhoneXOrLater ? 20 : 0)
+                
+            }.onAppear{
+                self.chater = Dev.currentChater
+                self.isIPhoneXOrLater = checkIfIPhoneXOrLater()
+            }.navigationBarHidden(true).navigationBarBackButtonHidden()
+        
     }
-}
+    
+    func checkIfIPhoneXOrLater() -> Bool {
+            let keyWindow = UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }
 
+            let safeAreaInsets = keyWindow?.safeAreaInsets ?? UIEdgeInsets.zero
+            return safeAreaInsets.top > 20 || safeAreaInsets.bottom > 0
+        }
+}
 

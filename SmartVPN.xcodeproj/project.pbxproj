@@ -50,6 +50,8 @@
 		BC50397E2C45264900EE2819 /* FbPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397D2C45264900EE2819 /* FbPage.swift */; };
 		BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397F2C4609AF00EE2819 /* NodePage.swift */; };
 		BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039812C460A4E00EE2819 /* NodeItem.swift */; };
+		BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */; };
+		BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039872C4771DB00EE2819 /* PrivacyPage.swift */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,8 @@
 		BC50397D2C45264900EE2819 /* FbPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbPage.swift; sourceTree = "<group>"; };
 		BC50397F2C4609AF00EE2819 /* NodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePage.swift; sourceTree = "<group>"; };
 		BC5039812C460A4E00EE2819 /* NodeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeItem.swift; sourceTree = "<group>"; };
+		BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		BC5039872C4771DB00EE2819 /* PrivacyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPage.swift; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +287,8 @@
 				BC50397D2C45264900EE2819 /* FbPage.swift */,
 				BC50397F2C4609AF00EE2819 /* NodePage.swift */,
 				BC5039812C460A4E00EE2819 /* NodeItem.swift */,
+				BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */,
+				BC5039872C4771DB00EE2819 /* PrivacyPage.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -475,7 +481,9 @@
 				BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */,
 				BC5039662C41270300EE2819 /* Toast.swift in Sources */,
 				BC50397E2C45264900EE2819 /* FbPage.swift in Sources */,
+				BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */,
 				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
+				BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */,
 				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
 				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
 				BC50396E2C41335400EE2819 /* NotificationBubbleView.swift in Sources */,

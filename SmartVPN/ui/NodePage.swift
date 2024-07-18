@@ -15,7 +15,7 @@ struct NodePage: View {
             VStack{
                 ForEach(Dev.hotDatas){item in
                     NodeItem(itemData: item){
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                             presentationMode.wrappedValue.dismiss()
                         })
                     }

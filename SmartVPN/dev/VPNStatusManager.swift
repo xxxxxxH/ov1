@@ -31,7 +31,7 @@ class VPNStatusManager: ObservableObject {
         vpnStatus = connection.status
     }
 
-    func statusDescription(for status: NEVPNStatus) -> String {
+    func statusDescription(for status: NEVPNStatus) -> String { 
         switch status {
         case .invalid:
             return "Click to\nconnect"

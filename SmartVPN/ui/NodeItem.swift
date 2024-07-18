@@ -12,7 +12,8 @@ struct NodeItem: View {
     let itemClick:()->Void
     var body: some View {
         Button(action: {
-            Downloadx.downloadFileToDocuments(from: itemData.hotUrl)
+            Dev.nodeInfo = itemData
+            
             Dev.switchNode = true
             itemClick()
         }, label: {

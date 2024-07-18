@@ -13,6 +13,8 @@ struct ChatView: View {
     @State private var showToast: Bool = false
     @State private var toastStr = ""
     
+    
+    
     var body: some View {
         VStack {
             ScrollViewReader { proxy in
@@ -38,7 +40,7 @@ struct ChatView: View {
                     HStack(spacing: 8) {
                         ForEach(0..<Dev.rList.count) { index in
                             Text(Dev.rList[index])
-                               .padding(.horizontal, 10).padding(.vertical, 12)
+                                .padding(.horizontal, 10).padding(.vertical, 12)
                                 .background(Color.black.opacity(0.2))
                                 .foregroundColor(.white)
                                 .font(.system(size: 14)).cornerRadius(8).overlay(
@@ -80,7 +82,7 @@ struct ChatView: View {
                                 showToast = true
                                 toastStr = "Please wait for the current response."
                             } else {
-                                if LocalData.getChatCount() > 5{
+                                if LocalData.getChatCount() > 10{
                                     showToast = true
                                     toastStr = "The maximum number of times has been reached"
                                     return
@@ -97,8 +99,7 @@ struct ChatView: View {
                             .font(.system(size: 16, weight: .bold))
                     }.background(Color.chatButton)
                         .cornerRadius(10)
-                }.padding(.horizontal, 20)
-                    .padding(.bottom, 20)
+                }.padding(.bottom, 20).padding(.horizontal, 20)
             }
             
             

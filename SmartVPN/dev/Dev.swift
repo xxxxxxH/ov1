@@ -23,18 +23,18 @@ class Dev{
     
     static func fetchHotData(success:@escaping()->Void) {
         guard let url = URL(string: url_nodes) else {
-            print("Invalid URL")
+            print("xxxxxxH->Invalid URL")
             return
         }
 
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
-                print("Error fetching data: \(error)")
+                print("xxxxxxH->Error fetching data: \(error)")
                 return
             }
 
             guard let data = data else {
-                print("Data Error")
+                print("xxxxxxH->Data Error")
                 return
             }
 
@@ -46,8 +46,9 @@ class Dev{
                     nodeInfo = hotDatas[0]
                     success()
                 }
+                print("xxxxxxH->获取节点成功 \(hotDatas.count)")
             } catch {
-                print("Error decoding data: \(error)")
+                print("xxxxxxH->获取节点失败: \(error)")
             }
         }
         task.resume()
@@ -92,8 +93,9 @@ class Dev{
         sList.append(SettingItemData(text:"Like us",icon:"ic_like"))
         sList.append(SettingItemData(text:"Share",icon:"ic_share"))
         sList.append(SettingItemData(text:"Feedback",icon:"ic_fb"))
-        sList.append(SettingItemData(text:"Provacy Policy",icon:"ic_private"))
+        sList.append(SettingItemData(text:"Privacy Policy",icon:"ic_private"))
         sList.append(SettingItemData(text:"Update",icon:"ic_update"))
+        
     }
     
     static func openAppStore() {

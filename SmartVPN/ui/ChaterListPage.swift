@@ -14,40 +14,33 @@ struct ChaterListPage: View {
     @State private var didSelectItem = false
     
     var body: some View {
+        GeometryReader{g in
             ZStack {
                 Color.pageBackground.edgesIgnoringSafeArea(.all)
-                
-                ScrollView {
-                    VStack(spacing: 10) {
-                        ForEach(Dev.chaterList, id: \.id) { chater in
-                            ChaterRowView(chater: chater)
-                                .padding(.horizontal)
-                                .onTapGesture {
-                                    Dev.currentChater = chater
-                                    startChat = true
-                                    Dev.update = true
-                                    presentationMode.wrappedValue.dismiss()
-                                }
+                VStack{
+                    CustomNavigationBar(title: "Chat", backAction: {
+                        Dev.update = false
+                        presentationMode.wrappedValue.dismiss()
+                    })
+                    
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            ForEach(Dev.chaterList, id: \.id) { chater in
+                                ChaterRowView(chater: chater)
+                                    .padding(.horizontal)
+                                    .onTapGesture {
+                                        Dev.currentChater = chater
+                                        startChat = true
+                                        Dev.update = true
+                                        presentationMode.wrappedValue.dismiss()
+                                    }
+                            }
                         }
                     }
                 }
-            }.navigationBarItems(
-                leading: Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                        Image(systemName: "chevron.backward")
-                        .foregroundColor(.white).onTapGesture {
-                            Dev.update = false
-                            presentationMode.wrappedValue.dismiss()
-                        }
-                }
-            ).navigationBarBackButtonHidden()
-//            .background{
-//                NavigationLink(destination: ChatPage(), isActive: $startChat){
-//                    EmptyView()
-//                }
-//            }
-    
+              
+            }
+        }.navigationBarHidden(true).navigationBarBackButtonHidden()
     }
 }
 

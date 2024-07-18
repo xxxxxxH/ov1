@@ -38,7 +38,7 @@ struct OverlappingImagesView: View {
                     .background(Color.red)
                     .clipShape(Circle())
                     .offset(x: 20, y: -10)
-            }
+            }.padding(.trailing, 20)
         }
     }
 }

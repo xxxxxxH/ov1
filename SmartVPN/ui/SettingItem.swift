@@ -11,6 +11,7 @@ struct SettingItem: View {
     var itemData:SettingItemData
     @State private var startFb = false
     let update:()->Void
+    let privacy:()->Void
     
     var body: some View {
         Button(action: {
@@ -27,6 +28,9 @@ struct SettingItem: View {
                 break
             case "Update":
                 update()
+                break
+            case "Privacy Policy":
+                privacy()
                 break
             default:
                 break
