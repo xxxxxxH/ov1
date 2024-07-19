@@ -36,7 +36,7 @@ struct SettingPage: View {
                 }
                 
                 Button(action: {
-                    UIPasteboard.general.string = "425270071@qq.com"
+                    UIPasteboard.general.string = "14398441@qq.com"
                     showToast = true
                     toastMessage = "Mailbox copied"
                 }, label: {
@@ -46,8 +46,9 @@ struct SettingPage: View {
                             .stroke(Color.white, lineWidth: 0.6)
                         HStack{
                             Image("ic_contact").padding()
-                            Text("425270071qq.com")
+                            Text(attributedString("14398441@qq.com"))
                                 .foregroundColor(.white)
+                                .textSelection(.disabled)
                             Spacer()
                             Image("ic_arrow_right")
                                 .resizable()
@@ -66,5 +67,11 @@ struct SettingPage: View {
             
         }.background(.clear)
     }
+    
+    func attributedString(_ email: String) -> AttributedString {
+            var attributedString = AttributedString(email)
+            attributedString.link = nil
+            return attributedString
+        }
 }
 

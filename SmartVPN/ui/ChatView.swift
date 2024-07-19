@@ -51,7 +51,7 @@ struct ChatView: View {
                                         showToast = true
                                         toastStr = "Please wait for the current response."
                                     } else {
-                                        if LocalData.getChatCount() > 5{
+                                        if LocalData.getChatCount() > 10{
                                             showToast = true
                                             toastStr = "The maximum number of times has been reached"
                                             return

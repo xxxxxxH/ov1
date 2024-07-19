@@ -70,25 +70,7 @@ struct HomePage: View {
                         }
                         
                         Button(action: {
-                            if Dev.connecting{
-                                toastMessage = "Connecting,plesae try later"
-                                showToast = true
-                            }else{
-                                if Dev.nodeInfo == nil || Downloadx.config_url == nil || Downloadx.config_path.isEmpty{
-                                    toastMessage = "No node info"
-                                    showToast = true
-                                }else{
-                                    Dev.connecting = true
-                                    
-                                    if vpnStatusManager.vpnStatus == .invalid || vpnStatusManager.vpnStatus == .disconnected{
-                                        connect()
-                                    }else if vpnStatusManager.vpnStatus == .connected{
-                                        Task{
-                                            await vpn.disconnect()
-                                        }
-                                    }
-                                }
-                            }
+                            prepareConnect()
                         }, label: {
                             ZStack{
                                 LottieView(animation: .named("connect"))
@@ -117,12 +99,37 @@ struct HomePage: View {
             self.cuurentNode = Dev.nodeInfo
             if Dev.switchNode{
                 Downloadx.downloadFileToDocuments(from: self.cuurentNode!.hotUrl){
-//                    switchNode()
-                    connect()
+                    if vpnStatusManager.vpnStatus == .connected{
+                        connect()
+                    }else{
+                        prepareConnect()
+                    }
                 }
             }
         }.navigationBarHidden(true)
         
+    }
+    
+    func prepareConnect(){
+        if Dev.connecting{
+            toastMessage = "Connecting,plesae try later"
+            showToast = true
+        }else{
+            if Dev.nodeInfo == nil || Downloadx.config_url == nil || Downloadx.config_path.isEmpty{
+                toastMessage = "No node info"
+                showToast = true
+            }else{
+                Dev.connecting = true
+                
+                if vpnStatusManager.vpnStatus == .invalid || vpnStatusManager.vpnStatus == .disconnected{
+                    connect()
+                }else if vpnStatusManager.vpnStatus == .connected{
+                    Task{
+                        await vpn.disconnect()
+                    }
+                }
+            }
+        }
     }
     
     func connect(){

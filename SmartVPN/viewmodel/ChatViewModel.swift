@@ -34,11 +34,11 @@ class ChatViewModel: ObservableObject {
         isLoading = true
         
         // Simulate network request for a response
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             let loadingMessage = Message(text: "", isSentByUser: false, isLoading: true)
             self.messages.append(loadingMessage)
             
-            self.fetchResponse()
+            self.fetchResponse(text: text)
                 .sink(receiveCompletion: { _ in
                     self.isLoading = false
                 }, receiveValue: { response in
@@ -47,16 +47,21 @@ class ChatViewModel: ObservableObject {
                     }
                 })
                 .store(in: &self.cancellables)
+            
         }
     }
     
-    private func fetchResponse() -> AnyPublisher<String, Never> {
-        // Simulate a network request with a delay
-        Just("This is a response from the network")
-            .delay(for: 2, scheduler: DispatchQueue.main)
-            .eraseToAnyPublisher()
+    private func fetchResponse(text:String) -> AnyPublisher<String, Never> {
+        Future { promise in
+                   Dev.getAiAnswer(req: [ChatReq(role: "user", content: text)]) { response in
+                       promise(.success(response))
+                   }
+               }
+               .eraseToAnyPublisher()
+        
     }
     
+
     func clearMessages() {
             // Example: Clear all messages
             messages.removeAll()

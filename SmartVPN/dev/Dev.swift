@@ -26,18 +26,18 @@ class Dev{
             print("xxxxxxH->Invalid URL")
             return
         }
-
+        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 print("xxxxxxH->Error fetching data: \(error)")
                 return
             }
-
+            
             guard let data = data else {
                 print("xxxxxxH->Data Error")
                 return
             }
-
+            
             do {
                 let decoder = JSONDecoder()
                 let response = try decoder.decode(HotDataResponse.self, from: data)
@@ -99,12 +99,12 @@ class Dev{
     }
     
     static func openAppStore() {
-           guard let url = URL(string: "https://apps.apple.com/app/id=\(Bundle.main.bundleIdentifier)") else {
-               return
-           }
-           
-           UIApplication.shared.open(url, options: [:], completionHandler: nil)
-       }
+        guard let url = URL(string: "https://apps.apple.com/app/id=\(Bundle.main.bundleIdentifier)") else {
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
     
     static func shareContent() {
         let text = "Hello" // 要分享的文本内容
@@ -138,6 +138,50 @@ class Dev{
             topController = presentedViewController
         }
         return topController
+    }
+    
+    static func getAiAnswer(req:[ChatReq], success:@escaping(String)->Void){
+        guard let url = URL(string: "https://ai.smartvpn.top/SmartAI/chatAnswer") else {
+            print("Invalid URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        guard let httpBody = try? JSONEncoder().encode(req) else {
+            print("Invalid JSON")
+            return
+        }
+        if let jsonString = String(data: httpBody, encoding: .utf8) {
+            print("xxxxxxH-> json = \(jsonString)")
+        }
+        request.httpBody = httpBody
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                success("error")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data received")
+                success("error")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let response = try decoder.decode(ChatResp.self, from: data)
+                success(response.result)
+                print("xxxxxxH->\(response)")
+            } catch {
+                success("error")
+                print("xxxxxxH->: \(error)")
+            }
+        }.resume()
     }
 }
 
