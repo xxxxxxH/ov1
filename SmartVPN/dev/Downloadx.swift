@@ -19,12 +19,13 @@ class Downloadx{
     }
     
     static  func downloadFileToDocuments(from urlString: String,success:@escaping()->Void) {
+        print("url = \(urlString)")
         guard let url = URL(string: urlString) else {
             return
         }
         
         let documentsDirectoryURL = getDocumentsDirectory()
-        let destinationURL = documentsDirectoryURL.appendingPathComponent("config.ovpn")
+        let destinationURL = documentsDirectoryURL.appendingPathComponent("configx.ovpn")
         
         let task = URLSession.shared.downloadTask(with: url) { (tempFileURL, response, error) in
             if let error = error {
@@ -46,6 +47,7 @@ class Downloadx{
                 config_path = destinationURL.path
                 config_url = destinationURL
                 print("xxxxxxH->下载配置文件成功 \(config_path) \(String(describing: config_url))")
+                
                 success()
             } catch {
                 print("xxxxxxH->下载配置文件失败 \(error)")
@@ -55,6 +57,18 @@ class Downloadx{
     }
     
     
+    @Published var fileContent: String = ""
     
+   static func readFile(url: URL) {
+        do {
+            let data = try Data(contentsOf: url)
+            if let content = String(data: data, encoding: .utf8) {
+            
+                print("Conent = \(content)")
+            }
+        } catch {
+            print("Error reading file: \(error)")
+        }
+    }
     
 }

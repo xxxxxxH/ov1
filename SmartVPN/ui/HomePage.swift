@@ -96,9 +96,12 @@ struct HomePage: View {
                 ToastView(message: toastMessage, isShowing: $showToast)
             }
         }.onAppear{
+            Task{
+                await vpn.prepare()
+            }
             self.cuurentNode = Dev.nodeInfo
             if Dev.switchNode{
-                Downloadx.downloadFileToDocuments(from: self.cuurentNode!.hotUrl){
+                Downloadx.downloadFileToDocuments(from: self.cuurentNode!.smartUrl){
                     if vpnStatusManager.vpnStatus == .connected{
                         connect()
                     }else{

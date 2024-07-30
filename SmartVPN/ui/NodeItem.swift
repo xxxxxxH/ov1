@@ -23,7 +23,7 @@ struct NodeItem: View {
                     .stroke(Color.white, lineWidth: 0.6)
                 HStack{
                     Image(systemName: "globe").padding().foregroundColor(.white)
-                    Text(itemData.hotName)
+                    Text(itemData.smartName)
                         .foregroundColor(.white)
                     Spacer()
                     Image("ic_arrow_right")

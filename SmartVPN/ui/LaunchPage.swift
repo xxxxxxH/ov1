@@ -36,7 +36,7 @@ struct LaunchPage: View {
             }
             .onAppear {
                 Dev.fetchHotData(){
-                    Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].hotUrl){}
+                    Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].smartUrl){}
                 }
                 Dev.buildChaterList()
                 Dev.recommendWord()

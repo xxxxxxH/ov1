@@ -14,7 +14,7 @@ struct HotDataResponse: Codable {
 
 struct HotData: Codable,Identifiable {
     let id = UUID()
-    let hotId: Int
-    let hotName: String
-    let hotUrl: String
+    let smartId: Int
+    let smartName: String
+    let smartUrl: String
 }

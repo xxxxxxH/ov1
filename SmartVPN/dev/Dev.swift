@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 class Dev{
-    
+    //smartvpn.top/getSmart/getSmartUrl
+    //hotvpn.top/hotData/getOpenUrl
     static var hotDatas: [HotData] = []
-    static let url_nodes = "https://hotvpn.top/hotData/getOpenUrl"
+    static let url_nodes = "https://smartvpn.top/getSmart/getSmartUrl"
     static var nodeInfo:HotData?
     static var chaterList:[ChaterEntity] = []
     static var currentChater:ChaterEntity?
@@ -19,6 +20,7 @@ class Dev{
     static var sList:[SettingItemData] = []
     static var switchNode = false
     static let extPkg = "com.apps.smartx.SmartVPN.SmartT"
+    static let group = ""
     static var connecting = false
     
     static func fetchHotData(success:@escaping()->Void) {
@@ -47,6 +49,7 @@ class Dev{
                     success()
                 }
                 print("xxxxxxH->获取节点成功 \(hotDatas.count)")
+            
             } catch {
                 print("xxxxxxH->获取节点失败: \(error)")
             }

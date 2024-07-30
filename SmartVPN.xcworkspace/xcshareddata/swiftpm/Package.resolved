@@ -1,5 +1,5 @@
 {
-  "originHash" : "e478debaed434837ec58c8f6edbb8f9c83dedcf59f98772af9acd5da2e47909f",
+  "originHash" : "5e08d551b3520422f0cf40cea56ed82b61f27859e34af98643e89a293931bf25",
   "pins" : [
     {
       "identity" : "lottie-ios",
@@ -35,24 +35,6 @@
       "state" : {
         "revision" : "73d9152fa0cb661db0348a1ac11dbbf998422a50",
         "version" : "1.0.17"
-      }
-    },
-    {
-      "identity" : "zzbase",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CZ410/ZZBase.git",
-      "state" : {
-        "revision" : "c5fdf9ff8c5df8a3c81d88ed4e28aba93b1ded32",
-        "version" : "0.3.0"
-      }
-    },
-    {
-      "identity" : "zzcustomcontrol",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CZ410/ZZCustomControl.git",
-      "state" : {
-        "revision" : "f076a1b260da0b95119e53803d8358d082a40b3a",
-        "version" : "0.2.0"
       }
     }
   ],
