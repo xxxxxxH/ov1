@@ -20,6 +20,10 @@ struct HomePage: View {
     @State var cuurentNode:HotData?
     @State private var showToast = false
     @State private var toastMessage = ""
+    @State private var startResult = false
+    @State private var startInfo = false
+    @State private var startScan = false
+    @State private var startTest = false
     
     init(startChat: Binding<Bool>) {
         self._startChat = startChat
@@ -67,10 +71,63 @@ struct HomePage: View {
                                     .stroke(Color.white, lineWidth: 1)
                             )
                             
+                            Spacer().frame(width: 20)
+                            Button(action: {
+                                startInfo = true
+                            }){
+                                ZStack{
+                                    Image("ic_netinfo").resizable()
+                                        .scaledToFit().frame(width: 25,height: 25)
+                                }.frame(width: 45, height: 45)
+                                
+                                NavigationLink(destination: NodePage(), isActive: $startNode){
+                                    EmptyView()
+                                }
+                            }.overlay(
+                                RoundedRectangle(cornerRadius: 2)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            
+                            
+                            Spacer().frame(width: 20)
+                            Button(action: {
+                                startScan = true
+                            }){
+                                ZStack{
+                                    Image("ic_scan").resizable()
+                                        .scaledToFit().frame(width: 25,height: 25)
+                                }.frame(width: 45, height: 45)
+                                
+                                NavigationLink(destination: NodePage(), isActive: $startNode){
+                                    EmptyView()
+                                }
+                            }.overlay(
+                                RoundedRectangle(cornerRadius: 2)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            
+                            
+                            Spacer().frame(width: 20)
+                            Button(action: {
+                                startTest = true
+                            }){
+                                ZStack{
+                                    Image("ic_speed").resizable()
+                                        .scaledToFit().frame(width: 25,height: 25)
+                                }.frame(width: 45, height: 45)
+                                
+                                NavigationLink(destination: NodePage(), isActive: $startNode){
+                                    EmptyView()
+                                }
+                            }.overlay(
+                                RoundedRectangle(cornerRadius: 2)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
                         }
                         
                         Button(action: {
                             prepareConnect()
+//                            startResult = true
                         }, label: {
                             ZStack{
                                 LottieView(animation: .named("connect"))
@@ -87,7 +144,21 @@ struct HomePage: View {
                             startChat = true
                         }.padding(.bottom, 50)
                         
+                        NavigationLink(destination: ConnectResultPage(), isActive: $startResult){
+                            EmptyView()
+                        }
                         
+                        NavigationLink(destination: LocationInfoPage(), isActive: $startInfo){
+                            EmptyView()
+                        }
+                        
+                        NavigationLink(destination: ScanPage(), isActive: $startScan){
+                            EmptyView()
+                        }
+                        
+                        NavigationLink(destination: SpeedTestPage(), isActive: $startTest){
+                            EmptyView()
+                        }
                     }.frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
@@ -109,6 +180,8 @@ struct HomePage: View {
                     }
                 }
             }
+        }.onChange(of: vpnStatusManager.vpnStatus) { newValue in
+            startResult = newValue == .connected || newValue == .disconnected
         }.navigationBarHidden(true)
         
     }

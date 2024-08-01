@@ -6,6 +6,8 @@ target 'SmartVPN' do
   use_frameworks!
 
   # Pods for SmartVPN
+  
+  pod 'NDT7', '0.0.4'
 
 end
 
@@ -13,3 +15,4 @@ target 'SmartT' do
   
   use_frameworks!
 end
+

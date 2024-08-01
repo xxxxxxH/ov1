@@ -19,9 +19,10 @@ class Dev{
     static var rList:[String] = []
     static var sList:[SettingItemData] = []
     static var switchNode = false
-    static let extPkg = "com.apps.smartx.SmartVPN.SmartT"
+    static let extPkg = "com.apps.smartx.joy.SmartT"
     static let group = ""
     static var connecting = false
+    static var dSpeed = true
     
     static func fetchHotData(success:@escaping()->Void) {
         guard let url = URL(string: url_nodes) else {
@@ -49,7 +50,7 @@ class Dev{
                     success()
                 }
                 print("xxxxxxH->获取节点成功 \(hotDatas.count)")
-            
+                
             } catch {
                 print("xxxxxxH->获取节点失败: \(error)")
             }
@@ -185,6 +186,64 @@ class Dev{
                 print("xxxxxxH->: \(error)")
             }
         }.resume()
+    }
+    
+    static func formatSpeed(_ speed: Double) -> String {
+        var formattedSpeed: String = "0.0 kB/s"
+        
+        if speed < 1_000 {
+            // Less than 1 KB, use bytes
+            formattedSpeed = String(format: "%.0f B/s", speed)
+        } else if speed < 1_000_000 {
+            // Less than 1 MB, use KB
+            let kbSpeed = speed / 1_000
+            formattedSpeed = String(format: "%.2f KB/s", kbSpeed)
+        } else {
+            // 1 MB or more, use MB
+            let mbSpeed = speed / 1_000_000
+            formattedSpeed = String(format: "%.2f MB/s", mbSpeed)
+        }
+        
+        return formattedSpeed
+    }
+    
+    static func fetchIPInfo(completion: @escaping (LocationInfoEntity?) -> Void) {
+        let url = URL(string: "https://ipinfo.io/json")!
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                completion(nil)
+                return
+            }
+            
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let locationInfo = try decoder.decode(LocationInfoEntity.self, from: data)
+                print("location info = \(locationInfo)")
+                completion(locationInfo)
+            } catch {
+                completion(nil)
+            }
+        }
+        
+        task.resume()
+    }
+    
+    static func getRandomIndex() -> (Int, Int) {
+        var uniqueNumbers = Set<Int>()
+        
+        while uniqueNumbers.count < 2 {
+            let randomNumber = Int.random(in: 0...9)
+            uniqueNumbers.insert(randomNumber)
+        }
+        
+        let numbersArray = Array(uniqueNumbers)
+        return (numbersArray[0], numbersArray[1])
     }
 }
 

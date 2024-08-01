@@ -31,7 +31,7 @@ class Config{
         }
         let cfg = builder.configuration
 
-        var providerConfiguration = OpenVPN.ProviderConfiguration("SmartX VPN", appGroup: "group.com.apps.smartx.SmartVPN", configuration: cfg)
+        var providerConfiguration = OpenVPN.ProviderConfiguration("SmartX VPN", appGroup: "group.com.apps.smartx.joy", configuration: cfg)
         providerConfiguration.shouldDebug = true
         providerConfiguration.masksPrivateData = false
         return providerConfiguration

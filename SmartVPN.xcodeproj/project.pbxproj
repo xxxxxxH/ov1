@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48199012112566F843C54ECF /* Pods_SmartT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */; };
 		BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B02C4A069700C9C565 /* ChatReq.swift */; };
 		BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */; };
 		BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */; };
@@ -49,12 +50,29 @@
 		BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */; };
 		BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039872C4771DB00EE2819 /* PrivacyPage.swift */; };
 		BC5039B12C49248500EE2819 /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039B02C49248500EE2819 /* TunnelKitOpenVPN */; };
-		BCA9A06E2C4A349900A61ADE /* connect.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA9A06C2C4A349900A61ADE /* connect.json */; };
-		BCA9A06F2C4A349900A61ADE /* xh.json in Resources */ = {isa = PBXBuildFile; fileRef = BCA9A06D2C4A349900A61ADE /* xh.json */; };
-		BCA9A0712C4A367E00A61ADE /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCA9A0702C4A367E00A61ADE /* TunnelKit */; };
-		BCA9A0732C4A368200A61ADE /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = BCA9A0722C4A368200A61ADE /* TunnelKitOpenVPNAppExtension */; };
-		BCC699232C578A3800FAE55E /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCC699222C578A3800FAE55E /* TunnelKitLZO */; };
-		BCC699252C578A4000FAE55E /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCC699242C578A4000FAE55E /* TunnelKitLZO */; };
+		BCB67F732C58875600DAA32B /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F722C58875600DAA32B /* TunnelKit */; };
+		BCB67F752C58875600DAA32B /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F742C58875600DAA32B /* TunnelKitLZO */; };
+		BCB67F772C58875600DAA32B /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */; };
+		BCB67F7F2C58880000DAA32B /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F7E2C58880000DAA32B /* TunnelKit */; };
+		BCB67F812C58880400DAA32B /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F802C58880400DAA32B /* TunnelKitLZO */; };
+		BCB67F832C58880700DAA32B /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */; };
+		BCB67F8A2C58888300DAA32B /* connect.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67F882C58888200DAA32B /* connect.json */; };
+		BCB67F8B2C58888300DAA32B /* xh.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67F892C58888200DAA32B /* xh.json */; };
+		BCB67F8D2C5892BB00DAA32B /* ConnectResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */; };
+		BCB67F912C58DE9200DAA32B /* DownloadSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */; };
+		BCB67F932C58DF9400DAA32B /* UploadSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F922C58DF9400DAA32B /* UploadSpeedTest.swift */; };
+		BCB67F952C59E5DF00DAA32B /* LocationInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */; };
+		BCB67F992C59E64700DAA32B /* LocationInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */; };
+		BCB67FA12C5A18BF00DAA32B /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FA02C5A18BF00DAA32B /* CameraScannerView.swift */; };
+		BCB67FA32C5A198900DAA32B /* ScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FA22C5A198900DAA32B /* ScanPage.swift */; };
+		BCB67FA52C5A258800DAA32B /* QRCodeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FA42C5A258800DAA32B /* QRCodeDetector.swift */; };
+		BCB67FA72C5A25C500DAA32B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FA62C5A25C500DAA32B /* ImagePicker.swift */; };
+		BCB67FA92C5A27F500DAA32B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FA82C5A27F500DAA32B /* LoadingView.swift */; };
+		BCB67FAB2C5A313900DAA32B /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAA2C5A313900DAA32B /* CameraManager.swift */; };
+		BCB67FAD2C5B258F00DAA32B /* SpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */; };
+		BCB67FAF2C5B271100DAA32B /* SpeedTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */; };
+		BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB02C5B333300DAA32B /* TransitionPage.swift */; };
+		BCB67FB32C5B55F600DAA32B /* speed.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67FB22C5B55F600DAA32B /* speed.json */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,8 +150,23 @@
 		BC5039812C460A4E00EE2819 /* NodeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeItem.swift; sourceTree = "<group>"; };
 		BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		BC5039872C4771DB00EE2819 /* PrivacyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPage.swift; sourceTree = "<group>"; };
-		BCA9A06C2C4A349900A61ADE /* connect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = connect.json; path = ../../../connect.json; sourceTree = "<group>"; };
-		BCA9A06D2C4A349900A61ADE /* xh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = xh.json; path = ../../../xh.json; sourceTree = "<group>"; };
+		BCB67F882C58888200DAA32B /* connect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = connect.json; path = ../../../../../../Downloads/connect.json; sourceTree = "<group>"; };
+		BCB67F892C58888200DAA32B /* xh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = xh.json; path = ../../../../../../Downloads/xh.json; sourceTree = "<group>"; };
+		BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectResultPage.swift; sourceTree = "<group>"; };
+		BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadSpeedTest.swift; sourceTree = "<group>"; };
+		BCB67F922C58DF9400DAA32B /* UploadSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSpeedTest.swift; sourceTree = "<group>"; };
+		BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPage.swift; sourceTree = "<group>"; };
+		BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoEntity.swift; sourceTree = "<group>"; };
+		BCB67FA02C5A18BF00DAA32B /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
+		BCB67FA22C5A198900DAA32B /* ScanPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPage.swift; sourceTree = "<group>"; };
+		BCB67FA42C5A258800DAA32B /* QRCodeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeDetector.swift; sourceTree = "<group>"; };
+		BCB67FA62C5A25C500DAA32B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BCB67FA82C5A27F500DAA32B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BCB67FAA2C5A313900DAA32B /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTest.swift; sourceTree = "<group>"; };
+		BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestPage.swift; sourceTree = "<group>"; };
+		BCB67FB02C5B333300DAA32B /* TransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPage.swift; sourceTree = "<group>"; };
+		BCB67FB22C5B55F600DAA32B /* speed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = speed.json; path = ../../../../../../Downloads/speed.json; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,10 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */,
+				BCB67F752C58875600DAA32B /* TunnelKitLZO in Frameworks */,
+				BCB67F772C58875600DAA32B /* TunnelKitOpenVPN in Frameworks */,
 				BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */,
 				BC5039B12C49248500EE2819 /* TunnelKitOpenVPN in Frameworks */,
-				BCC699232C578A3800FAE55E /* TunnelKitLZO in Frameworks */,
 				BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */,
+				BCB67F732C58875600DAA32B /* TunnelKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +189,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA9A0712C4A367E00A61ADE /* TunnelKit in Frameworks */,
 				BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */,
-				BCA9A0732C4A368200A61ADE /* TunnelKitOpenVPNAppExtension in Frameworks */,
-				BCC699252C578A4000FAE55E /* TunnelKitLZO in Frameworks */,
+				BCB67F812C58880400DAA32B /* TunnelKitLZO in Frameworks */,
+				BCB67F832C58880700DAA32B /* TunnelKitOpenVPNAppExtension in Frameworks */,
+				BCB67F7F2C58880000DAA32B /* TunnelKit in Frameworks */,
+				48199012112566F843C54ECF /* Pods_SmartT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +276,11 @@
 				BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */,
 				BC50392D2C3FA71100EE2819 /* Color.swift */,
 				BC5039732C44FE8D00EE2819 /* LocalData.swift */,
+				BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */,
+				BCB67F922C58DF9400DAA32B /* UploadSpeedTest.swift */,
+				BCB67FA42C5A258800DAA32B /* QRCodeDetector.swift */,
+				BCB67FA62C5A25C500DAA32B /* ImagePicker.swift */,
+				BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */,
 			);
 			path = dev;
 			sourceTree = "<group>";
@@ -253,6 +294,7 @@
 				BC5039792C45060500EE2819 /* SettingItemData.swift */,
 				BC1A16B02C4A069700C9C565 /* ChatReq.swift */,
 				BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */,
+				BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -289,6 +331,14 @@
 				BC5039812C460A4E00EE2819 /* NodeItem.swift */,
 				BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */,
 				BC5039872C4771DB00EE2819 /* PrivacyPage.swift */,
+				BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */,
+				BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */,
+				BCB67FA02C5A18BF00DAA32B /* CameraScannerView.swift */,
+				BCB67FA22C5A198900DAA32B /* ScanPage.swift */,
+				BCB67FA82C5A27F500DAA32B /* LoadingView.swift */,
+				BCB67FAA2C5A313900DAA32B /* CameraManager.swift */,
+				BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */,
+				BCB67FB02C5B333300DAA32B /* TransitionPage.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -296,8 +346,9 @@
 		BC5039352C3FACCE00EE2819 /* anim */ = {
 			isa = PBXGroup;
 			children = (
-				BCA9A06C2C4A349900A61ADE /* connect.json */,
-				BCA9A06D2C4A349900A61ADE /* xh.json */,
+				BCB67FB22C5B55F600DAA32B /* speed.json */,
+				BCB67F882C58888200DAA32B /* connect.json */,
+				BCB67F892C58888200DAA32B /* xh.json */,
 			);
 			path = anim;
 			sourceTree = "<group>";
@@ -322,6 +373,7 @@
 				BC5038892C3E5D2D00EE2819 /* Frameworks */,
 				BC50388A2C3E5D2D00EE2819 /* Resources */,
 				BC5038C22C3E5F2000EE2819 /* Embed Foundation Extensions */,
+				A27E759E93E4750AC4EE61B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +385,9 @@
 				BC5038FF2C3E6ED700EE2819 /* TunnelKit */,
 				BC5039332C3FAC5000EE2819 /* Lottie */,
 				BC5039B02C49248500EE2819 /* TunnelKitOpenVPN */,
-				BCC699222C578A3800FAE55E /* TunnelKitLZO */,
+				BCB67F722C58875600DAA32B /* TunnelKit */,
+				BCB67F742C58875600DAA32B /* TunnelKitLZO */,
+				BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */,
 			);
 			productName = SmartVPN;
 			productReference = BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */;
@@ -354,9 +408,9 @@
 			);
 			name = SmartT;
 			packageProductDependencies = (
-				BCA9A0702C4A367E00A61ADE /* TunnelKit */,
-				BCA9A0722C4A368200A61ADE /* TunnelKitOpenVPNAppExtension */,
-				BCC699242C578A4000FAE55E /* TunnelKitLZO */,
+				BCB67F7E2C58880000DAA32B /* TunnelKit */,
+				BCB67F802C58880400DAA32B /* TunnelKitLZO */,
+				BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */,
 			);
 			productName = SmartT;
 			productReference = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */;
@@ -391,7 +445,7 @@
 			mainGroup = BC5038832C3E5D2D00EE2819;
 			packageReferences = (
 				BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */,
+				BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */,
 			);
 			productRefGroup = BC50388D2C3E5D2D00EE2819 /* Products */;
 			projectDirPath = "";
@@ -408,10 +462,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA9A06E2C4A349900A61ADE /* connect.json in Resources */,
+				BCB67F8A2C58888300DAA32B /* connect.json in Resources */,
 				BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */,
 				BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */,
-				BCA9A06F2C4A349900A61ADE /* xh.json in Resources */,
+				BCB67F8B2C58888300DAA32B /* xh.json in Resources */,
+				BCB67FB32C5B55F600DAA32B /* speed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +502,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A27E759E93E4750AC4EE61B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartVPN/Pods-SmartVPN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartVPN/Pods-SmartVPN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartVPN/Pods-SmartVPN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B977A7096EC7507D1445F292 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,18 +548,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB67F992C59E64700DAA32B /* LocationInfoEntity.swift in Sources */,
 				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
 				BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */,
 				BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */,
 				BC5039662C41270300EE2819 /* Toast.swift in Sources */,
 				BC50397E2C45264900EE2819 /* FbPage.swift in Sources */,
 				BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */,
+				BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */,
 				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
 				BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */,
+				BCB67F932C58DF9400DAA32B /* UploadSpeedTest.swift in Sources */,
 				BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */,
 				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
 				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
+				BCB67FAD2C5B258F00DAA32B /* SpeedTest.swift in Sources */,
+				BCB67F912C58DE9200DAA32B /* DownloadSpeedTest.swift in Sources */,
 				BC50396E2C41335400EE2819 /* NotificationBubbleView.swift in Sources */,
+				BCB67FA32C5A198900DAA32B /* ScanPage.swift in Sources */,
 				BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */,
 				BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */,
 				BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */,
@@ -497,19 +575,27 @@
 				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
 				BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */,
 				BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */,
+				BCB67FA92C5A27F500DAA32B /* LoadingView.swift in Sources */,
+				BCB67FA12C5A18BF00DAA32B /* CameraScannerView.swift in Sources */,
+				BCB67F952C59E5DF00DAA32B /* LocationInfoPage.swift in Sources */,
 				BC50396C2C412E9D00EE2819 /* ChaterItem.swift in Sources */,
 				BC5039742C44FE8D00EE2819 /* LocalData.swift in Sources */,
 				BC50397A2C45060500EE2819 /* SettingItemData.swift in Sources */,
+				BCB67FA72C5A25C500DAA32B /* ImagePicker.swift in Sources */,
 				BC50392E2C3FA71100EE2819 /* Color.swift in Sources */,
 				BC5039602C411F5600EE2819 /* ChatViewModel.swift in Sources */,
+				BCB67FAB2C5A313900DAA32B /* CameraManager.swift in Sources */,
 				BC5039682C4129C300EE2819 /* OverlappingImagesView.swift in Sources */,
 				BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */,
 				BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */,
 				BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */,
+				BCB67F8D2C5892BB00DAA32B /* ConnectResultPage.swift in Sources */,
 				BC5039762C4504A300EE2819 /* SettingPage.swift in Sources */,
 				BC50395D2C411F3400EE2819 /* Message.swift in Sources */,
+				BCB67FAF2C5B271100DAA32B /* SpeedTestPage.swift in Sources */,
 				BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */,
 				BC5039132C3E876200EE2819 /* Config.swift in Sources */,
+				BCB67FA52C5A258800DAA32B /* QRCodeDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +655,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -632,7 +718,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -663,11 +749,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVPN/Preview Content\"";
-				DEVELOPMENT_TEAM = Q3C89S49CJ;
+				DEVELOPMENT_TEAM = ZRKM42D778;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = joyChatConnect;
+				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -679,7 +767,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -704,11 +792,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartVPN/Preview Content\"";
-				DEVELOPMENT_TEAM = Q3C89S49CJ;
+				DEVELOPMENT_TEAM = ZRKM42D778;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = joyChatConnect;
+				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -720,7 +810,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -741,7 +831,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3C89S49CJ;
+				DEVELOPMENT_TEAM = ZRKM42D778;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
@@ -753,7 +843,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy.SmartT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -774,7 +864,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3C89S49CJ;
+				DEVELOPMENT_TEAM = ZRKM42D778;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
@@ -786,7 +876,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.SmartVPN.SmartT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy.SmartT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -831,13 +921,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../tunnelkit;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -845,6 +928,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.5.0;
+			};
+		};
+		BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CZ410/tunnelkit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -863,25 +954,35 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = TunnelKitOpenVPN;
 		};
-		BCA9A0702C4A367E00A61ADE /* TunnelKit */ = {
+		BCB67F722C58875600DAA32B /* TunnelKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
 			productName = TunnelKit;
 		};
-		BCA9A0722C4A368200A61ADE /* TunnelKitOpenVPNAppExtension */ = {
+		BCB67F742C58875600DAA32B /* TunnelKitLZO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitLZO;
+		};
+		BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitOpenVPN;
+		};
+		BCB67F7E2C58880000DAA32B /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		BCB67F802C58880400DAA32B /* TunnelKitLZO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitLZO;
+		};
+		BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
 			productName = TunnelKitOpenVPNAppExtension;
-		};
-		BCC699222C578A3800FAE55E /* TunnelKitLZO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */;
-			productName = TunnelKitLZO;
-		};
-		BCC699242C578A4000FAE55E /* TunnelKitLZO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCA9A05F2C4A345700A61ADE /* XCLocalSwiftPackageReference "../tunnelkit" */;
-			productName = TunnelKitLZO;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
