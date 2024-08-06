@@ -33,7 +33,6 @@ class ChatViewModel: ObservableObject {
         
         isLoading = true
         
-        // Simulate network request for a response
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             let loadingMessage = Message(text: "", isSentByUser: false, isLoading: true)
             self.messages.append(loadingMessage)
@@ -53,21 +52,21 @@ class ChatViewModel: ObservableObject {
     
     private func fetchResponse(text:String) -> AnyPublisher<String, Never> {
         Future { promise in
-                   Dev.getAiAnswer(req: [ChatReq(role: "user", content: text)]) { response in
-                       promise(.success(response))
-                   }
-               }
-               .eraseToAnyPublisher()
+            Dev.getAiAnswer(req: [ChatReq(role: "user", content: text)]) { response in
+                promise(.success(response))
+            }
+        }
+        .eraseToAnyPublisher()
         
     }
     
-
+    
     func clearMessages() {
-            // Example: Clear all messages
-            messages.removeAll()
-        }
+        // Example: Clear all messages
+        messages.removeAll()
+    }
     
     func updateChatData() {
-            messages.append(Message(text: Dev.currentChater!.introduce, isSentByUser: false))
-        }
+        messages.append(Message(text: Dev.currentChater!.introduce, isSentByUser: false))
+    }
 }

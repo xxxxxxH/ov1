@@ -86,7 +86,7 @@ struct ScanPage: View {
                 Spacer()
             }
             if isLoading {
-                LoadingView()
+                LoadingView(text: "Scanning")
             }
             
             if showToast{

@@ -58,7 +58,7 @@ class UploadSpeedTest{
         
         if elapsedTime > 0 {
             let bytesPerSecond = Double(totalBytes) / elapsedTime
-            let speed = bytesPerSecond / 1024.0 / 1024.0 // MB/s
+            let speed = bytesPerSecond
             let formattedSpeed = Dev.formatSpeed(speed)
             
             completion(formattedSpeed)

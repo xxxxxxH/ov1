@@ -73,6 +73,15 @@
 		BCB67FAF2C5B271100DAA32B /* SpeedTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */; };
 		BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB02C5B333300DAA32B /* TransitionPage.swift */; };
 		BCB67FB32C5B55F600DAA32B /* speed.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67FB22C5B55F600DAA32B /* speed.json */; };
+		BCB67FB82C5B8D5500DAA32B /* ComplexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB72C5B8D5500DAA32B /* ComplexView.swift */; };
+		BCB67FBA2C5B8DB400DAA32B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB92C5B8DB400DAA32B /* UserViewModel.swift */; };
+		BCB67FBC2C5B8E0B00DAA32B /* AdvancedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FBB2C5B8E0B00DAA32B /* AdvancedViewModel.swift */; };
+		BCEC50AF2C5C730400225EE5 /* MarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50AE2C5C730400225EE5 /* MarqueeView.swift */; };
+		BCEC50B32C5CCA7700225EE5 /* StarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */; };
+		BCEC50B52C5CCB3C00225EE5 /* StarListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */; };
+		BCEC50B72C5CD89500225EE5 /* StarDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */; };
+		BCEC50B92C606B9900225EE5 /* StarDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */; };
+		BCEC50BB2C609BEB00225EE5 /* TestResultDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +176,15 @@
 		BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestPage.swift; sourceTree = "<group>"; };
 		BCB67FB02C5B333300DAA32B /* TransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPage.swift; sourceTree = "<group>"; };
 		BCB67FB22C5B55F600DAA32B /* speed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = speed.json; path = ../../../../../../Downloads/speed.json; sourceTree = "<group>"; };
+		BCB67FB72C5B8D5500DAA32B /* ComplexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexView.swift; sourceTree = "<group>"; };
+		BCB67FB92C5B8DB400DAA32B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		BCB67FBB2C5B8E0B00DAA32B /* AdvancedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedViewModel.swift; sourceTree = "<group>"; };
+		BCEC50AE2C5C730400225EE5 /* MarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeView.swift; sourceTree = "<group>"; };
+		BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarEntity.swift; sourceTree = "<group>"; };
+		BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarListPage.swift; sourceTree = "<group>"; };
+		BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDetailsPage.swift; sourceTree = "<group>"; };
+		BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDetailsEntity.swift; sourceTree = "<group>"; };
+		BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultDialogView.swift; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +262,8 @@
 		BC50388E2C3E5D2E00EE2819 /* SmartVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BCB67FBD2C5B98E800DAA32B /* widget */,
+				BCB67FB62C5B8D4700DAA32B /* View */,
 				BC50395E2C411F4700EE2819 /* viewmodel */,
 				BC5039352C3FACCE00EE2819 /* anim */,
 				BC50392F2C3FA73200EE2819 /* ui */,
@@ -295,6 +315,8 @@
 				BC1A16B02C4A069700C9C565 /* ChatReq.swift */,
 				BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */,
 				BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */,
+				BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */,
+				BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -339,6 +361,9 @@
 				BCB67FAA2C5A313900DAA32B /* CameraManager.swift */,
 				BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */,
 				BCB67FB02C5B333300DAA32B /* TransitionPage.swift */,
+				BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */,
+				BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */,
+				BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -359,6 +384,24 @@
 				BC50395F2C411F5600EE2819 /* ChatViewModel.swift */,
 			);
 			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		BCB67FB62C5B8D4700DAA32B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCB67FB72C5B8D5500DAA32B /* ComplexView.swift */,
+				BCB67FB92C5B8DB400DAA32B /* UserViewModel.swift */,
+				BCB67FBB2C5B8E0B00DAA32B /* AdvancedViewModel.swift */,
+				BCEC50AE2C5C730400225EE5 /* MarqueeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCB67FBD2C5B98E800DAA32B /* widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEC50B32C5CCA7700225EE5 /* StarEntity.swift in Sources */,
 				BCB67F992C59E64700DAA32B /* LocationInfoEntity.swift in Sources */,
 				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
 				BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */,
@@ -562,14 +606,17 @@
 				BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */,
 				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
 				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
+				BCEC50B92C606B9900225EE5 /* StarDetailsEntity.swift in Sources */,
 				BCB67FAD2C5B258F00DAA32B /* SpeedTest.swift in Sources */,
 				BCB67F912C58DE9200DAA32B /* DownloadSpeedTest.swift in Sources */,
+				BCB67FB82C5B8D5500DAA32B /* ComplexView.swift in Sources */,
 				BC50396E2C41335400EE2819 /* NotificationBubbleView.swift in Sources */,
 				BCB67FA32C5A198900DAA32B /* ScanPage.swift in Sources */,
 				BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */,
 				BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */,
 				BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */,
 				BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */,
+				BCB67FBA2C5B8DB400DAA32B /* UserViewModel.swift in Sources */,
 				BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */,
 				BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */,
 				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
@@ -584,11 +631,16 @@
 				BCB67FA72C5A25C500DAA32B /* ImagePicker.swift in Sources */,
 				BC50392E2C3FA71100EE2819 /* Color.swift in Sources */,
 				BC5039602C411F5600EE2819 /* ChatViewModel.swift in Sources */,
+				BCB67FBC2C5B8E0B00DAA32B /* AdvancedViewModel.swift in Sources */,
+				BCEC50AF2C5C730400225EE5 /* MarqueeView.swift in Sources */,
 				BCB67FAB2C5A313900DAA32B /* CameraManager.swift in Sources */,
 				BC5039682C4129C300EE2819 /* OverlappingImagesView.swift in Sources */,
 				BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */,
+				BCEC50B52C5CCB3C00225EE5 /* StarListPage.swift in Sources */,
 				BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */,
 				BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */,
+				BCEC50B72C5CD89500225EE5 /* StarDetailsPage.swift in Sources */,
+				BCEC50BB2C609BEB00225EE5 /* TestResultDialogView.swift in Sources */,
 				BCB67F8D2C5892BB00DAA32B /* ConnectResultPage.swift in Sources */,
 				BC5039762C4504A300EE2819 /* SettingPage.swift in Sources */,
 				BC50395D2C411F3400EE2819 /* Message.swift in Sources */,

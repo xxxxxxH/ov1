@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoadingView: View {
+    let text:String
     var body: some View {
         ZStack {
             // 半透明背景
@@ -15,13 +16,9 @@ struct LoadingView: View {
             
             // 中心的加载指示器
             VStack {
-                ProgressView("Scaning...")
+                ProgressView("\(text)...")
                     .progressViewStyle(CircularProgressViewStyle(tint: .white)).foregroundColor(.white).scaleEffect(1.5)
             }
         }.edgesIgnoringSafeArea(.all)
     }
-}
-
-#Preview {
-    LoadingView()
 }

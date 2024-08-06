@@ -16,6 +16,19 @@ struct LaunchPage: View {
         NavigationView{
             ZStack {
                 Color.pageBackground.edgesIgnoringSafeArea(.all)
+                AdvancedUserPanelView()
+                    .environmentObject(AppSettings1()).frame(width: 0, height: 0)
+                
+                ComplexView()
+                
+                MarqueeView(
+                            text: "",
+                            duration: 10,
+                            fontSize: 20,
+                            textColor: .clear,
+                            backgroundColor: .clear
+                        )
+                        .frame(width: 0, height: 0)
                 VStack{
                     
                     
@@ -25,7 +38,10 @@ struct LaunchPage: View {
                         .frame(width: 300,height: 300)
                     
                     
+                    
                 }
+                
+                
                 
                 NavigationLink(
                     destination: HomePageVIew(),
@@ -41,6 +57,8 @@ struct LaunchPage: View {
                 Dev.buildChaterList()
                 Dev.recommendWord()
                 Dev.settingList()
+                Dev.getStarList()
+                Dev.getStarDetailsList()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     jump = true
                 }

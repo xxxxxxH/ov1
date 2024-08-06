@@ -19,106 +19,137 @@ struct SpeedTestPage: View {
     @State private var avaIndex1 = 0
     @State private var avaIndex2 = 0
     @Environment(\.presentationMode) var presentationMode
+    @State private var startStar = false
     
     
     var body: some View {
         ZStack {
             Color.pageBackground.edgesIgnoringSafeArea(.all)
             
-            VStack{
-                
-                if showAnim{
+
+                VStack{
                     
-                    LottieView(animation: .named("speed"))
-                        .playing()
-                        .looping()
+                    if showAnim{
+                        
+                        LottieView(animation: .named("speed"))
+                            .playing()
+                            .looping()
+                        
+                        Text("Testing, please wait...").foregroundColor(.white)
+                        
+                    }else{
+                        CustomNavigationBar(title: "Speed Test", backAction: {
+                            presentationMode.wrappedValue.dismiss()
+                        },overlay:false)
+                        ScrollView{
+                            VStack{
+                                HStack{
+                                    Text("Download speed: \n⬇️\(viewModel.downloadSpeed) Mbps").frame(maxWidth: .infinity,maxHeight: 150,alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
+                                    
+                                    Text("Upload speed: \n⬆️\(viewModel.uploadSpeed) Mbps").frame(maxWidth: .infinity,maxHeight: 150, alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
+                                }.frame(height:150).padding(.horizontal, 20)
+                                
+                                HStack{
+                                    
+                                    Button(action: {startIpInfo = true}, label: {
+                                        
+                                        HStack{
+                                            Image("ic_netinfo").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                            Text("My IP")
+                                        }.frame(maxWidth: .infinity,maxHeight: 100,alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
+                                        
+                                        
+                                    })
+                                    
+                                    Button(action: {startScan = true}, label: {
+                                        HStack{
+                                            Image("ic_scan").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                            Text("QR Scanner")
+                                        }.frame(maxWidth: .infinity,maxHeight: 100, alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
+                                        
+                                    })
+                                    
+                                    NavigationLink(destination: LocationInfoPage(), isActive: $startIpInfo, label: {EmptyView()})
+                                    NavigationLink(destination: ScanPage(), isActive: $startScan, label: {EmptyView()})
+                                    
+                                }.frame(height:100).padding(.horizontal, 20)
+                                
+                                HStack{
+                                    ZStack{
+                                        
+                                        Image(Dev.chaterList[avaIndex1].avatar).clipShape(Circle()).overlay(
+                                            Rectangle()
+                                                .fill(Color.black.opacity(0.5))
+                                                .clipShape(Circle())
+                                        )
+                                        
+                                        Button(action: {
+                                            Dev.currentChater = Dev.chaterList[avaIndex1]
+                                            startChat = true
+                                        }){
+                                            Text("chat")
+                                                .foregroundColor(.white)
+                                                .padding(.horizontal,20)
+                                                .padding(.vertical,10)
+                                        }.background(Color.chatButton)
+                                            .cornerRadius(10)
+                                    }.frame(maxWidth: .infinity)
+                                    
+                                    ZStack{
+                                        Image(Dev.chaterList[avaIndex2].avatar).clipShape(Circle()).overlay(
+                                            Rectangle()
+                                                .fill(Color.black.opacity(0.5))
+                                                .clipShape(Circle())
+                                        )
+                                        
+                                        
+                                        Button(action: {
+                                            Dev.currentChater = Dev.chaterList[avaIndex2]
+                                            startChat = true
+                                        }){
+                                            Text("chat")
+                                                .foregroundColor(.white)
+                                                .padding(.horizontal,20)
+                                                .padding(.vertical,10)
+                                        }.background(Color.chatButton)
+                                            .cornerRadius(10)
+                                    }.frame(maxWidth: .infinity)
+                                    
+                                    NavigationLink(destination: ChatPage(), isActive: $startChat, label: {EmptyView()})
+                                }.padding()
+                                
+                                Button(action: {
+                                    startStar = true
+                                }, label: {
+                                    ZStack{
+                                        Image("ic_star")
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(height: .infinity)
+                                            .clipped()
+                                            .cornerRadius(10).overlay(
+                                                Rectangle()
+                                                    .fill(Color.black.opacity(0.5)).cornerRadius(10)
+                                                
+                                            )
+                                        Text("Horoscope").foregroundColor(.white).bold()
+                                    }.frame(height: .infinity).padding(.horizontal, 20)
+                                })
+                                NavigationLink(destination: StarListPage(), isActive: $startStar, label: {EmptyView()})
+                                Spacer().frame(height: 50)
+                            }
+                        }
+                        
+                        
+                        
+                    }
                     
-                    Text("Testing, please wait...").foregroundColor(.white)
-                    
-                }else{
-                    CustomNavigationBar(title: "", backAction: {
-                        presentationMode.wrappedValue.dismiss()
-                    },overlay:false)
-                    HStack{
-                        Text("Download speed: \n⬇️\(viewModel.downloadSpeed) Mbps").frame(maxWidth: .infinity,maxHeight: 200,alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
-                        
-                        Text("Upload speed: \n⬆️\(viewModel.uploadSpeed) Mbps").frame(maxWidth: .infinity,maxHeight: 200, alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
-                    }.frame(height:200).padding(.horizontal, 20)
-                    
-                    HStack{
-                        
-                        Button(action: {startIpInfo = true}, label: {
-                            
-                            HStack{
-                                Image("ic_netinfo").resizable()
-                                    .scaledToFit().frame(width: 25,height: 25)
-                                Text("My IP")
-                            }.frame(maxWidth: .infinity,maxHeight: 100,alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
-                            
-                            
-                        })
-                        
-                        Button(action: {startScan = true}, label: {
-                            HStack{
-                                Image("ic_scan").resizable()
-                                    .scaledToFit().frame(width: 25,height: 25)
-                                Text("QR Scanner")
-                            }.frame(maxWidth: .infinity,maxHeight: 100, alignment: .center).foregroundColor(.white).background(Color.chatButton).clipShape(RoundedRectangle(cornerRadius: 10))
-                            
-                        })
-                        
-                        NavigationLink(destination: LocationInfoPage(), isActive: $startIpInfo, label: {EmptyView()})
-                        NavigationLink(destination: ScanPage(), isActive: $startScan, label: {EmptyView()})
-                        
-                    }.frame(height:100).padding(.horizontal, 20)
-                    
-                    HStack{
-                        ZStack{
-                            
-                            Image(Dev.chaterList[avaIndex1].avatar).clipShape(Circle()).overlay(
-                                Rectangle()
-                                    .fill(Color.black.opacity(0.5))
-                                    .clipShape(Circle())
-                            )
-                            
-                            Button(action: {
-                                Dev.currentChater = Dev.chaterList[avaIndex1]
-                                startChat = true
-                            }){
-                                Text("chat")
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal,20)
-                                    .padding(.vertical,10)
-                            }.background(Color.chatButton)
-                                .cornerRadius(10)
-                        }.frame(maxWidth: .infinity)
-                        
-                        ZStack{
-                            Image(Dev.chaterList[avaIndex2].avatar).clipShape(Circle()).overlay(
-                                Rectangle()
-                                    .fill(Color.black.opacity(0.5))
-                                    .clipShape(Circle())
-                            )
-                            
-                            
-                            Button(action: {
-                                Dev.currentChater = Dev.chaterList[avaIndex2]
-                                startChat = true
-                            }){
-                                Text("chat")
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal,20)
-                                    .padding(.vertical,10)
-                            }.background(Color.chatButton)
-                                .cornerRadius(10)
-                        }.frame(maxWidth: .infinity)
-                        
-                        NavigationLink(destination: ChatPage(), isActive: $startChat, label: {EmptyView()})
-                    }.padding()
-                    Spacer()
-                }
                 
             }
+            
+           
             
             
         }.onAppear{

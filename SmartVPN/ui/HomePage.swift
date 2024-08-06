@@ -24,6 +24,8 @@ struct HomePage: View {
     @State private var startInfo = false
     @State private var startScan = false
     @State private var startTest = false
+    @State private var rotation: Double = 0
+    @State private var startStar = false
     
     init(startChat: Binding<Bool>) {
         self._startChat = startChat
@@ -36,98 +38,117 @@ struct HomePage: View {
                 ScrollView{
                     VStack() {
                         HStack{
-                            
-                            Button(action: {
-                                print("clicked")
-                                startSet = true
-                            }){
-                                ZStack{
-                                    Image("ic_func").resizable()
-                                        .scaledToFit().frame(width: 25,height: 25)
+                            ScrollView(.horizontal, showsIndicators: true) {
+                                HStack{
+                                    Spacer().frame(width: 20)
+                                    Button(action: {
+                                        print("clicked")
+                                        startSet = true
+                                    }){
+                                        ZStack{
+                                            Image("ic_func").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                            
+                                        }.frame(width: 45, height: 45)
+                                        
+                                        NavigationLink(destination: SettingPage(), isActive: $startSet){
+                                            EmptyView()
+                                        }
+                                    }.overlay(
+                                        RoundedRectangle(cornerRadius: 2)
+                                            .stroke(Color.white, lineWidth: 1)
+                                    )
+                                    Spacer().frame(width: 20)
+                                    Button(action: {
+                                        startNode = true
+                                    }){
+                                        ZStack{
+                                            Image("ic_node").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                        }.frame(width: 45, height: 45)
+                                        
+                                        NavigationLink(destination: NodePage(), isActive: $startNode){
+                                            EmptyView()
+                                        }
+                                    }.overlay(
+                                        RoundedRectangle(cornerRadius: 2)
+                                            .stroke(Color.white, lineWidth: 1)
+                                    )
                                     
-                                }.frame(width: 45, height: 45)
-                                
-                                NavigationLink(destination: SettingPage(), isActive: $startSet){
-                                    EmptyView()
+                                    //                                    Spacer().frame(width: 20)
+                                    //                                    Button(action: {
+                                    //                                        startInfo = true
+                                    //                                    }){
+                                    //                                        ZStack{
+                                    //                                            Image("ic_netinfo").resizable()
+                                    //                                                .scaledToFit().frame(width: 25,height: 25)
+                                    //                                        }.frame(width: 45, height: 45)
+                                    //
+                                    //                                        NavigationLink(destination: NodePage(), isActive: $startNode){
+                                    //                                            EmptyView()
+                                    //                                        }
+                                    //                                    }.overlay(
+                                    //                                        RoundedRectangle(cornerRadius: 2)
+                                    //                                            .stroke(Color.white, lineWidth: 1)
+                                    //                                    )
+                                    
+                                    
+                                    Spacer().frame(width: 20)
+                                    Button(action: {
+                                        startScan = true
+                                    }){
+                                        ZStack{
+                                            Image("ic_scan").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                        }.frame(width: 45, height: 45)
+                                        
+                                        NavigationLink(destination: NodePage(), isActive: $startNode){
+                                            EmptyView()
+                                        }
+                                    }.overlay(
+                                        RoundedRectangle(cornerRadius: 2)
+                                            .stroke(Color.white, lineWidth: 1)
+                                    )
+                                    
+                                    
+                                    Spacer().frame(width: 20)
+                                    
+                                    Button(action: {
+                                        startTest = true
+                                    }){
+                                        ZStack{
+                                            Image("ic_speed").resizable()
+                                                .scaledToFit().frame(width: 25,height: 25)
+                                        }.frame(width: 45, height: 45)
+                                        
+                                        NavigationLink(destination: NodePage(), isActive: $startNode){
+                                            EmptyView()
+                                        }
+                                    }.overlay(
+                                        RoundedRectangle(cornerRadius: 2)
+                                            .stroke(Color.white, lineWidth: 1)
+                                    )
+                                    
                                 }
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 2)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
-                            Spacer().frame(width: 20)
-                            Button(action: {
-                                startNode = true
-                            }){
-                                ZStack{
-                                    Image("ic_node").resizable()
-                                        .scaledToFit().frame(width: 25,height: 25)
-                                }.frame(width: 45, height: 45)
-                                
-                                NavigationLink(destination: NodePage(), isActive: $startNode){
-                                    EmptyView()
-                                }
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 2)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
-                            
-                            Spacer().frame(width: 20)
-                            Button(action: {
-                                startInfo = true
-                            }){
-                                ZStack{
-                                    Image("ic_netinfo").resizable()
-                                        .scaledToFit().frame(width: 25,height: 25)
-                                }.frame(width: 45, height: 45)
-                                
-                                NavigationLink(destination: NodePage(), isActive: $startNode){
-                                    EmptyView()
-                                }
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 2)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
-                            
-                            
-                            Spacer().frame(width: 20)
-                            Button(action: {
-                                startScan = true
-                            }){
-                                ZStack{
-                                    Image("ic_scan").resizable()
-                                        .scaledToFit().frame(width: 25,height: 25)
-                                }.frame(width: 45, height: 45)
-                                
-                                NavigationLink(destination: NodePage(), isActive: $startNode){
-                                    EmptyView()
-                                }
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 2)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
+                            }
                             
                             
-                            Spacer().frame(width: 20)
-                            Button(action: {
-                                startTest = true
-                            }){
-                                ZStack{
-                                    Image("ic_speed").resizable()
-                                        .scaledToFit().frame(width: 25,height: 25)
-                                }.frame(width: 45, height: 45)
-                                
-                                NavigationLink(destination: NodePage(), isActive: $startNode){
-                                    EmptyView()
-                                }
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 2)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
+                            Image("ic_horoscope").resizable().scaledToFit().frame(width: 80, height: 80).padding(.horizontal, 10).rotationEffect(.degrees(rotation))
+                                .onAppear {
+                                    withAnimation(
+                                        Animation.linear(duration: 10)
+                                            .repeatForever(autoreverses: false)
+                                    ) {
+                                        rotation = 360
+                                    }
+                                }.onTapGesture(perform: {
+                                    startStar = true
+                                })
                         }
                         
                         Button(action: {
                             prepareConnect()
-//                            startResult = true
+//                                                        startResult = true
                         }, label: {
                             ZStack{
                                 LottieView(animation: .named("connect"))
@@ -159,6 +180,12 @@ struct HomePage: View {
                         NavigationLink(destination: SpeedTestPage(), isActive: $startTest){
                             EmptyView()
                         }
+                        
+                        NavigationLink(destination: StarListPage(), isActive: $startStar){
+                            EmptyView()
+                        }
+                        
+                        
                     }.frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
@@ -181,7 +208,7 @@ struct HomePage: View {
                 }
             }
         }.onChange(of: vpnStatusManager.vpnStatus) { newValue in
-            startResult = newValue == .connected || newValue == .disconnected
+            startResult = newValue == .connected
         }.navigationBarHidden(true)
         
     }

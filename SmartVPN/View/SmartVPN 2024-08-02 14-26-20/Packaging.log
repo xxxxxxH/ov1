@@ -1,0 +1,411 @@
+2024-08-02 06:26:08 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x32ecb2280; archive(resolved)="<IDEArchive: 0x6000135eaee0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	Chain (16, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x32ecb2280; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x32ecb1fd0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32f43f780; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32ecb1da0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32ecb13f0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32ec66cc0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32eca7b60; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x330f3c610; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32eca77b0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600004a1ce00; teamID='ZRKM42D778', teamName='HONGKONG HUIG TRADING LIMITED', teamType='Company', username='269363686@qq.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x32ec6fbc0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="(null)">
+	<IDEDistributionContext: 0x32ec6f990; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="(null)">
+	<IDEDistributionContext: 0x32ecb29b0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="(null)">
+	<IDEDistributionContext: 0x330ecf6c0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x6000053ab6d0>", team="(null)">
+	<IDEDistributionContext: 0x330ecce90; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x335da8b10; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x32e69b2b0; archive = "<IDEArchive: 0x6000135eaee0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x32ecb2280>
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCreateDestRootStep
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCopyItemStep
+2024-08-02 06:26:08 +0000  Running /usr/bin/ditto '-V' '/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app'
+2024-08-02 06:26:08 +0000  >>> Copying /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app 
+2024-08-02 06:26:08 +0000  copying file ./_CodeSignature/CodeResources ... 
+2024-08-02 06:26:08 +0000  6577 bytes for ./_CodeSignature/CodeResources
+2024-08-02 06:26:08 +0000  copying file ./connect.json ... 
+2024-08-02 06:26:08 +0000  6649 bytes for ./connect.json
+2024-08-02 06:26:08 +0000  copying file ./xh.json ... 
+2024-08-02 06:26:08 +0000  106789 bytes for ./xh.json
+2024-08-02 06:26:08 +0000  copying file ./PlugIns/SmartT.appex/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:08 +0000  2040 bytes for ./PlugIns/SmartT.appex/_CodeSignature/CodeResources
+2024-08-02 06:26:08 +0000  copying file ./PlugIns/SmartT.appex/embedded.mobileprovision ... 
+2024-08-02 06:26:08 +0000  13280 bytes for ./PlugIns/SmartT.appex/embedded.mobileprovision
+2024-08-02 06:26:08 +0000  copying file ./PlugIns/SmartT.appex/Info.plist ... 
+2024-08-02 06:26:08 +0000  936 bytes for ./PlugIns/SmartT.appex/Info.plist
+2024-08-02 06:26:08 +0000  copying file ./PlugIns/SmartT.appex/SmartT ... 
+2024-08-02 06:26:08 +0000  1225936 bytes for ./PlugIns/SmartT.appex/SmartT
+2024-08-02 06:26:08 +0000  copying file ./SmartVPN ... 
+2024-08-02 06:26:08 +0000  3521376 bytes for ./SmartVPN
+2024-08-02 06:26:08 +0000  copying file ./AppIcon60x60@2x.png ... 
+12294 bytes for ./AppIcon60x60@2x.png
+copying file ./speed.json ... 
+2024-08-02 06:26:08 +0000  7233 bytes for ./speed.json
+2024-08-02 06:26:08 +0000  copying file ./Lottie_Lottie.bundle/PrivacyInfo.xcprivacy ... 
+2024-08-02 06:26:08 +0000  599 bytes for ./Lottie_Lottie.bundle/PrivacyInfo.xcprivacy
+2024-08-02 06:26:08 +0000  copying file ./Lottie_Lottie.bundle/Info.plist ... 
+2024-08-02 06:26:08 +0000  668 bytes for ./Lottie_Lottie.bundle/Info.plist
+2024-08-02 06:26:08 +0000  copying file ./Assets.car ... 
+2024-08-02 06:26:08 +0000  10970975 bytes for ./Assets.car
+2024-08-02 06:26:08 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+16114 bytes for ./AppIcon76x76@2x~ipad.png
+2024-08-02 06:26:08 +0000  copying file ./Frameworks/openssl.framework/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:08 +0000  1798 bytes for ./Frameworks/openssl.framework/_CodeSignature/CodeResources
+2024-08-02 06:26:08 +0000  copying file ./Frameworks/openssl.framework/openssl ... 
+2024-08-02 06:26:08 +0000  5617824 bytes for ./Frameworks/openssl.framework/openssl
+2024-08-02 06:26:08 +0000  copying file ./Frameworks/openssl.framework/Info.plist ... 
+710 bytes for ./Frameworks/openssl.framework/Info.plist
+copying file ./Frameworks/NDT7.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Frameworks/NDT7.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/NDT7.framework/NDT7 ... 
+737296 bytes for ./Frameworks/NDT7.framework/NDT7
+copying file ./Frameworks/NDT7.framework/Info.plist ... 
+2024-08-02 06:26:08 +0000  777 bytes for ./Frameworks/NDT7.framework/Info.plist
+copying file ./embedded.mobileprovision ... 
+2024-08-02 06:26:08 +0000  13420 bytes for ./embedded.mobileprovision
+2024-08-02 06:26:08 +0000  copying file ./Info.plist ... 
+2024-08-02 06:26:08 +0000  1869 bytes for ./Info.plist
+2024-08-02 06:26:08 +0000  copying file ./PkgInfo ... 
+2024-08-02 06:26:08 +0000  8 bytes for ./PkgInfo
+2024-08-02 06:26:08 +0000  /usr/bin/ditto exited with 0
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionEmbedProfileStep
+2024-08-02 06:26:08 +0000  Skipping profile for item: <IDEDistributionItem: 0x60001354eac0; bundleID='org.cocoapods.NDT7', path='<DVTFilePath:0x60000beef080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f085d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064ae7c0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.cocoapods.NDT7', executablePath='<DVTFilePath:0x60000b934b60:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework/NDT7'>', hardenedRuntime='0'>'>
+2024-08-02 06:26:08 +0000  Skipping profile for item: <IDEDistributionItem: 0x600013588960; bundleID='org.openssl.OpenSSL', path='<DVTFilePath:0x60000beee080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a120; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064f3f00; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.openssl.OpenSSL', executablePath='<DVTFilePath:0x60000b9372c0:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework/openssl'>', hardenedRuntime='0'>'>
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionInfoPlistStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionSymbolsStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionAppThinningStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionArchThinningStep
+2024-08-02 06:26:08 +0000  Item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-08-02 06:26:08 +0000  Archs to thin for item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework are ["arm64e"]
+2024-08-02 06:26:08 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/NDT7.framework/NDT7' '-verify_arch' 'arm64e'
+2024-08-02 06:26:08 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2024-08-02 06:26:08 +0000  Skipping architecture thinning for item "NDT7" because arch "arm64e" wasn't found
+2024-08-02 06:26:08 +0000  Item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-08-02 06:26:08 +0000  Archs to thin for item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework are ["arm64e"]
+2024-08-02 06:26:08 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework/openssl' '-verify_arch' 'arm64e'
+2024-08-02 06:26:08 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2024-08-02 06:26:08 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework/openssl' '-remove' 'arm64e' '-output' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework/openssl'
+2024-08-02 06:26:08 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2024-08-02 06:26:08 +0000  Successfully thinned item "openssl", arch "arm64e"
+2024-08-02 06:26:08 +0000  Item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-08-02 06:26:08 +0000  Archs to thin for item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex are ["arm64e"]
+2024-08-02 06:26:08 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/PlugIns/SmartT.appex/SmartT' '-verify_arch' 'arm64e'
+2024-08-02 06:26:08 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2024-08-02 06:26:08 +0000  Skipping architecture thinning for item "SmartT" because arch "arm64e" wasn't found
+2024-08-02 06:26:08 +0000  Item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-08-02 06:26:08 +0000  Archs to thin for item /Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app are ["arm64e"]
+2024-08-02 06:26:08 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/SmartVPN' '-verify_arch' 'arm64e'
+2024-08-02 06:26:08 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2024-08-02 06:26:08 +0000  Skipping architecture thinning for item "SmartVPN" because arch "arm64e" wasn't found
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionODRStep
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionStripXattrsStep
+2024-08-02 06:26:08 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2024-08-02 06:26:08 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2024-08-02 06:26:08 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2024-08-02 06:26:08 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCodesignStep
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x60001354eac0; bundleID='org.cocoapods.NDT7', path='<DVTFilePath:0x60000beef080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f085d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641f0c0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.cocoapods.NDT7', executablePath='<DVTFilePath:0x60000b934b60:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework/NDT7'>', hardenedRuntime='0'>'>: {
+}
+2024-08-02 06:26:08 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x60001354eac0; bundleID='org.cocoapods.NDT7', path='<DVTFilePath:0x60000beef080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f085d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064d2100; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.cocoapods.NDT7', executablePath='<DVTFilePath:0x60000b934b60:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework/NDT7'>', hardenedRuntime='0'>'> are: {
+}
+2024-08-02 06:26:08 +0000  Writing entitlements for <IDEDistributionItem: 0x60001354eac0; bundleID='org.cocoapods.NDT7', path='<DVTFilePath:0x60000beef080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f085d10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064d3cc0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.cocoapods.NDT7', executablePath='<DVTFilePath:0x60000b934b60:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/NDT7.framework/NDT7'>', hardenedRuntime='0'>'> to: /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~HHw3zT
+2024-08-02 06:26:08 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '58D39F16A5EEB22346F3FF49188D4DA4C53AD827' '--entitlements' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~HHw3zT' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/NDT7.framework'
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/NDT7.framework: replacing existing signature
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/NDT7.framework: signed bundle with Mach-O thin (arm64) [org.cocoapods.NDT7]
+2024-08-02 06:26:08 +0000  /usr/bin/codesign exited with 0
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x600013588960; bundleID='org.openssl.OpenSSL', path='<DVTFilePath:0x60000beee080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a120; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000642d740; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.openssl.OpenSSL', executablePath='<DVTFilePath:0x60000b9372c0:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework/openssl'>', hardenedRuntime='0'>'>: {
+}
+2024-08-02 06:26:08 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x600013588960; bundleID='org.openssl.OpenSSL', path='<DVTFilePath:0x60000beee080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a120; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641f0c0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.openssl.OpenSSL', executablePath='<DVTFilePath:0x60000b9372c0:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework/openssl'>', hardenedRuntime='0'>'> are: {
+}
+2024-08-02 06:26:08 +0000  Writing entitlements for <IDEDistributionItem: 0x600013588960; bundleID='org.openssl.OpenSSL', path='<DVTFilePath:0x60000beee080:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a120; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641c900; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='(null)', teamID='ZRKM42D778', identifier='org.openssl.OpenSSL', executablePath='<DVTFilePath:0x60000b9372c0:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/Frameworks/openssl.framework/openssl'>', hardenedRuntime='0'>'> to: /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~q3N5WV
+2024-08-02 06:26:08 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '58D39F16A5EEB22346F3FF49188D4DA4C53AD827' '--entitlements' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~q3N5WV' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework'
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework: replacing existing signature
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework: signed bundle with Mach-O universal (arm64) [org.openssl.OpenSSL]
+2024-08-02 06:26:08 +0000  /usr/bin/codesign exited with 0
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x60001354e0a0; bundleID='com.apps.smartx.joy.SmartT', path='<DVTFilePath:0x60000beeb400:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f0ae7b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641f0c0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy.SmartT";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy.SmartT', executablePath='<DVTFilePath:0x60000b936a00:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex/SmartT'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy.SmartT";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 0;
+}
+2024-08-02 06:26:08 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x60001354e0a0; bundleID='com.apps.smartx.joy.SmartT', path='<DVTFilePath:0x60000beeb400:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f0ae7b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064c1d40; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy.SmartT";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy.SmartT', executablePath='<DVTFilePath:0x60000b936a00:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex/SmartT'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy.SmartT";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 0;
+}
+2024-08-02 06:26:08 +0000  Writing entitlements for <IDEDistributionItem: 0x60001354e0a0; bundleID='com.apps.smartx.joy.SmartT', path='<DVTFilePath:0x60000beeb400:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f0ae7b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064c3240; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy.SmartT";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy.SmartT', executablePath='<DVTFilePath:0x60000b936a00:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/PlugIns/SmartT.appex/SmartT'>', hardenedRuntime='0'>'> to: /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~Qi3Ko0
+2024-08-02 06:26:08 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '58D39F16A5EEB22346F3FF49188D4DA4C53AD827' '--entitlements' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~Qi3Ko0' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/PlugIns/SmartT.appex'
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/PlugIns/SmartT.appex: replacing existing signature
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/PlugIns/SmartT.appex: signed bundle with Mach-O thin (arm64) [com.apps.smartx.joy.SmartT]
+2024-08-02 06:26:08 +0000  /usr/bin/codesign exited with 0
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x6000135bc840; bundleID='com.apps.smartx.joy', path='<DVTFilePath:0x60000bef1580:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a440; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641e940; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.networking.vpn.api" =     (
+        "allow-vpn"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+    );
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy', executablePath='<DVTFilePath:0x60000bed7d80:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/SmartVPN'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.networking.vpn.api" =     (
+        "allow-vpn"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+    );
+}
+2024-08-02 06:26:08 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-08-02 06:26:08 +0000  Entitlements for <IDEDistributionItem: 0x6000135bc840; bundleID='com.apps.smartx.joy', path='<DVTFilePath:0x60000bef1580:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a440; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60000641e580; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.networking.vpn.api" =     (
+        "allow-vpn"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+    );
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy', executablePath='<DVTFilePath:0x60000bed7d80:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/SmartVPN'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.networking.vpn.api" =     (
+        "allow-vpn"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+    );
+}
+2024-08-02 06:26:08 +0000  Writing entitlements for <IDEDistributionItem: 0x6000135bc840; bundleID='com.apps.smartx.joy', path='<DVTFilePath:0x60000bef1580:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60000f62a440; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x6000064db6c0; name='Apple Development: ShuangRong He (5YA7XNMJTG)', hash='B39C5AA067E176B997B604285784E0A8375B8F04', serialNumber='10B8157189CFD07F1BE171C85DAAFF33', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-07-10 06:37:03 +0000''>', entitlements='{
+    "application-identifier" = "ZRKM42D778.com.apps.smartx.joy";
+    "com.apple.developer.networking.networkextension" =     (
+        "app-proxy-provider",
+        "content-filter-provider",
+        "packet-tunnel-provider"
+    );
+    "com.apple.developer.networking.vpn.api" =     (
+        "allow-vpn"
+    );
+    "com.apple.developer.team-identifier" = ZRKM42D778;
+    "com.apple.security.application-groups" =     (
+        "group.com.apps.smartx.joy"
+    );
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+    );
+}', teamID='ZRKM42D778', identifier='com.apps.smartx.joy', executablePath='<DVTFilePath:0x60000bed7d80:'/Users/xxxxxxh/Library/Developer/Xcode/Archives/2024-08-02/SmartVPN 2024-8-2, 14.24.xcarchive/Products/Applications/SmartVPN.app/SmartVPN'>', hardenedRuntime='0'>'> to: /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~blJg0r
+2024-08-02 06:26:08 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '58D39F16A5EEB22346F3FF49188D4DA4C53AD827' '--entitlements' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/entitlements~~~blJg0r' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app'
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app: replacing existing signature
+2024-08-02 06:26:08 +0000  /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app: signed app bundle with Mach-O thin (arm64) [com.apps.smartx.joy]
+2024-08-02 06:26:08 +0000  /usr/bin/codesign exited with 0
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionZipODRItemStep
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-08-02 06:26:08 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-08-02 06:26:08 +0000  Processing step: IDEDistributionCreateIPAStep
+2024-08-02 06:26:08 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root' '/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Packages/SmartVPN.ipa'
+2024-08-02 06:26:08 +0000  >>> Copying /var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root 
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:08 +0000  6577 bytes for ./Payload/SmartVPN.app/_CodeSignature/CodeResources
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/connect.json ... 
+2024-08-02 06:26:08 +0000  6649 bytes for ./Payload/SmartVPN.app/connect.json
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/xh.json ... 
+2024-08-02 06:26:08 +0000  106789 bytes for ./Payload/SmartVPN.app/xh.json
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/PlugIns/SmartT.appex/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:08 +0000  2040 bytes for ./Payload/SmartVPN.app/PlugIns/SmartT.appex/_CodeSignature/CodeResources
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/PlugIns/SmartT.appex/embedded.mobileprovision ... 
+2024-08-02 06:26:08 +0000  19600 bytes for ./Payload/SmartVPN.app/PlugIns/SmartT.appex/embedded.mobileprovision
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/PlugIns/SmartT.appex/Info.plist ... 
+2024-08-02 06:26:08 +0000  936 bytes for ./Payload/SmartVPN.app/PlugIns/SmartT.appex/Info.plist
+2024-08-02 06:26:08 +0000  copying file ./Payload/SmartVPN.app/PlugIns/SmartT.appex/SmartT ... 
+2024-08-02 06:26:09 +0000  1225952 bytes for ./Payload/SmartVPN.app/PlugIns/SmartT.appex/SmartT
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/SmartVPN ... 
+2024-08-02 06:26:09 +0000  3521392 bytes for ./Payload/SmartVPN.app/SmartVPN
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/AppIcon60x60@2x.png ... 
+12294 bytes for ./Payload/SmartVPN.app/AppIcon60x60@2x.png
+copying file ./Payload/SmartVPN.app/speed.json ... 
+2024-08-02 06:26:09 +0000  7233 bytes for ./Payload/SmartVPN.app/speed.json
+copying file ./Payload/SmartVPN.app/Lottie_Lottie.bundle/PrivacyInfo.xcprivacy ... 
+2024-08-02 06:26:09 +0000  599 bytes for ./Payload/SmartVPN.app/Lottie_Lottie.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/SmartVPN.app/Lottie_Lottie.bundle/Info.plist ... 
+2024-08-02 06:26:09 +0000  668 bytes for ./Payload/SmartVPN.app/Lottie_Lottie.bundle/Info.plist
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/Assets.car ... 
+2024-08-02 06:26:09 +0000  10970975 bytes for ./Payload/SmartVPN.app/Assets.car
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/AppIcon76x76@2x~ipad.png ... 
+16114 bytes for ./Payload/SmartVPN.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/SmartVPN.app/Frameworks/openssl.framework/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:09 +0000  1798 bytes for ./Payload/SmartVPN.app/Frameworks/openssl.framework/_CodeSignature/CodeResources
+copying file ./Payload/SmartVPN.app/Frameworks/openssl.framework/openssl ... 
+2024-08-02 06:26:09 +0000  2792096 bytes for ./Payload/SmartVPN.app/Frameworks/openssl.framework/openssl
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/Frameworks/openssl.framework/Info.plist ... 
+710 bytes for ./Payload/SmartVPN.app/Frameworks/openssl.framework/Info.plist
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/Frameworks/NDT7.framework/_CodeSignature/CodeResources ... 
+2024-08-02 06:26:09 +0000  1798 bytes for ./Payload/SmartVPN.app/Frameworks/NDT7.framework/_CodeSignature/CodeResources
+copying file ./Payload/SmartVPN.app/Frameworks/NDT7.framework/NDT7 ... 
+2024-08-02 06:26:09 +0000  737616 bytes for ./Payload/SmartVPN.app/Frameworks/NDT7.framework/NDT7
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/Frameworks/NDT7.framework/Info.plist ... 
+2024-08-02 06:26:09 +0000  777 bytes for ./Payload/SmartVPN.app/Frameworks/NDT7.framework/Info.plist
+copying file ./Payload/SmartVPN.app/embedded.mobileprovision ... 
+2024-08-02 06:26:09 +0000  19740 bytes for ./Payload/SmartVPN.app/embedded.mobileprovision
+2024-08-02 06:26:09 +0000  copying file ./Payload/SmartVPN.app/Info.plist ... 
+2024-08-02 06:26:09 +0000  1869 bytes for ./Payload/SmartVPN.app/Info.plist
+copying file ./Payload/SmartVPN.app/PkgInfo ... 
+2024-08-02 06:26:09 +0000  8 bytes for ./Payload/SmartVPN.app/PkgInfo
+2024-08-02 06:26:09 +0000  /usr/bin/ditto exited with 0
+2024-08-02 06:26:09 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2024-08-02 06:26:09 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2024-08-02 06:26:09 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2024-08-02 06:26:09 +0000  IDEDistributionItem init <DVTFilePath:0x60000be5be80:'/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/NDT7.framework'>
+2024-08-02 06:26:09 +0000  IDEDistributionItem init <DVTFilePath:0x60000be5bf80:'/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/PlugIns/SmartT.appex'>
+2024-08-02 06:26:09 +0000  IDEDistributionItem init <DVTFilePath:0x60000be2c800:'/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app/Frameworks/openssl.framework'>
+2024-08-02 06:26:09 +0000  IDEDistributionItem init <DVTFilePath:0x60000be12900:'/var/folders/r4/r22fjkw1355gzn672yj4zlv00000gn/T/XcodeDistPipeline.~~~l6Deze/Root/Payload/SmartVPN.app'>
+2024-08-02 06:26:09 +0000  Processing step: IDEDistributionCreateManifestStep

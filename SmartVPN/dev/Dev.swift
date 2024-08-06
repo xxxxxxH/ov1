@@ -23,6 +23,8 @@ class Dev{
     static let group = ""
     static var connecting = false
     static var dSpeed = true
+    static var starList: [StarEntity] = []
+    static var starDetailsList:[StarDetailsEntity] = []
     
     static func fetchHotData(success:@escaping()->Void) {
         guard let url = URL(string: url_nodes) else {
@@ -244,6 +246,86 @@ class Dev{
         
         let numbersArray = Array(uniqueNumbers)
         return (numbersArray[0], numbersArray[1])
+    }
+    
+    static func getStarList(){
+        starList.append(StarEntity(name: "Aries", color: "#FF4C4C", icon: "ic_by"))
+        starList.append(StarEntity(name: "Taurus", color: "#4CAF50",icon: "ic_jn"))
+        starList.append(StarEntity(name: "Gemini", color: "#F8E71C",icon: "ic_sz"))
+        starList.append(StarEntity(name: "Cancer", color: "#C0C0C0",icon: "ic_jx"))
+        starList.append(StarEntity(name: "Leo", color: "#FFD700",icon: "ic_shizi"))
+        starList.append(StarEntity(name: "Virgo", color: "#3D9970",icon: "ic_cn"))
+        starList.append(StarEntity(name: "Libra", color: "#0099FF",icon: "ic_tc"))
+        starList.append(StarEntity(name: "Scorpio", color: "#C8102E",icon: "ic_tx"))
+        starList.append(StarEntity(name: "Sagittarius", color: "#8A2BE2",icon: "ic_ss"))
+        starList.append(StarEntity(name: "Capricorn", color: "#8B4513",icon: "ic_mj"))
+        starList.append(StarEntity(name: "Aquarius", color: "#00FFFF",icon: "ic_sp"))
+        starList.append(StarEntity(name: "Pisces", color: "#1E90FF",icon: "ic_sy"))
+    }
+    
+    static func getStarDetailsList(){
+        starDetailsList.append(StarDetailsEntity(type: "Fortune", icon: "ic_yunshi", bg: "#83B1E3", desc: "10K+ used"))
+        starDetailsList.append(StarDetailsEntity(type: "Love", icon: "ic_aiqing", bg: "#E6ADCE", desc: "20.5K+ used"))
+        starDetailsList.append(StarDetailsEntity(type: "Complex", icon: "ic_fuhe", bg: "#444D92", desc: "5K+ used"))
+        starDetailsList.append(StarDetailsEntity(type: "Relationship", icon: "ic_guanxi", bg: "#B14CB6", desc: "2.5K+ used"))
+        starDetailsList.append(StarDetailsEntity(type: "Career", icon: "ic_shiye", bg: "#96BCBD", desc: "6K+ used"))
+        starDetailsList.append(StarDetailsEntity(type: "Wealth", icon: "ic_caifu", bg: "#C4967C", desc: "10K+ used"))
+    }
+    
+    static func getTestResult(req:[ChatReq], success:@escaping(String)->Void){
+        guard let url = URL(string: "https://ai.smartvpn.top/SmartAI/chatAnswer") else {
+            print("Invalid URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        guard let httpBody = try? JSONEncoder().encode(req) else {
+            print("Invalid JSON")
+            return
+        }
+        if let jsonString = String(data: httpBody, encoding: .utf8) {
+            print("xxxxxxH-> json = \(jsonString)")
+        }
+        request.httpBody = httpBody
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                success("error")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data received")
+                success("error")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let response = try decoder.decode(ChatResp.self, from: data)
+                success(response.result)
+                print("xxxxxxH->\(response)")
+            } catch {
+                success("error")
+                print("xxxxxxH->: \(error)")
+            }
+        }.resume()
+    }
+    
+    static func currentMonthString() -> String {
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let monthNumber = calendar.component(.month, from: currentDate)
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM"
+        let monthName = dateFormatter.string(from: calendar.date(bySetting: .month, value: monthNumber, of: currentDate)!)
+        
+        return monthName
     }
 }
 
