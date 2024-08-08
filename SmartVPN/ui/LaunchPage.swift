@@ -11,6 +11,8 @@ import Lottie
 struct LaunchPage: View {
     
     @State private var jump = false
+    @State private var showAlert = false
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         NavigationView{
@@ -22,13 +24,13 @@ struct LaunchPage: View {
                 ComplexView()
                 
                 MarqueeView(
-                            text: "",
-                            duration: 10,
-                            fontSize: 20,
-                            textColor: .clear,
-                            backgroundColor: .clear
-                        )
-                        .frame(width: 0, height: 0)
+                    text: "",
+                    duration: 10,
+                    fontSize: 20,
+                    textColor: .clear,
+                    backgroundColor: .clear
+                )
+                .frame(width: 0, height: 0)
                 VStack{
                     
                     
@@ -51,6 +53,7 @@ struct LaunchPage: View {
                 }
             }
             .onAppear {
+                checkCountryAndPrompt()
                 Dev.fetchHotData(){
                     Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].smartUrl){}
                 }
@@ -60,9 +63,30 @@ struct LaunchPage: View {
                 Dev.getStarList()
                 Dev.getStarDetailsList()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                    jump = true
+                    if !showAlert{
+                        jump = true
+                    }
+                }
+            }.alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Service Unavailable"),
+                    message: Text("Due to regional restrictions, this app is not available in your area. Please contact support for more information."),
+                    dismissButton: .default(Text("Exit App")) {
+                        exit(0)
+                    }
+                )
+            }.onChange(of: scenePhase) { newPhase in
+                if newPhase == .background {
+                    checkCountryAndPrompt()
                 }
             }
+        }
+    }
+    
+    private func checkCountryAndPrompt() {
+        let countryCode = Locale.current.regionCode
+        if countryCode == "CN" {
+            showAlert = true
         }
     }
 }
