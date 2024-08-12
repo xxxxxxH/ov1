@@ -46,14 +46,15 @@ struct LaunchPage: View {
                 
                 
                 NavigationLink(
-                    destination: HomePageVIew(),
+//                    destination: HomePageVIew(),
+                    destination: MainPage(),
                     isActive: $jump
                 ) {
                     EmptyView()
                 }
             }
             .onAppear {
-                checkCountryAndPrompt()
+                //checkCountryAndPrompt()
                 Dev.fetchHotData(){
                     Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].smartUrl){}
                 }
@@ -62,6 +63,7 @@ struct LaunchPage: View {
                 Dev.settingList()
                 Dev.getStarList()
                 Dev.getStarDetailsList()
+                Dev.getShengXiaoList()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     if !showAlert{
                         jump = true
@@ -77,7 +79,7 @@ struct LaunchPage: View {
                 )
             }.onChange(of: scenePhase) { newPhase in
                 if newPhase == .background {
-                    checkCountryAndPrompt()
+                    //checkCountryAndPrompt()
                 }
             }
         }

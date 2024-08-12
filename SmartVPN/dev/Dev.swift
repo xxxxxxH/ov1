@@ -24,6 +24,7 @@ class Dev{
     static var connecting = false
     static var dSpeed = true
     static var starList: [StarEntity] = []
+    static var SXList: [StarEntity] = []
     static var starDetailsList:[StarDetailsEntity] = []
     
     static func fetchHotData(success:@escaping()->Void) {
@@ -261,6 +262,21 @@ class Dev{
         starList.append(StarEntity(name: "Capricorn", color: "#8B4513",icon: "ic_mj"))
         starList.append(StarEntity(name: "Aquarius", color: "#00FFFF",icon: "ic_sp"))
         starList.append(StarEntity(name: "Pisces", color: "#1E90FF",icon: "ic_sy"))
+    }
+    
+    static func getShengXiaoList(){
+        SXList.append(StarEntity(name: "Rat", color: "#85C3DE", icon: "ic_laoshu"))
+        SXList.append(StarEntity(name: "Ox", color: "#FFAF6E",icon: "ic_niu"))
+        SXList.append(StarEntity(name: "Tiger", color: "#F7C768",icon: "ic_laohu"))
+        SXList.append(StarEntity(name: "Rabbit", color: "#FFBDD8",icon: "ic_tuzi"))
+        SXList.append(StarEntity(name: "Dragon", color: "#FF8787",icon: "ic_long"))
+        SXList.append(StarEntity(name: "Snake", color: "#C3D686",icon: "ic_snake"))
+        SXList.append(StarEntity(name: "Horse", color: "#FFAF6E",icon: "ic_ma"))
+        SXList.append(StarEntity(name: "Goat", color: "#F7C768",icon: "ic_yang"))
+        SXList.append(StarEntity(name: "Monkey", color: "#C3D686",icon: "ic_houzi"))
+        SXList.append(StarEntity(name: "Rooster", color: "#FF8787",icon: "ic_ji"))
+        SXList.append(StarEntity(name: "Dog", color: "#85C3DE",icon: "ic_gou"))
+        SXList.append(StarEntity(name: "Boar", color: "#FFBDD8",icon: "ic_zhu"))
     }
     
     static func getStarDetailsList(){

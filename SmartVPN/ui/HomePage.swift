@@ -75,24 +75,7 @@ struct HomePage: View {
                                             .stroke(Color.white, lineWidth: 1)
                                     )
                                     
-                                    //                                    Spacer().frame(width: 20)
-                                    //                                    Button(action: {
-                                    //                                        startInfo = true
-                                    //                                    }){
-                                    //                                        ZStack{
-                                    //                                            Image("ic_netinfo").resizable()
-                                    //                                                .scaledToFit().frame(width: 25,height: 25)
-                                    //                                        }.frame(width: 45, height: 45)
-                                    //
-                                    //                                        NavigationLink(destination: NodePage(), isActive: $startNode){
-                                    //                                            EmptyView()
-                                    //                                        }
-                                    //                                    }.overlay(
-                                    //                                        RoundedRectangle(cornerRadius: 2)
-                                    //                                            .stroke(Color.white, lineWidth: 1)
-                                    //                                    )
-                                    
-                                    
+
                                     Spacer().frame(width: 20)
                                     Button(action: {
                                         startScan = true

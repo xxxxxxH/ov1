@@ -1,6 +1,15 @@
 {
-  "originHash" : "d125f7fbea18a106094f9d9662081a5832932dd1a13afe51bf6376c883ed77d0",
+  "originHash" : "900d6d9fd596dda3b1020808df98dd258f64a4144f46880642008b762076693b",
   "pins" : [
+    {
+      "identity" : "documentationcomment",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fumito-ito/DocumentationComment.git",
+      "state" : {
+        "revision" : "90d3c5b9cccddb202c8adb99138733c868d7b082",
+        "version" : "0.0.6"
+      }
+    },
     {
       "identity" : "lottie-ios",
       "kind" : "remoteSourceControl",
@@ -17,6 +26,42 @@
       "state" : {
         "revision" : "757c074af45e4f2514fe63f649ccdde966183e90",
         "version" : "1.1.11700"
+      }
+    },
+    {
+      "identity" : "parra-mobile-sdks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Parra-Inc/parra-mobile-sdks.git",
+      "state" : {
+        "revision" : "d49358b4df018a03b2e4c56b0ebd87272358f263",
+        "version" : "0.2.1"
+      }
+    },
+    {
+      "identity" : "shapes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nutterfi/Shapes.git",
+      "state" : {
+        "revision" : "af931b6b5ccc442b339e3c0523e443e161fe5044",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-cmark.git",
+      "state" : {
+        "revision" : "3bc2f3e25df0cecc5dc269f7ccae65d0f386f06a",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swift-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-markdown.git",
+      "state" : {
+        "revision" : "4aae40bf6fff5286e0e1672329d17824ce16e081",
+        "version" : "0.4.0"
       }
     },
     {

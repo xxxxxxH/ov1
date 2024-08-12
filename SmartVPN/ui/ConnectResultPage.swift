@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ConnectResultPage: View {
+    var vpnStatus = ""
     @StateObject private var vpnStatusManager = VPNStatusManager()
     @State private var downloadSpeed = "0.0"
     @State private var uploadSpeed = "0.0"
@@ -27,7 +28,7 @@ struct ConnectResultPage: View {
                 VStack{
                     
                     VStack{
-                        Text("\(vpnStatusManager.statusDescription(for: vpnStatusManager.vpnStatus))").foregroundColor(.white).padding()
+                        Text(vpnStatus).foregroundColor(.white).padding()
                         
                         Spacer().frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/ ,maxHeight:0.5).background(.white).padding()
                         
@@ -155,16 +156,15 @@ struct ConnectResultPage: View {
             
         }.onAppear{
             (avaIndex1, avaIndex2) = Dev.getRandomIndex()
-            DispatchQueue.global(qos: .background).async {
-                self.downloadGet()
-            }
-            DispatchQueue.global(qos: .background).async {
-                self.uploadGet()
-            }
-            if vpnStatusManager.vpnStatus == .connected{
+            
+            if vpnStatus == "Connected"{
                 
-            }else{
-                
+                DispatchQueue.global(qos: .background).async {
+                    self.downloadGet()
+                }
+                DispatchQueue.global(qos: .background).async {
+                    self.uploadGet()
+                }
             }
         }.onDisappear{
             loop = false
@@ -175,7 +175,6 @@ struct ConnectResultPage: View {
     private func downloadGet(){
         var counter = 0
         while loop{
-            print("loop downloadGet = \(counter)")
             counter += 1
             let download = Double.random(in: 0.00...30.00)
             downloadSpeed = String(format: "%.2f", download)
