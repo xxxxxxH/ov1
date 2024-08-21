@@ -29,7 +29,7 @@ struct ChaterRowView: View {
                     Text(chater.introduce)
                         .font(.subheadline)
                         .lineLimit(2)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                 }
                 
                 Spacer()

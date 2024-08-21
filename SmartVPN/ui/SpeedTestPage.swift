@@ -124,20 +124,20 @@ struct SpeedTestPage: View {
                                     startStar = true
                                 }, label: {
                                     ZStack{
-                                        Image("ic_star")
+                                        Image("ic_ai_img")
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(height: .infinity)
+                                            .frame(height: 120)
                                             .clipped()
                                             .cornerRadius(10).overlay(
                                                 Rectangle()
                                                     .fill(Color.black.opacity(0.5)).cornerRadius(10)
                                                 
                                             )
-                                        Text("Horoscope").foregroundColor(.white).bold()
-                                    }.frame(height: .infinity).padding(.horizontal, 20)
+                                        Text("Image Generator").foregroundColor(.white).bold()
+                                    }.frame(height: 120).padding(.horizontal, 20)
                                 })
-                                NavigationLink(destination: StarListPage(), isActive: $startStar, label: {EmptyView()})
+                                NavigationLink(destination: CreateImagePage(), isActive: $startStar, label: {EmptyView()})
                                 Spacer().frame(height: 50)
                             }
                         }

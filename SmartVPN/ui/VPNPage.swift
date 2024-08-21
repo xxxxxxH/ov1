@@ -8,6 +8,7 @@
 import SwiftUI
 import TunnelKitManager
 import Lottie
+import SwiftMessages
 
 struct VPNPage: View {
     @StateObject private var vpnStatusManager = VPNStatusManager()
@@ -29,7 +30,7 @@ struct VPNPage: View {
                 Button(action: {
                     isNeedRoute = true
                     prepareConnect()
-                    //                                                        startResult = true
+//                                                                            startResult = true
                 }, label: {
                     ZStack{
                         LottieView(animation: .named("connect"))
@@ -60,6 +61,7 @@ struct VPNPage: View {
              
             if showToast{
                 ToastView(message: toastMessage, isShowing: $showToast)
+                let view = MessageView.viewFromNib(layout: .cardView)
             }
         }.onAppear{
             Task{
@@ -140,5 +142,7 @@ struct VPNPage: View {
             }
         }
     }
+    
+
 }
 

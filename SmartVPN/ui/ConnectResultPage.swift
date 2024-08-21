@@ -20,6 +20,7 @@ struct ConnectResultPage: View {
     @State private var startSpeed = false
     @State private var startStar = false
     @Environment(\.presentationMode) var presentationMode
+    @State private var startImage = false
     @State private var loop = true
     var body: some View {
         ZStack{
@@ -30,7 +31,7 @@ struct ConnectResultPage: View {
                     VStack{
                         Text(vpnStatus).foregroundColor(.white).padding()
                         
-                        Spacer().frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/ ,maxHeight:0.5).background(.white).padding()
+                        Spacer().frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/ ,maxHeight:0.5).background(.white).padding(.all, 10)
                         
                         HStack{
                             VStack{
@@ -46,31 +47,30 @@ struct ConnectResultPage: View {
                             }
                         }
                         
-                    }.padding().frame(maxWidth: .infinity).overlay(
+                    }.padding(.all, 10).frame(maxWidth: .infinity).overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white, lineWidth: 1)
                     ).padding(.horizontal, 20)
                     
                     
                     Button(action: {
-                        Dev.currentChater = Dev.chaterList[avaIndex1]
-                        startChat = true
+                        startStar = true
                     }, label: {
                         ZStack{
-                            
-                            Image(Dev.chaterList[avaIndex1].hBackground)
+                            Image("ic_ai_img")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(height: 100)
+                                .frame(height: 120)
                                 .clipped()
                                 .cornerRadius(10).overlay(
                                     Rectangle()
                                         .fill(Color.black.opacity(0.5)).cornerRadius(10)
                                     
                                 )
-                            Text("Chat with \(Dev.chaterList[avaIndex1].name)").foregroundColor(.white).bold()
-                        }.frame(height: 100).padding(.horizontal, 20)
+                            Text("Image Generator").foregroundColor(.white).bold()
+                        }.frame(height: 120).padding(.horizontal, 20)
                     })
+                    
                     
                     HStack{
                         
@@ -107,47 +107,19 @@ struct ConnectResultPage: View {
                         NavigationLink(destination: LocationInfoPage(), isActive: $startIpInfo, label: {EmptyView()})
                         NavigationLink(destination: ScanPage(), isActive: $startScan, label: {EmptyView()})
                         NavigationLink(destination: SpeedTestPage(), isActive: $startSpeed, label: {EmptyView()})
-                        NavigationLink(destination: StarListPage(), isActive: $startStar, label: {EmptyView()})
+//                        NavigationLink(destination: StarListPage(), isActive: $startStar, label: {EmptyView()})
+                        NavigationLink(destination: CreateImagePage(), isActive: $startStar, label: {EmptyView()})
                         
                     }.frame(height:100).padding(.horizontal, 20)
                     
-                    Button(action: {
-                        Dev.currentChater = Dev.chaterList[avaIndex2]
+                    CarouselView(){ info in
+                        Dev.currentChater = info
                         startChat = true
-                    }, label: {
-                        ZStack{
-                            Image(Dev.chaterList[avaIndex2].hBackground)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 100)
-                                .clipped()
-                                .cornerRadius(10).overlay(
-                                    Rectangle()
-                                        .fill(Color.black.opacity(0.5)).cornerRadius(10)
-                                    
-                                )
-                            Text("Chat with \(Dev.chaterList[avaIndex2].name)").foregroundColor(.white).bold()
-                        }.frame(height: 100).padding(.horizontal, 20)
-                    })
+                    }.padding(.bottom, 50)
                     
-                    Button(action: {
-                        startStar = true
-                    }, label: {
-                        ZStack{
-                            Image("ic_star")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 100)
-                                .clipped()
-                                .cornerRadius(10).overlay(
-                                    Rectangle()
-                                        .fill(Color.black.opacity(0.5)).cornerRadius(10)
-                                    
-                                )
-                            Text("Horoscope").foregroundColor(.white).bold()
-                        }.frame(height: 100).padding(.horizontal, 20)
-                    })
-                    
+
+                
+                    NavigationLink(destination: CreateImagePage(), isActive: $startImage, label: {EmptyView()})
                     NavigationLink(destination: ChatPage(), isActive: $startChat, label: {EmptyView()})
                     Spacer()
                 }

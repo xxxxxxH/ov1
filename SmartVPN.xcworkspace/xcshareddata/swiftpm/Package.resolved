@@ -1,13 +1,76 @@
 {
-  "originHash" : "900d6d9fd596dda3b1020808df98dd258f64a4144f46880642008b762076693b",
+  "originHash" : "eac2863a3bbfbc95a3697d3df7a09d4e664ae95621ca1a64ab953633be3cdfcf",
   "pins" : [
     {
-      "identity" : "documentationcomment",
+      "identity" : "aachartkit-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/fumito-ito/DocumentationComment.git",
+      "location" : "https://github.com/AAChartModel/AAChartKit-Swift.git",
       "state" : {
-        "revision" : "90d3c5b9cccddb202c8adb99138733c868d7b082",
-        "version" : "0.0.6"
+        "revision" : "6dea7b1c536af933e767ff31353948c6c891ec24",
+        "version" : "9.0.0"
+      }
+    },
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "747c8db8d57b68d5e35275f10c92d55f982adbd4",
+        "version" : "4.9.1"
+      }
+    },
+    {
+      "identity" : "algorithmchecker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kandelvijaya/algorithmchecker.git",
+      "state" : {
+        "revision" : "3c786303ec2cdd0018b77f1597d6e38e0448039a",
+        "version" : "0.1.5"
+      }
+    },
+    {
+      "identity" : "calendarkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/richardtop/CalendarKit.git",
+      "state" : {
+        "revision" : "92684acdffb76941268b6627f894274754771e41",
+        "version" : "1.1.10"
+      }
+    },
+    {
+      "identity" : "floatingpanel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SCENEE/FloatingPanel.git",
+      "state" : {
+        "revision" : "71f419a3cd212afc7615e2179c2fec1df1aa74da",
+        "version" : "2.8.5"
+      }
+    },
+    {
+      "identity" : "hero",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HeroTransitions/Hero.git",
+      "state" : {
+        "revision" : "b307e2d48d582118e5101d04f5187c91595a1095",
+        "version" : "1.6.3"
+      }
+    },
+    {
+      "identity" : "input-mask-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RedMadRobot/input-mask-ios",
+      "state" : {
+        "revision" : "b492f115cc8b3aeb1b6395b4c4157d6bba1fceab",
+        "version" : "7.3.2"
+      }
+    },
+    {
+      "identity" : "kiri",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/junkpiano/Kiri.git",
+      "state" : {
+        "revision" : "a1b2c6e646f55a3335807ff9ccc5a4fa018f1feb",
+        "version" : "1.1.0"
       }
     },
     {
@@ -29,39 +92,48 @@
       }
     },
     {
-      "identity" : "parra-mobile-sdks",
+      "identity" : "scientist",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Parra-Inc/parra-mobile-sdks.git",
+      "location" : "https://github.com/junkpiano/scientist.git",
       "state" : {
-        "revision" : "d49358b4df018a03b2e4c56b0ebd87272358f263",
-        "version" : "0.2.1"
-      }
-    },
-    {
-      "identity" : "shapes",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/nutterfi/Shapes.git",
-      "state" : {
-        "revision" : "af931b6b5ccc442b339e3c0523e443e161fe5044",
+        "revision" : "b63ad65c53394415ffbb5324b8ac0832eadc6afe",
         "version" : "0.4.0"
       }
     },
     {
-      "identity" : "swift-cmark",
+      "identity" : "sidemenu",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-cmark.git",
+      "location" : "https://github.com/jonkykong/SideMenu.git",
       "state" : {
-        "revision" : "3bc2f3e25df0cecc5dc269f7ccae65d0f386f06a",
-        "version" : "0.4.0"
+        "revision" : "8bd4fd128923cf5494fa726839af8afe12908ad9",
+        "version" : "6.5.0"
       }
     },
     {
-      "identity" : "swift-markdown",
+      "identity" : "swiftcsv",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-markdown.git",
+      "location" : "https://github.com/swiftcsv/SwiftCSV.git",
       "state" : {
-        "revision" : "4aae40bf6fff5286e0e1672329d17824ce16e081",
-        "version" : "0.4.0"
+        "revision" : "6ab5d0fe9b6ef3c79d717eefa70862df389e74d9",
+        "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "swiftmessages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftKickMobile/SwiftMessages.git",
+      "state" : {
+        "revision" : "b899be48a61ddb209695a8d5e411189b704a7fa3",
+        "version" : "10.0.0"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup.git",
+      "state" : {
+        "revision" : "e2d11208519549c2e5798d70190472045633f22f",
+        "version" : "2.7.3"
       }
     },
     {
@@ -71,6 +143,15 @@
       "state" : {
         "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
         "version" : "1.9.6"
+      }
+    },
+    {
+      "identity" : "tppdf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/techprimate/tppdf.git",
+      "state" : {
+        "revision" : "9b3c912871123a3e5e178e5a5b37a383946d7c70",
+        "version" : "2.6.0"
       }
     },
     {

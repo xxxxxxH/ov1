@@ -164,9 +164,9 @@ struct HomePage: View {
                             EmptyView()
                         }
                         
-                        NavigationLink(destination: StarListPage(), isActive: $startStar){
-                            EmptyView()
-                        }
+//                        NavigationLink(destination: StarListPage(), isActive: $startStar){
+//                            EmptyView()
+//                        }
                         
                         
                     }.frame(width: geometry.size.width, height: geometry.size.height)

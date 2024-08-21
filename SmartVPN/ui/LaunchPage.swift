@@ -64,6 +64,10 @@ struct LaunchPage: View {
                 Dev.getStarList()
                 Dev.getStarDetailsList()
                 Dev.getShengXiaoList()
+                Dev.setRecommends()
+                Dev.setStyles()
+                Dev.setModels()
+                Dev.setSizes()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     if !showAlert{
                         jump = true

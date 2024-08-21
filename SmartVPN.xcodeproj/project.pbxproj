@@ -13,9 +13,26 @@
 		BC12B07F2C65EC76000445CB /* ImageGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B07E2C65EC76000445CB /* ImageGridView2.swift */; };
 		BC12B0812C65FF3F000445CB /* VPNPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0802C65FF3F000445CB /* VPNPage.swift */; };
 		BC12B0832C69AFF0000445CB /* SXListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0822C69AFF0000445CB /* SXListPage.swift */; };
-		BC12B0862C69BC3E000445CB /* Parra in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0852C69BC3E000445CB /* Parra */; };
-		BC12B0892C69BD21000445CB /* Shapes in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0882C69BD21000445CB /* Shapes */; };
-		BC12B08C2C69BE49000445CB /* DocumetationComment in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B08B2C69BE49000445CB /* DocumetationComment */; };
+		BC12B08F2C69E4F1000445CB /* Scientist in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B08E2C69E4F1000445CB /* Scientist */; };
+		BC12B0922C69E73E000445CB /* Kiri in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0912C69E73E000445CB /* Kiri */; };
+		BC12B0982C69E8B0000445CB /* AlgoChecker in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0972C69E8B0000445CB /* AlgoChecker */; };
+		BC12B09B2C69E9BC000445CB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B09A2C69E9BC000445CB /* SideMenu */; };
+		BC12B09E2C69EA57000445CB /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B09D2C69EA57000445CB /* FloatingPanel */; };
+		BC12B0AA2C69ED32000445CB /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0A92C69ED32000445CB /* CalendarKit */; };
+		BC12B0AD2C69EE0D000445CB /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0AC2C69EE0D000445CB /* SwiftCSV */; };
+		BC12B0B02C69EEB0000445CB /* InputMask in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0AF2C69EEB0000445CB /* InputMask */; };
+		BC12B0B32C69F3D7000445CB /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0B22C69F3D7000445CB /* Hero */; };
+		BC12B0B62C69F4F3000445CB /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0B52C69F4F3000445CB /* SwiftMessages */; };
+		BC12B0BB2C69F94F000445CB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0BA2C69F94F000445CB /* SwiftSoup */; };
+		BC12B0BE2C69FA27000445CB /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0BD2C69FA27000445CB /* TPPDF */; };
+		BC12B0C12C69FB0F000445CB /* AAInfographics in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0C02C69FB0F000445CB /* AAInfographics */; };
+		BC12B0C32C732533000445CB /* Base64ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0C22C732533000445CB /* Base64ImageView.swift */; };
+		BC12B0C52C7328E9000445CB /* CreateImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0C42C7328E9000445CB /* CreateImagePage.swift */; };
+		BC12B0C72C7338A4000445CB /* AiImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0C62C7338A4000445CB /* AiImageEntity.swift */; };
+		BC12B0CB2C744748000445CB /* AIImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0CA2C744748000445CB /* AIImagePage.swift */; };
+		BC12B0CD2C7473F5000445CB /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0CC2C7473F5000445CB /* ImageSaver.swift */; };
+		BC12B0CF2C7477CC000445CB /* StylesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0CE2C7477CC000445CB /* StylesPage.swift */; };
+		BC12B0D12C747D3E000445CB /* ModelsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0D02C747D3E000445CB /* ModelsPage.swift */; };
 		BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B02C4A069700C9C565 /* ChatReq.swift */; };
 		BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */; };
 		BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */; };
@@ -128,6 +145,13 @@
 		BC12B07E2C65EC76000445CB /* ImageGridView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView2.swift; sourceTree = "<group>"; };
 		BC12B0802C65FF3F000445CB /* VPNPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNPage.swift; sourceTree = "<group>"; };
 		BC12B0822C69AFF0000445CB /* SXListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXListPage.swift; sourceTree = "<group>"; };
+		BC12B0C22C732533000445CB /* Base64ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64ImageView.swift; sourceTree = "<group>"; };
+		BC12B0C42C7328E9000445CB /* CreateImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImagePage.swift; sourceTree = "<group>"; };
+		BC12B0C62C7338A4000445CB /* AiImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiImageEntity.swift; sourceTree = "<group>"; };
+		BC12B0CA2C744748000445CB /* AIImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImagePage.swift; sourceTree = "<group>"; };
+		BC12B0CC2C7473F5000445CB /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		BC12B0CE2C7477CC000445CB /* StylesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesPage.swift; sourceTree = "<group>"; };
+		BC12B0D02C747D3E000445CB /* ModelsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsPage.swift; sourceTree = "<group>"; };
 		BC1A16B02C4A069700C9C565 /* ChatReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReq.swift; sourceTree = "<group>"; };
 		BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResp.swift; sourceTree = "<group>"; };
 		BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,15 +231,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */,
+				BC12B08F2C69E4F1000445CB /* Scientist in Frameworks */,
+				BC12B0BE2C69FA27000445CB /* TPPDF in Frameworks */,
+				BC12B0B32C69F3D7000445CB /* Hero in Frameworks */,
 				BCB67F752C58875600DAA32B /* TunnelKitLZO in Frameworks */,
-				BC12B08C2C69BE49000445CB /* DocumetationComment in Frameworks */,
+				BC12B0922C69E73E000445CB /* Kiri in Frameworks */,
 				BCB67F772C58875600DAA32B /* TunnelKitOpenVPN in Frameworks */,
-				BC12B0862C69BC3E000445CB /* Parra in Frameworks */,
+				BC12B0982C69E8B0000445CB /* AlgoChecker in Frameworks */,
+				BC12B0AA2C69ED32000445CB /* CalendarKit in Frameworks */,
 				BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */,
 				BC5039B12C49248500EE2819 /* TunnelKitOpenVPN in Frameworks */,
 				BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */,
-				BC12B0892C69BD21000445CB /* Shapes in Frameworks */,
+				BC12B09E2C69EA57000445CB /* FloatingPanel in Frameworks */,
 				BCB67F732C58875600DAA32B /* TunnelKit in Frameworks */,
+				BC12B0B02C69EEB0000445CB /* InputMask in Frameworks */,
+				BC12B0B62C69F4F3000445CB /* SwiftMessages in Frameworks */,
+				BC12B09B2C69E9BC000445CB /* SideMenu in Frameworks */,
+				BC12B0C12C69FB0F000445CB /* AAInfographics in Frameworks */,
+				BC12B0AD2C69EE0D000445CB /* SwiftCSV in Frameworks */,
+				BC12B0BB2C69F94F000445CB /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +351,7 @@
 				BCB67FA42C5A258800DAA32B /* QRCodeDetector.swift */,
 				BCB67FA62C5A25C500DAA32B /* ImagePicker.swift */,
 				BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */,
+				BC12B0CC2C7473F5000445CB /* ImageSaver.swift */,
 			);
 			path = dev;
 			sourceTree = "<group>";
@@ -333,6 +368,7 @@
 				BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */,
 				BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */,
 				BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */,
+				BC12B0C62C7338A4000445CB /* AiImageEntity.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -385,6 +421,11 @@
 				BC12B07E2C65EC76000445CB /* ImageGridView2.swift */,
 				BC12B0802C65FF3F000445CB /* VPNPage.swift */,
 				BC12B0822C69AFF0000445CB /* SXListPage.swift */,
+				BC12B0C22C732533000445CB /* Base64ImageView.swift */,
+				BC12B0C42C7328E9000445CB /* CreateImagePage.swift */,
+				BC12B0CA2C744748000445CB /* AIImagePage.swift */,
+				BC12B0CE2C7477CC000445CB /* StylesPage.swift */,
+				BC12B0D02C747D3E000445CB /* ModelsPage.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -452,9 +493,19 @@
 				BCB67F722C58875600DAA32B /* TunnelKit */,
 				BCB67F742C58875600DAA32B /* TunnelKitLZO */,
 				BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */,
-				BC12B0852C69BC3E000445CB /* Parra */,
-				BC12B0882C69BD21000445CB /* Shapes */,
-				BC12B08B2C69BE49000445CB /* DocumetationComment */,
+				BC12B08E2C69E4F1000445CB /* Scientist */,
+				BC12B0912C69E73E000445CB /* Kiri */,
+				BC12B0972C69E8B0000445CB /* AlgoChecker */,
+				BC12B09A2C69E9BC000445CB /* SideMenu */,
+				BC12B09D2C69EA57000445CB /* FloatingPanel */,
+				BC12B0A92C69ED32000445CB /* CalendarKit */,
+				BC12B0AC2C69EE0D000445CB /* SwiftCSV */,
+				BC12B0AF2C69EEB0000445CB /* InputMask */,
+				BC12B0B22C69F3D7000445CB /* Hero */,
+				BC12B0B52C69F4F3000445CB /* SwiftMessages */,
+				BC12B0BA2C69F94F000445CB /* SwiftSoup */,
+				BC12B0BD2C69FA27000445CB /* TPPDF */,
+				BC12B0C02C69FB0F000445CB /* AAInfographics */,
 			);
 			productName = SmartVPN;
 			productReference = BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */;
@@ -513,9 +564,19 @@
 			packageReferences = (
 				BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */,
-				BC12B0842C69BC3E000445CB /* XCRemoteSwiftPackageReference "parra-mobile-sdks" */,
-				BC12B0872C69BD21000445CB /* XCRemoteSwiftPackageReference "Shapes" */,
-				BC12B08A2C69BE49000445CB /* XCRemoteSwiftPackageReference "DocumentationComment" */,
+				BC12B08D2C69E4F1000445CB /* XCRemoteSwiftPackageReference "scientist" */,
+				BC12B0902C69E73E000445CB /* XCRemoteSwiftPackageReference "Kiri" */,
+				BC12B0962C69E8B0000445CB /* XCRemoteSwiftPackageReference "algorithmchecker" */,
+				BC12B0992C69E9BC000445CB /* XCRemoteSwiftPackageReference "SideMenu" */,
+				BC12B09C2C69EA57000445CB /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				BC12B0A82C69ED32000445CB /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				BC12B0AB2C69EE0C000445CB /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				BC12B0AE2C69EEB0000445CB /* XCRemoteSwiftPackageReference "input-mask-ios" */,
+				BC12B0B12C69F3D7000445CB /* XCRemoteSwiftPackageReference "Hero" */,
+				BC12B0B42C69F4F3000445CB /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				BC12B0B92C69F94F000445CB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				BC12B0BC2C69FA27000445CB /* XCRemoteSwiftPackageReference "tppdf" */,
+				BC12B0BF2C69FB0F000445CB /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */,
 			);
 			productRefGroup = BC50388D2C3E5D2D00EE2819 /* Products */;
 			projectDirPath = "";
@@ -619,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEC50B32C5CCA7700225EE5 /* StarEntity.swift in Sources */,
+				BC12B0C72C7338A4000445CB /* AiImageEntity.swift in Sources */,
 				BC12B0832C69AFF0000445CB /* SXListPage.swift in Sources */,
 				BCB67F992C59E64700DAA32B /* LocationInfoEntity.swift in Sources */,
 				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
@@ -629,9 +691,11 @@
 				BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */,
 				BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */,
 				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
+				BC12B0CF2C7477CC000445CB /* StylesPage.swift in Sources */,
 				BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */,
 				BCB67F932C58DF9400DAA32B /* UploadSpeedTest.swift in Sources */,
 				BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */,
+				BC12B0CD2C7473F5000445CB /* ImageSaver.swift in Sources */,
 				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
 				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
 				BCEC50B92C606B9900225EE5 /* StarDetailsEntity.swift in Sources */,
@@ -643,6 +707,7 @@
 				BCB67FA32C5A198900DAA32B /* ScanPage.swift in Sources */,
 				BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */,
 				BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */,
+				BC12B0C32C732533000445CB /* Base64ImageView.swift in Sources */,
 				BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */,
 				BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */,
 				BCB67FBA2C5B8DB400DAA32B /* UserViewModel.swift in Sources */,
@@ -653,10 +718,13 @@
 				BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */,
 				BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */,
 				BCB67FA92C5A27F500DAA32B /* LoadingView.swift in Sources */,
+				BC12B0D12C747D3E000445CB /* ModelsPage.swift in Sources */,
+				BC12B0C52C7328E9000445CB /* CreateImagePage.swift in Sources */,
 				BC12B07D2C65E8E8000445CB /* ImageGridView.swift in Sources */,
 				BCB67FA12C5A18BF00DAA32B /* CameraScannerView.swift in Sources */,
 				BCB67F952C59E5DF00DAA32B /* LocationInfoPage.swift in Sources */,
 				BC50396C2C412E9D00EE2819 /* ChaterItem.swift in Sources */,
+				BC12B0CB2C744748000445CB /* AIImagePage.swift in Sources */,
 				BC5039742C44FE8D00EE2819 /* LocalData.swift in Sources */,
 				BC50397A2C45060500EE2819 /* SettingItemData.swift in Sources */,
 				BCB67FA72C5A25C500DAA32B /* ImagePicker.swift in Sources */,
@@ -837,8 +905,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = joyChatConnect;
+				INFOPLIST_KEY_CFBundleDisplayName = AIChatBox;
 				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to the photo library to save photos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -880,8 +949,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = joyChatConnect;
+				INFOPLIST_KEY_CFBundleDisplayName = AIChatBox;
 				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to the photo library to save photos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1006,28 +1076,108 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BC12B0842C69BC3E000445CB /* XCRemoteSwiftPackageReference "parra-mobile-sdks" */ = {
+		BC12B08D2C69E4F1000445CB /* XCRemoteSwiftPackageReference "scientist" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Parra-Inc/parra-mobile-sdks.git";
+			repositoryURL = "https://github.com/junkpiano/scientist.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.1;
+				kind = exactVersion;
+				version = 0.4.0;
 			};
 		};
-		BC12B0872C69BD21000445CB /* XCRemoteSwiftPackageReference "Shapes" */ = {
+		BC12B0902C69E73E000445CB /* XCRemoteSwiftPackageReference "Kiri" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nutterfi/Shapes.git";
+			repositoryURL = "https://github.com/junkpiano/Kiri.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
+				kind = exactVersion;
+				version = 1.1.0;
 			};
 		};
-		BC12B08A2C69BE49000445CB /* XCRemoteSwiftPackageReference "DocumentationComment" */ = {
+		BC12B0962C69E8B0000445CB /* XCRemoteSwiftPackageReference "algorithmchecker" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fumito-ito/DocumentationComment.git";
+			repositoryURL = "https://github.com/kandelvijaya/algorithmchecker.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.5;
+			};
+		};
+		BC12B0992C69E9BC000445CB /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		BC12B09C2C69EA57000445CB /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SCENEE/FloatingPanel.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.6;
+				minimumVersion = 2.8.5;
+			};
+		};
+		BC12B0A82C69ED32000445CB /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.10;
+			};
+		};
+		BC12B0AB2C69EE0C000445CB /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		BC12B0AE2C69EEB0000445CB /* XCRemoteSwiftPackageReference "input-mask-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RedMadRobot/input-mask-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.3.2;
+			};
+		};
+		BC12B0B12C69F3D7000445CB /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
+		BC12B0B42C69F4F3000445CB /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		BC12B0B92C69F94F000445CB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.3;
+			};
+		};
+		BC12B0BC2C69FA27000445CB /* XCRemoteSwiftPackageReference "tppdf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/techprimate/tppdf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		BC12B0BF2C69FB0F000445CB /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AAChartModel/AAChartKit-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 		BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
@@ -1049,20 +1199,70 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BC12B0852C69BC3E000445CB /* Parra */ = {
+		BC12B08E2C69E4F1000445CB /* Scientist */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC12B0842C69BC3E000445CB /* XCRemoteSwiftPackageReference "parra-mobile-sdks" */;
-			productName = Parra;
+			package = BC12B08D2C69E4F1000445CB /* XCRemoteSwiftPackageReference "scientist" */;
+			productName = Scientist;
 		};
-		BC12B0882C69BD21000445CB /* Shapes */ = {
+		BC12B0912C69E73E000445CB /* Kiri */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC12B0872C69BD21000445CB /* XCRemoteSwiftPackageReference "Shapes" */;
-			productName = Shapes;
+			package = BC12B0902C69E73E000445CB /* XCRemoteSwiftPackageReference "Kiri" */;
+			productName = Kiri;
 		};
-		BC12B08B2C69BE49000445CB /* DocumetationComment */ = {
+		BC12B0972C69E8B0000445CB /* AlgoChecker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC12B08A2C69BE49000445CB /* XCRemoteSwiftPackageReference "DocumentationComment" */;
-			productName = DocumetationComment;
+			package = BC12B0962C69E8B0000445CB /* XCRemoteSwiftPackageReference "algorithmchecker" */;
+			productName = AlgoChecker;
+		};
+		BC12B09A2C69E9BC000445CB /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0992C69E9BC000445CB /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		BC12B09D2C69EA57000445CB /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B09C2C69EA57000445CB /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+		BC12B0A92C69ED32000445CB /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0A82C69ED32000445CB /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+		BC12B0AC2C69EE0D000445CB /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0AB2C69EE0C000445CB /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		BC12B0AF2C69EEB0000445CB /* InputMask */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0AE2C69EEB0000445CB /* XCRemoteSwiftPackageReference "input-mask-ios" */;
+			productName = InputMask;
+		};
+		BC12B0B22C69F3D7000445CB /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0B12C69F3D7000445CB /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+		BC12B0B52C69F4F3000445CB /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0B42C69F4F3000445CB /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		BC12B0BA2C69F94F000445CB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0B92C69F94F000445CB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		BC12B0BD2C69FA27000445CB /* TPPDF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0BC2C69FA27000445CB /* XCRemoteSwiftPackageReference "tppdf" */;
+			productName = TPPDF;
+		};
+		BC12B0C02C69FB0F000445CB /* AAInfographics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC12B0BF2C69FB0F000445CB /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */;
+			productName = AAInfographics;
 		};
 		BC5038FF2C3E6ED700EE2819 /* TunnelKit */ = {
 			isa = XCSwiftPackageProductDependency;

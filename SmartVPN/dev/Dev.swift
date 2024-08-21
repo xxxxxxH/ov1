@@ -26,6 +26,14 @@ class Dev{
     static var starList: [StarEntity] = []
     static var SXList: [StarEntity] = []
     static var starDetailsList:[StarDetailsEntity] = []
+    static var aiImg_url = "https://ai.smartvpn.top/SmartAI/XfImage"
+    static var recommends:[String] = []
+    static var styles:[AiImageEntity] = []
+    static var models:[AiImageEntity] = []
+    static var sizes:[AiImageEntity] = []
+    static var currentStyle:AiImageEntity?
+    static var currentModel:AiImageEntity?
+    static var currentSize:AiImageEntity?
     
     static func fetchHotData(success:@escaping()->Void) {
         guard let url = URL(string: url_nodes) else {
@@ -336,12 +344,138 @@ class Dev{
         let currentDate = Date()
         let calendar = Calendar.current
         let monthNumber = calendar.component(.month, from: currentDate)
-
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM"
         let monthName = dateFormatter.string(from: calendar.date(bySetting: .month, value: monthNumber, of: currentDate)!)
         
         return monthName
     }
+    
+    static func getAiImage(content:String, result:@escaping(String)->Void) {
+        // 构建基础 URL
+        guard var components = URLComponents(string: aiImg_url) else {
+            print("Invalid URL")
+            result("")
+            return
+        }
+        
+        // 添加查询参数
+        components.queryItems = [
+            URLQueryItem(name: "content", value: content),
+            URLQueryItem(name: "width", value: "512"),
+            URLQueryItem(name: "height", value: "512")
+        ]
+        
+        // 获取带有参数的完整 URL
+        guard let url = components.url else {
+            print("Invalid URL components")
+            result("")
+            return
+        }
+        
+        print("url = \(url)")
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        // 发起请求
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let e = error {
+                result("")
+                return
+            }
+            
+            guard let data = data else {
+                result("")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let response = try decoder.decode(ChatResp.self, from: data)
+                result(response.result)
+                print("xxxxxxH->\(response.code)")
+            } catch {
+                result("")
+                print("xxxxxxH->: \(error)")
+            }
+        }
+        
+        task.resume()
+    }
+    
+    static func setRecommends(){
+        recommends.append("Milky Way in the sky.")
+        recommends.append("Pink Maid.")
+        recommends.append("Pure white wedding dress.")
+        recommends.append("Movie Star.")
+        recommends.append("Sunset view.")
+        recommends.append("Girl in White.")
+        recommends.append("An old oil painting.")
+        recommends.append("Dragon Girl.")
+    }
+    
+    static func setStyles(){
+        styles.append(AiImageEntity(type: "2D", icon: "ic_erciyuan"))
+        styles.append(AiImageEntity(type: "Cartoon", icon: "ic_katong"))
+        styles.append(AiImageEntity(type: "Plate", icon: "ic_chahua"))
+        styles.append(AiImageEntity(type: "Art", icon: "ic_yishu"))
+        styles.append(AiImageEntity(type: "3D", icon: "ic_sand"))
+        styles.append(AiImageEntity(type: "Chinese style", icon: "ic_guofeng"))
+        styles.append(AiImageEntity(type: "Mecha", icon: "ic_qita"))
+    }
+    
+    static func setModels(){
+        models.append(AiImageEntity(type: "Summer", icon: "ic_summer"))
+        models.append(AiImageEntity(type: "Desk Girl", icon: "ic_desk"))
+        models.append(AiImageEntity(type: "Cat girl", icon: "ic_cat"))
+        models.append(AiImageEntity(type: "Ski Girl", icon: "ic_ski"))
+        models.append(AiImageEntity(type: "Wolf Gril", icon: "ic_wolf"))
+        models.append(AiImageEntity(type: "Wizard", icon: "ic_wizard"))
+        models.append(AiImageEntity(type: "Dragon Girl", icon: "ic_longzu"))
+        models.append(AiImageEntity(type: "Pink Girl", icon: "ic_fenhong"))
+        models.append(AiImageEntity(type: "Deep forest", icon: "ic_senlin"))
+        models.append(AiImageEntity(type: "Gorgeous Queen", icon: "ic_nvwang"))
+        models.append(AiImageEntity(type: "Shy Girl", icon: "ic_shy"))
+        models.append(AiImageEntity(type: "Wedding dress", icon: "ic_hunsha"))
+        models.append(AiImageEntity(type: "Movie star", icon: "ic_dianying"))
+        models.append(AiImageEntity(type: "Secretary", icon: "ic_mishu"))
+        models.append(AiImageEntity(type: "Opera Girl", icon: "ic_xiqu"))
+        models.append(AiImageEntity(type: "Elf Girl", icon: "ic_jingling"))
+    }
+    
+    static func setSizes(){
+        sizes.append(AiImageEntity(type: "1:1", icon: "ic_1_1"))
+        sizes.append(AiImageEntity(type: "4:3", icon: "ic_1_1"))
+        sizes.append(AiImageEntity(type: "3:4", icon: "ic_1_1"))
+        sizes.append(AiImageEntity(type: "16:9", icon: "ic_1_1"))
+        sizes.append(AiImageEntity(type: "9:16", icon: "ic_1_1"))
+    }
+    
+    static func getWH() -> (CGFloat, CGFloat) {
+        let w: CGFloat = 512
+        var h: CGFloat = w
+
+        if let type = currentSize?.type {
+            switch type {
+            case "1:1":
+                h = w
+            case "4:3":
+                h = w * 3 / 4
+            case "3:4":
+                h = w * 4 / 3
+            case "16:9":
+                h = w * 9 / 16
+            case "9:16":
+                h = w * 16 / 9
+            default:
+                break
+            }
+        }
+
+        return (w, h)
+    }
+    
 }
 

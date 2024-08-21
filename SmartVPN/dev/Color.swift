@@ -10,7 +10,7 @@ import SwiftUI
 //按钮颜色 20bf6b
 
 extension Color {
-    static let pageBackground = Color(hex: "#2f3542")
+    static let pageBackground = Color(hex: "#10ac84")
     static let chatButton = Color(hex: "#20bf6b")
 }
 

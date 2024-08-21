@@ -15,6 +15,7 @@ struct MainPage: View {
     @State private var startSet = false
     @State private var startVPN = false
     @State private var startSX = false
+    @State private var startAIImage = false
     var body: some View {
         ZStack{
             Color.pageBackground.edgesIgnoringSafeArea(.all)
@@ -22,42 +23,65 @@ struct MainPage: View {
             ScrollView{
                 VStack{
                     Spacer().frame(height: 30)
+//                    HStack{
+//                        
+//                        Button(action: {
+//                             startStar = true
+//                        }, label: {
+//                            ZStack{
+//                                Image("ic_star")
+//                                    .resizable()
+//                                    .frame(width: UIScreen.main.bounds.width / 2 - 20,height: 150)
+//                                    .clipped()
+//                                    .cornerRadius(10).overlay(
+//                                        Rectangle()
+//                                            .fill(Color.black.opacity(0.5)).cornerRadius(10)
+//                                        
+//                                    )
+//                                Text("Horoscope").foregroundColor(.white).bold()
+//                            }
+//                        })
+//                        
+//                        Button(action: {
+//                            startSX = true
+//                        }, label: {
+//                            ZStack{
+//                                Image("ic_shier")
+//                                    .resizable()
+//                                    .scaledToFill()
+//                                    .frame(width: UIScreen.main.bounds.width / 2 - 20,height: 150)
+//                                    .clipped()
+//                                    .cornerRadius(10).overlay(
+//                                        Rectangle()
+//                                            .fill(Color.black.opacity(0.5)).cornerRadius(10)
+//                                        
+//                                    )
+//                                Text("Zodiac").foregroundColor(.white).bold()
+//                            }
+//                        })
+//                        
+//                    }.frame(height:150).padding(.horizontal, 20)
+                    
                     HStack{
                         
                         Button(action: {
-                             startStar = true
+                            startAIImage = true
                         }, label: {
                             ZStack{
-                                Image("ic_star")
+                                Image("ic_ai_img")
                                     .resizable()
-                                    .frame(width: UIScreen.main.bounds.width / 2 - 20,height: 150)
+                                    .scaledToFill()
+                                    .frame(width: UIScreen.main.bounds.width - 25,height: 150)
                                     .clipped()
                                     .cornerRadius(10).overlay(
                                         Rectangle()
                                             .fill(Color.black.opacity(0.5)).cornerRadius(10)
                                         
                                     )
-                                Text("Horoscope").foregroundColor(.white).bold()
+                                Text("AI generated pictures").foregroundColor(.white).bold()
                             }
                         })
                         
-                        Button(action: {
-                            startSX = true
-                        }, label: {
-                            ZStack{
-                                Image("ic_shier")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: UIScreen.main.bounds.width / 2 - 20,height: 150)
-                                    .clipped()
-                                    .cornerRadius(10).overlay(
-                                        Rectangle()
-                                            .fill(Color.black.opacity(0.5)).cornerRadius(10)
-                                        
-                                    )
-                                Text("Zodiac").foregroundColor(.white).bold()
-                            }
-                        })
                         
                     }.frame(height:150).padding(.horizontal, 20)
                     
@@ -165,11 +189,12 @@ struct MainPage: View {
                 
                 NavigationLink(destination: ScanPage(), isActive: $startScan){EmptyView()}
                 NavigationLink(destination: SpeedTestPage(), isActive: $startTest){EmptyView()}
-                NavigationLink(destination: StarListPage(), isActive: $startStar){EmptyView()}
+//                NavigationLink(destination: StarListPage(), isActive: $startStar){EmptyView()}
                 NavigationLink(destination: ChatPage(), isActive: $startChat){EmptyView()}
                 NavigationLink(destination: SettingPage(), isActive: $startSet){EmptyView()}
                 NavigationLink(destination: VPNPage(), isActive: $startVPN){EmptyView()}
                 NavigationLink(destination: SXListPage(), isActive: $startSX){EmptyView()}
+                NavigationLink(destination: CreateImagePage(), isActive: $startAIImage){EmptyView()}
             }
         }.navigationBarHidden(true)
     }
