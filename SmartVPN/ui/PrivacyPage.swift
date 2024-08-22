@@ -13,7 +13,7 @@ struct PrivacyPage : UIViewRepresentable {
         return WKWebView()
     }
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        let req = URLRequest(url: URL(string: "https://smartproxy.online/privacy.html")!)
+        let req = URLRequest(url: URL(string: "https://aichatboxonline.top/privacy.html")!)
         uiView.load(req)
     }
 }
