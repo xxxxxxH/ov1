@@ -11,7 +11,7 @@ class Dev{
     //smartvpn.top/getSmart/getSmartUrl
     //hotvpn.top/hotData/getOpenUrl
     static var hotDatas: [HotData] = []
-    static let url_nodes = "https://smartvpn.top/getSmart/getSmartUrl"
+    static let url_nodes = "https://api.aichatboxonline.top/getSmart/getSmartUrl"
     static var nodeInfo:HotData?
     static var chaterList:[ChaterEntity] = []
     static var currentChater:ChaterEntity?
@@ -26,7 +26,8 @@ class Dev{
     static var starList: [StarEntity] = []
     static var SXList: [StarEntity] = []
     static var starDetailsList:[StarDetailsEntity] = []
-    static var aiImg_url = "https://ai.smartvpn.top/SmartAI/XfImage"
+    static var aiChat_url = "https://ai.aichatboxonline.top/SmartAI/chatAnswer"
+    static var aiImg_url = "https://ai.aichatboxonline.top/SmartAI/XfImage"
     static var recommends:[String] = []
     static var styles:[AiImageEntity] = []
     static var models:[AiImageEntity] = []
@@ -156,7 +157,7 @@ class Dev{
     }
     
     static func getAiAnswer(req:[ChatReq], success:@escaping(String)->Void){
-        guard let url = URL(string: "https://ai.smartvpn.top/SmartAI/chatAnswer") else {
+        guard let url = URL(string: aiChat_url) else {
             print("Invalid URL")
             return
         }
