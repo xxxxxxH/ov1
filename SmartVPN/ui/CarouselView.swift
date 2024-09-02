@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CarouselView: View {
-    let images = Dev.chaterList
+    let images = Dev.chaterList.shuffled()
     let ItemClick:(ChaterEntity)->Void
     
     @State private var currentIndex = 0

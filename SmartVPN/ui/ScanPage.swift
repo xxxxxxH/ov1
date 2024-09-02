@@ -14,6 +14,7 @@ struct ScanPage: View {
     @State private var isLoading: Bool = false
     @State private var showToast = false
     @State private var isFlashlightOn = false
+    @State private var startChat = false
     @StateObject private var cameraManager = CameraManager()
     var body: some View {
         ZStack {
@@ -23,7 +24,7 @@ struct ScanPage: View {
                 CameraScannerView { code in
                     self.scannedCode = code
                 }
-                .frame(width: 220, height: 220)
+                .frame(width: 200, height: 200)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.white, lineWidth: 5)
@@ -55,19 +56,19 @@ struct ScanPage: View {
                     
                     Button(action: {
                         isFlashlightOn.toggle()
-                                        cameraManager.toggleFlashlight(on: isFlashlightOn)
+                        cameraManager.toggleFlashlight(on: isFlashlightOn)
                     }){
                         HStack{
                             Image("ic_light").resizable()
                                 .scaledToFit().frame(width: 25,height: 25)
                             
                             Text(isFlashlightOn ? "Turn off" : "Turn on").foregroundColor(.white)
-                                                
+                            
                         }.padding()
                         
                     }.background(Color.chatButton).cornerRadius(10)
                 }.padding(.top, 20)
-               
+                
                 if scannedCode.isEmpty{
                     
                 }else{
@@ -80,8 +81,13 @@ struct ScanPage: View {
                     }.background(Color.chatButton).cornerRadius(10).padding()
                 }
                 
+                CarouselView(ItemClick: {
+                    info in
+                    Dev.currentChater = info
+                    startChat = true
+                }).padding(.vertical, 20)
                 
-                
+                NavigationLink(destination: ChatPage(), isActive: $startChat){EmptyView()}
                 
                 Spacer()
             }

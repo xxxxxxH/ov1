@@ -11,8 +11,3 @@ target 'SmartVPN' do
 
 end
 
-target 'SmartT' do
-  
-  use_frameworks!
-end
-

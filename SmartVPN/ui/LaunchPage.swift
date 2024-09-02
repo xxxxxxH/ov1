@@ -55,15 +55,9 @@ struct LaunchPage: View {
             }
             .onAppear {
                 //checkCountryAndPrompt()
-                Dev.fetchHotData(){
-                    Downloadx.downloadFileToDocuments(from: Dev.hotDatas[0].smartUrl){}
-                }
                 Dev.buildChaterList()
                 Dev.recommendWord()
                 Dev.settingList()
-                Dev.getStarList()
-                Dev.getStarDetailsList()
-                Dev.getShengXiaoList()
                 Dev.setRecommends()
                 Dev.setStyles()
                 Dev.setModels()

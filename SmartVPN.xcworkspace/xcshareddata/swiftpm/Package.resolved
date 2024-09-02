@@ -1,5 +1,5 @@
 {
-  "originHash" : "eac2863a3bbfbc95a3697d3df7a09d4e664ae95621ca1a64ab953633be3cdfcf",
+  "originHash" : "cfd75a269ae5852813a5b7b1d9b7dccdf1f0cfa833ed44f691cce29b29f6138d",
   "pins" : [
     {
       "identity" : "aachartkit-swift",
@@ -83,15 +83,6 @@
       }
     },
     {
-      "identity" : "openssl-apple",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/passepartoutvpn/openssl-apple",
-      "state" : {
-        "revision" : "757c074af45e4f2514fe63f649ccdde966183e90",
-        "version" : "1.1.11700"
-      }
-    },
-    {
       "identity" : "scientist",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/junkpiano/scientist.git",
@@ -137,39 +128,12 @@
       }
     },
     {
-      "identity" : "swiftybeaver",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver",
-      "state" : {
-        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
-        "version" : "1.9.6"
-      }
-    },
-    {
       "identity" : "tppdf",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/techprimate/tppdf.git",
       "state" : {
         "revision" : "9b3c912871123a3e5e178e5a5b37a383946d7c70",
         "version" : "2.6.0"
-      }
-    },
-    {
-      "identity" : "tunnelkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CZ410/tunnelkit.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d8563e7f15f03fcd5ed60df4e1ff8bdda2097761"
-      }
-    },
-    {
-      "identity" : "wireguard-apple",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/passepartoutvpn/wireguard-apple",
-      "state" : {
-        "revision" : "73d9152fa0cb661db0348a1ac11dbbf998422a50",
-        "version" : "1.0.17"
       }
     }
   ],

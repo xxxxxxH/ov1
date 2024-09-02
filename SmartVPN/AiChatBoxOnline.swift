@@ -7,7 +7,7 @@
 
 import SwiftUI
 @main
-struct SmartVPNApp: App {
+struct AiChatBoxOnline: App {
    
     var body: some Scene {
         WindowGroup {

@@ -8,24 +8,12 @@
 import Foundation
 import UIKit
 class Dev{
-    //smartvpn.top/getSmart/getSmartUrl
-    //hotvpn.top/hotData/getOpenUrl
-    static var hotDatas: [HotData] = []
-    static let url_nodes = "https://api.aichatboxonline.top/getSmart/getSmartUrl"
-    static var nodeInfo:HotData?
     static var chaterList:[ChaterEntity] = []
     static var currentChater:ChaterEntity?
     static var update = false
     static var rList:[String] = []
     static var sList:[SettingItemData] = []
-    static var switchNode = false
-    static let extPkg = "com.apps.smartx.joy.SmartT"
-    static let group = ""
-    static var connecting = false
     static var dSpeed = true
-    static var starList: [StarEntity] = []
-    static var SXList: [StarEntity] = []
-    static var starDetailsList:[StarDetailsEntity] = []
     static var aiChat_url = "https://ai.aichatboxonline.top/SmartAI/chatAnswer"
     static var aiImg_url = "https://ai.aichatboxonline.top/SmartAI/XfImage"
     static var recommends:[String] = []
@@ -36,40 +24,7 @@ class Dev{
     static var currentModel:AiImageEntity?
     static var currentSize:AiImageEntity?
     
-    static func fetchHotData(success:@escaping()->Void) {
-        guard let url = URL(string: url_nodes) else {
-            print("xxxxxxH->Invalid URL")
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
-                print("xxxxxxH->Error fetching data: \(error)")
-                return
-            }
-            
-            guard let data = data else {
-                print("xxxxxxH->Data Error")
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let response = try decoder.decode(HotDataResponse.self, from: data)
-                hotDatas = response.result
-                if !hotDatas.isEmpty{
-                    nodeInfo = hotDatas[0]
-                    success()
-                }
-                print("xxxxxxH->获取节点成功 \(hotDatas.count)")
-                
-            } catch {
-                print("xxxxxxH->获取节点失败: \(error)")
-            }
-        }
-        task.resume()
-    }
-    
+
     static func buildChaterList(){
         chaterList.append(ChaterEntity(name: "Emily", introduce: "Emily is an avid reader who loves exploring new genres and sharing her favorite books with friends.", background: "b1", hBackground: "1h", avatar: "t1"))
         
@@ -258,45 +213,7 @@ class Dev{
         return (numbersArray[0], numbersArray[1])
     }
     
-    static func getStarList(){
-        starList.append(StarEntity(name: "Aries", color: "#FF4C4C", icon: "ic_by"))
-        starList.append(StarEntity(name: "Taurus", color: "#4CAF50",icon: "ic_jn"))
-        starList.append(StarEntity(name: "Gemini", color: "#F8E71C",icon: "ic_sz"))
-        starList.append(StarEntity(name: "Cancer", color: "#C0C0C0",icon: "ic_jx"))
-        starList.append(StarEntity(name: "Leo", color: "#FFD700",icon: "ic_shizi"))
-        starList.append(StarEntity(name: "Virgo", color: "#3D9970",icon: "ic_cn"))
-        starList.append(StarEntity(name: "Libra", color: "#0099FF",icon: "ic_tc"))
-        starList.append(StarEntity(name: "Scorpio", color: "#C8102E",icon: "ic_tx"))
-        starList.append(StarEntity(name: "Sagittarius", color: "#8A2BE2",icon: "ic_ss"))
-        starList.append(StarEntity(name: "Capricorn", color: "#8B4513",icon: "ic_mj"))
-        starList.append(StarEntity(name: "Aquarius", color: "#00FFFF",icon: "ic_sp"))
-        starList.append(StarEntity(name: "Pisces", color: "#1E90FF",icon: "ic_sy"))
-    }
-    
-    static func getShengXiaoList(){
-        SXList.append(StarEntity(name: "Rat", color: "#85C3DE", icon: "ic_laoshu"))
-        SXList.append(StarEntity(name: "Ox", color: "#FFAF6E",icon: "ic_niu"))
-        SXList.append(StarEntity(name: "Tiger", color: "#F7C768",icon: "ic_laohu"))
-        SXList.append(StarEntity(name: "Rabbit", color: "#FFBDD8",icon: "ic_tuzi"))
-        SXList.append(StarEntity(name: "Dragon", color: "#FF8787",icon: "ic_long"))
-        SXList.append(StarEntity(name: "Snake", color: "#C3D686",icon: "ic_snake"))
-        SXList.append(StarEntity(name: "Horse", color: "#FFAF6E",icon: "ic_ma"))
-        SXList.append(StarEntity(name: "Goat", color: "#F7C768",icon: "ic_yang"))
-        SXList.append(StarEntity(name: "Monkey", color: "#C3D686",icon: "ic_houzi"))
-        SXList.append(StarEntity(name: "Rooster", color: "#FF8787",icon: "ic_ji"))
-        SXList.append(StarEntity(name: "Dog", color: "#85C3DE",icon: "ic_gou"))
-        SXList.append(StarEntity(name: "Boar", color: "#FFBDD8",icon: "ic_zhu"))
-    }
-    
-    static func getStarDetailsList(){
-        starDetailsList.append(StarDetailsEntity(type: "Fortune", icon: "ic_yunshi", bg: "#83B1E3", desc: "10K+ used"))
-        starDetailsList.append(StarDetailsEntity(type: "Love", icon: "ic_aiqing", bg: "#E6ADCE", desc: "20.5K+ used"))
-        starDetailsList.append(StarDetailsEntity(type: "Complex", icon: "ic_fuhe", bg: "#444D92", desc: "5K+ used"))
-        starDetailsList.append(StarDetailsEntity(type: "Relationship", icon: "ic_guanxi", bg: "#B14CB6", desc: "2.5K+ used"))
-        starDetailsList.append(StarDetailsEntity(type: "Career", icon: "ic_shiye", bg: "#96BCBD", desc: "6K+ used"))
-        starDetailsList.append(StarDetailsEntity(type: "Wealth", icon: "ic_caifu", bg: "#C4967C", desc: "10K+ used"))
-    }
-    
+
     static func getTestResult(req:[ChatReq], success:@escaping(String)->Void){
         guard let url = URL(string: "https://ai.smartvpn.top/SmartAI/chatAnswer") else {
             print("Invalid URL")

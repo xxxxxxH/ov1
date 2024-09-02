@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48199012112566F843C54ECF /* Pods_SmartT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */; };
 		BC12B07B2C65C155000445CB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B07A2C65C155000445CB /* MainPage.swift */; };
 		BC12B07D2C65E8E8000445CB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B07C2C65E8E8000445CB /* ImageGridView.swift */; };
 		BC12B07F2C65EC76000445CB /* ImageGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B07E2C65EC76000445CB /* ImageGridView2.swift */; };
-		BC12B0812C65FF3F000445CB /* VPNPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0802C65FF3F000445CB /* VPNPage.swift */; };
-		BC12B0832C69AFF0000445CB /* SXListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0822C69AFF0000445CB /* SXListPage.swift */; };
 		BC12B08F2C69E4F1000445CB /* Scientist in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B08E2C69E4F1000445CB /* Scientist */; };
 		BC12B0922C69E73E000445CB /* Kiri in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0912C69E73E000445CB /* Kiri */; };
 		BC12B0982C69E8B0000445CB /* AlgoChecker in Frameworks */ = {isa = PBXBuildFile; productRef = BC12B0972C69E8B0000445CB /* AlgoChecker */; };
@@ -35,27 +32,16 @@
 		BC12B0D12C747D3E000445CB /* ModelsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC12B0D02C747D3E000445CB /* ModelsPage.swift */; };
 		BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B02C4A069700C9C565 /* ChatReq.swift */; };
 		BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */; };
-		BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */; };
-		BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5038912C3E5D2E00EE2819 /* ContentView.swift */; };
+		BC5038902C3E5D2E00EE2819 /* AiChatBoxOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50388F2C3E5D2E00EE2819 /* AiChatBoxOnline.swift */; };
 		BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5038932C3E5D3000EE2819 /* Assets.xcassets */; };
 		BC5038972C3E5D3000EE2819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5038962C3E5D3000EE2819 /* Preview Assets.xcassets */; };
-		BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC5038FF2C3E6ED700EE2819 /* TunnelKit */; };
 		BC50390B2C3E760100EE2819 /* Dev.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50390A2C3E760100EE2819 /* Dev.swift */; };
-		BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */; };
-		BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039102C3E84CD00EE2819 /* Downloadx.swift */; };
-		BC5039132C3E876200EE2819 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039122C3E876200EE2819 /* Config.swift */; };
-		BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */; };
-		BC50391E2C3F6DBC00EE2819 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */; };
-		BC5039232C3F6DBC00EE2819 /* SmartT.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */; };
 		BC50392E2C3FA71100EE2819 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50392D2C3FA71100EE2819 /* Color.swift */; };
 		BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039302C3FA74100EE2819 /* LaunchPage.swift */; };
 		BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039332C3FAC5000EE2819 /* Lottie */; };
-		BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50394A2C3FC6BD00EE2819 /* HomePage.swift */; };
 		BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50394E2C3FCDC600EE2819 /* CarouselView.swift */; };
 		BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039542C40FA6400EE2819 /* ChaterEntity.swift */; };
 		BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039582C41045B00EE2819 /* ChatPage.swift */; };
-		BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */; };
 		BC50395D2C411F3400EE2819 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395C2C411F3400EE2819 /* Message.swift */; };
 		BC5039602C411F5600EE2819 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50395F2C411F5600EE2819 /* ChatViewModel.swift */; };
 		BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039612C411FF700EE2819 /* ChatBubble.swift */; };
@@ -70,20 +56,10 @@
 		BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039772C45051F00EE2819 /* SettingItem.swift */; };
 		BC50397A2C45060500EE2819 /* SettingItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039792C45060500EE2819 /* SettingItemData.swift */; };
 		BC50397E2C45264900EE2819 /* FbPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397D2C45264900EE2819 /* FbPage.swift */; };
-		BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50397F2C4609AF00EE2819 /* NodePage.swift */; };
-		BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039812C460A4E00EE2819 /* NodeItem.swift */; };
 		BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */; };
 		BC5039882C4771DB00EE2819 /* PrivacyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5039872C4771DB00EE2819 /* PrivacyPage.swift */; };
-		BC5039B12C49248500EE2819 /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = BC5039B02C49248500EE2819 /* TunnelKitOpenVPN */; };
-		BCB67F732C58875600DAA32B /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F722C58875600DAA32B /* TunnelKit */; };
-		BCB67F752C58875600DAA32B /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F742C58875600DAA32B /* TunnelKitLZO */; };
-		BCB67F772C58875600DAA32B /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */; };
-		BCB67F7F2C58880000DAA32B /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F7E2C58880000DAA32B /* TunnelKit */; };
-		BCB67F812C58880400DAA32B /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F802C58880400DAA32B /* TunnelKitLZO */; };
-		BCB67F832C58880700DAA32B /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */; };
 		BCB67F8A2C58888300DAA32B /* connect.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67F882C58888200DAA32B /* connect.json */; };
 		BCB67F8B2C58888300DAA32B /* xh.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67F892C58888200DAA32B /* xh.json */; };
-		BCB67F8D2C5892BB00DAA32B /* ConnectResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */; };
 		BCB67F912C58DE9200DAA32B /* DownloadSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */; };
 		BCB67F932C58DF9400DAA32B /* UploadSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F922C58DF9400DAA32B /* UploadSpeedTest.swift */; };
 		BCB67F952C59E5DF00DAA32B /* LocationInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */; };
@@ -96,29 +72,13 @@
 		BCB67FAB2C5A313900DAA32B /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAA2C5A313900DAA32B /* CameraManager.swift */; };
 		BCB67FAD2C5B258F00DAA32B /* SpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */; };
 		BCB67FAF2C5B271100DAA32B /* SpeedTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */; };
-		BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB02C5B333300DAA32B /* TransitionPage.swift */; };
 		BCB67FB32C5B55F600DAA32B /* speed.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB67FB22C5B55F600DAA32B /* speed.json */; };
 		BCB67FB82C5B8D5500DAA32B /* ComplexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB72C5B8D5500DAA32B /* ComplexView.swift */; };
 		BCB67FBA2C5B8DB400DAA32B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FB92C5B8DB400DAA32B /* UserViewModel.swift */; };
 		BCB67FBC2C5B8E0B00DAA32B /* AdvancedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB67FBB2C5B8E0B00DAA32B /* AdvancedViewModel.swift */; };
 		BCEC50AF2C5C730400225EE5 /* MarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50AE2C5C730400225EE5 /* MarqueeView.swift */; };
-		BCEC50B32C5CCA7700225EE5 /* StarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */; };
-		BCEC50B52C5CCB3C00225EE5 /* StarListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */; };
-		BCEC50B72C5CD89500225EE5 /* StarDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */; };
-		BCEC50B92C606B9900225EE5 /* StarDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */; };
-		BCEC50BB2C609BEB00225EE5 /* TestResultDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */; };
 		F77A3AADF7B284BE32F4DF1A /* Pods_SmartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BC5039212C3F6DBC00EE2819 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC5038842C3E5D2D00EE2819 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC5039192C3F6DBC00EE2819;
-			remoteInfo = SmartT;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BC5038C22C3E5F2000EE2819 /* Embed Foundation Extensions */ = {
@@ -127,7 +87,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BC5039232C3F6DBC00EE2819 /* SmartT.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,14 +96,9 @@
 /* Begin PBXFileReference section */
 		27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.release.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.release.xcconfig"; sourceTree = "<group>"; };
 		3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartT.debug.xcconfig"; path = "Target Support Files/Pods-SmartT/Pods-SmartT.debug.xcconfig"; sourceTree = "<group>"; };
-		580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartT.release.xcconfig"; path = "Target Support Files/Pods-SmartT/Pods-SmartT.release.xcconfig"; sourceTree = "<group>"; };
 		BC12B07A2C65C155000445CB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		BC12B07C2C65E8E8000445CB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		BC12B07E2C65EC76000445CB /* ImageGridView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView2.swift; sourceTree = "<group>"; };
-		BC12B0802C65FF3F000445CB /* VPNPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNPage.swift; sourceTree = "<group>"; };
-		BC12B0822C69AFF0000445CB /* SXListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXListPage.swift; sourceTree = "<group>"; };
 		BC12B0C22C732533000445CB /* Base64ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64ImageView.swift; sourceTree = "<group>"; };
 		BC12B0C42C7328E9000445CB /* CreateImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImagePage.swift; sourceTree = "<group>"; };
 		BC12B0C62C7338A4000445CB /* AiImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiImageEntity.swift; sourceTree = "<group>"; };
@@ -155,29 +109,17 @@
 		BC1A16B02C4A069700C9C565 /* ChatReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReq.swift; sourceTree = "<group>"; };
 		BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResp.swift; sourceTree = "<group>"; };
 		BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVPNApp.swift; sourceTree = "<group>"; };
-		BC5038912C3E5D2E00EE2819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC50388F2C3E5D2E00EE2819 /* AiChatBoxOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiChatBoxOnline.swift; sourceTree = "<group>"; };
 		BC5038932C3E5D3000EE2819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5038962C3E5D3000EE2819 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC5038AA2C3E5DD800EE2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		BC5038F62C3E66B700EE2819 /* SmartVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartVPN.entitlements; sourceTree = "<group>"; };
 		BC50390A2C3E760100EE2819 /* Dev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dev.swift; sourceTree = "<group>"; };
-		BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEntity.swift; sourceTree = "<group>"; };
-		BC5039102C3E84CD00EE2819 /* Downloadx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloadx.swift; sourceTree = "<group>"; };
-		BC5039122C3E876200EE2819 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		BC50391A2C3F6DBC00EE2819 /* SmartT.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartT.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
-		BC50391F2C3F6DBC00EE2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC5039202C3F6DBC00EE2819 /* SmartT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartT.entitlements; sourceTree = "<group>"; };
-		BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusManager.swift; sourceTree = "<group>"; };
 		BC50392D2C3FA71100EE2819 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC5039302C3FA74100EE2819 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
-		BC50394A2C3FC6BD00EE2819 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		BC50394E2C3FCDC600EE2819 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		BC5039542C40FA6400EE2819 /* ChaterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaterEntity.swift; sourceTree = "<group>"; };
 		BC5039582C41045B00EE2819 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
-		BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVIew.swift; sourceTree = "<group>"; };
 		BC50395C2C411F3400EE2819 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BC50395F2C411F5600EE2819 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		BC5039612C411FF700EE2819 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
@@ -192,13 +134,10 @@
 		BC5039772C45051F00EE2819 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
 		BC5039792C45060500EE2819 /* SettingItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemData.swift; sourceTree = "<group>"; };
 		BC50397D2C45264900EE2819 /* FbPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbPage.swift; sourceTree = "<group>"; };
-		BC50397F2C4609AF00EE2819 /* NodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePage.swift; sourceTree = "<group>"; };
-		BC5039812C460A4E00EE2819 /* NodeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeItem.swift; sourceTree = "<group>"; };
 		BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		BC5039872C4771DB00EE2819 /* PrivacyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPage.swift; sourceTree = "<group>"; };
 		BCB67F882C58888200DAA32B /* connect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = connect.json; path = ../../../../../../Downloads/connect.json; sourceTree = "<group>"; };
 		BCB67F892C58888200DAA32B /* xh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = xh.json; path = ../../../../../../Downloads/xh.json; sourceTree = "<group>"; };
-		BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectResultPage.swift; sourceTree = "<group>"; };
 		BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadSpeedTest.swift; sourceTree = "<group>"; };
 		BCB67F922C58DF9400DAA32B /* UploadSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSpeedTest.swift; sourceTree = "<group>"; };
 		BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPage.swift; sourceTree = "<group>"; };
@@ -211,17 +150,11 @@
 		BCB67FAA2C5A313900DAA32B /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		BCB67FAC2C5B258F00DAA32B /* SpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTest.swift; sourceTree = "<group>"; };
 		BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestPage.swift; sourceTree = "<group>"; };
-		BCB67FB02C5B333300DAA32B /* TransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPage.swift; sourceTree = "<group>"; };
 		BCB67FB22C5B55F600DAA32B /* speed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = speed.json; path = ../../../../../../Downloads/speed.json; sourceTree = "<group>"; };
 		BCB67FB72C5B8D5500DAA32B /* ComplexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexView.swift; sourceTree = "<group>"; };
 		BCB67FB92C5B8DB400DAA32B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		BCB67FBB2C5B8E0B00DAA32B /* AdvancedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedViewModel.swift; sourceTree = "<group>"; };
 		BCEC50AE2C5C730400225EE5 /* MarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeView.swift; sourceTree = "<group>"; };
-		BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarEntity.swift; sourceTree = "<group>"; };
-		BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarListPage.swift; sourceTree = "<group>"; };
-		BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDetailsPage.swift; sourceTree = "<group>"; };
-		BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDetailsEntity.swift; sourceTree = "<group>"; };
-		BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultDialogView.swift; sourceTree = "<group>"; };
 		F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVPN.debug.xcconfig"; path = "Target Support Files/Pods-SmartVPN/Pods-SmartVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,34 +167,17 @@
 				BC12B08F2C69E4F1000445CB /* Scientist in Frameworks */,
 				BC12B0BE2C69FA27000445CB /* TPPDF in Frameworks */,
 				BC12B0B32C69F3D7000445CB /* Hero in Frameworks */,
-				BCB67F752C58875600DAA32B /* TunnelKitLZO in Frameworks */,
 				BC12B0922C69E73E000445CB /* Kiri in Frameworks */,
-				BCB67F772C58875600DAA32B /* TunnelKitOpenVPN in Frameworks */,
 				BC12B0982C69E8B0000445CB /* AlgoChecker in Frameworks */,
 				BC12B0AA2C69ED32000445CB /* CalendarKit in Frameworks */,
-				BC5039002C3E6ED700EE2819 /* TunnelKit in Frameworks */,
-				BC5039B12C49248500EE2819 /* TunnelKitOpenVPN in Frameworks */,
 				BC5039342C3FAC5000EE2819 /* Lottie in Frameworks */,
 				BC12B09E2C69EA57000445CB /* FloatingPanel in Frameworks */,
-				BCB67F732C58875600DAA32B /* TunnelKit in Frameworks */,
 				BC12B0B02C69EEB0000445CB /* InputMask in Frameworks */,
 				BC12B0B62C69F4F3000445CB /* SwiftMessages in Frameworks */,
 				BC12B09B2C69E9BC000445CB /* SideMenu in Frameworks */,
 				BC12B0C12C69FB0F000445CB /* AAInfographics in Frameworks */,
 				BC12B0AD2C69EE0D000445CB /* SwiftCSV in Frameworks */,
 				BC12B0BB2C69F94F000445CB /* SwiftSoup in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC5039172C3F6DBC00EE2819 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC50391B2C3F6DBC00EE2819 /* NetworkExtension.framework in Frameworks */,
-				BCB67F812C58880400DAA32B /* TunnelKitLZO in Frameworks */,
-				BCB67F832C58880700DAA32B /* TunnelKitOpenVPNAppExtension in Frameworks */,
-				BCB67F7F2C58880000DAA32B /* TunnelKit in Frameworks */,
-				48199012112566F843C54ECF /* Pods_SmartT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +189,6 @@
 			children = (
 				F486DE2BC9A88BBD66153EAB /* Pods-SmartVPN.debug.xcconfig */,
 				27C6278D6B9850DBC2F01D03 /* Pods-SmartVPN.release.xcconfig */,
-				4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */,
-				B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -283,8 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				3A0F37D3B2232C20C2FDDD17 /* Pods_SmartVPN.framework */,
-				BC5038B52C3E5F2000EE2819 /* NetworkExtension.framework */,
-				580B3CEF91F1385C441742C4 /* Pods_SmartT.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -293,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				BC50388E2C3E5D2E00EE2819 /* SmartVPN */,
-				BC50391C2C3F6DBC00EE2819 /* SmartT */,
 				BC50388D2C3E5D2D00EE2819 /* Products */,
 				1130ECD98BD1E42E3E07CF91 /* Pods */,
 				852F2C006FF81A11CDD23015 /* Frameworks */,
@@ -304,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */,
-				BC50391A2C3F6DBC00EE2819 /* SmartT.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,7 +222,6 @@
 		BC50388E2C3E5D2E00EE2819 /* SmartVPN */ = {
 			isa = PBXGroup;
 			children = (
-				BCB67FBD2C5B98E800DAA32B /* widget */,
 				BCB67FB62C5B8D4700DAA32B /* View */,
 				BC50395E2C411F4700EE2819 /* viewmodel */,
 				BC5039352C3FACCE00EE2819 /* anim */,
@@ -321,8 +230,7 @@
 				BC5039092C3E75F000EE2819 /* dev */,
 				BC5038F62C3E66B700EE2819 /* SmartVPN.entitlements */,
 				BC5038AA2C3E5DD800EE2819 /* Info.plist */,
-				BC50388F2C3E5D2E00EE2819 /* SmartVPNApp.swift */,
-				BC5038912C3E5D2E00EE2819 /* ContentView.swift */,
+				BC50388F2C3E5D2E00EE2819 /* AiChatBoxOnline.swift */,
 				BC5038932C3E5D3000EE2819 /* Assets.xcassets */,
 				BC5038952C3E5D3000EE2819 /* Preview Content */,
 			);
@@ -341,9 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				BC50390A2C3E760100EE2819 /* Dev.swift */,
-				BC5039102C3E84CD00EE2819 /* Downloadx.swift */,
-				BC5039122C3E876200EE2819 /* Config.swift */,
-				BC50392B2C3F850600EE2819 /* VPNStatusManager.swift */,
 				BC50392D2C3FA71100EE2819 /* Color.swift */,
 				BC5039732C44FE8D00EE2819 /* LocalData.swift */,
 				BCB67F902C58DE9200DAA32B /* DownloadSpeedTest.swift */,
@@ -359,38 +264,23 @@
 		BC50390D2C3E79F200EE2819 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				BC50390E2C3E7A5000EE2819 /* NodeEntity.swift */,
 				BC5039542C40FA6400EE2819 /* ChaterEntity.swift */,
 				BC50395C2C411F3400EE2819 /* Message.swift */,
 				BC5039792C45060500EE2819 /* SettingItemData.swift */,
 				BC1A16B02C4A069700C9C565 /* ChatReq.swift */,
 				BC1A16B22C4A06AE00C9C565 /* ChatResp.swift */,
 				BCB67F982C59E64700DAA32B /* LocationInfoEntity.swift */,
-				BCEC50B22C5CCA7700225EE5 /* StarEntity.swift */,
-				BCEC50B82C606B9900225EE5 /* StarDetailsEntity.swift */,
 				BC12B0C62C7338A4000445CB /* AiImageEntity.swift */,
 			);
 			path = data;
-			sourceTree = "<group>";
-		};
-		BC50391C2C3F6DBC00EE2819 /* SmartT */ = {
-			isa = PBXGroup;
-			children = (
-				BC50391D2C3F6DBC00EE2819 /* PacketTunnelProvider.swift */,
-				BC50391F2C3F6DBC00EE2819 /* Info.plist */,
-				BC5039202C3F6DBC00EE2819 /* SmartT.entitlements */,
-			);
-			path = SmartT;
 			sourceTree = "<group>";
 		};
 		BC50392F2C3FA73200EE2819 /* ui */ = {
 			isa = PBXGroup;
 			children = (
 				BC5039302C3FA74100EE2819 /* LaunchPage.swift */,
-				BC50394A2C3FC6BD00EE2819 /* HomePage.swift */,
 				BC50394E2C3FCDC600EE2819 /* CarouselView.swift */,
 				BC5039582C41045B00EE2819 /* ChatPage.swift */,
-				BC50395A2C410C9A00EE2819 /* HomePageVIew.swift */,
 				BC5039612C411FF700EE2819 /* ChatBubble.swift */,
 				BC5039632C41200C00EE2819 /* ChatView.swift */,
 				BC5039652C41270300EE2819 /* Toast.swift */,
@@ -401,26 +291,17 @@
 				BC5039752C4504A300EE2819 /* SettingPage.swift */,
 				BC5039772C45051F00EE2819 /* SettingItem.swift */,
 				BC50397D2C45264900EE2819 /* FbPage.swift */,
-				BC50397F2C4609AF00EE2819 /* NodePage.swift */,
-				BC5039812C460A4E00EE2819 /* NodeItem.swift */,
 				BC5039852C466B2900EE2819 /* CustomNavigationBar.swift */,
 				BC5039872C4771DB00EE2819 /* PrivacyPage.swift */,
-				BCB67F8C2C5892BB00DAA32B /* ConnectResultPage.swift */,
 				BCB67F942C59E5DF00DAA32B /* LocationInfoPage.swift */,
 				BCB67FA02C5A18BF00DAA32B /* CameraScannerView.swift */,
 				BCB67FA22C5A198900DAA32B /* ScanPage.swift */,
 				BCB67FA82C5A27F500DAA32B /* LoadingView.swift */,
 				BCB67FAA2C5A313900DAA32B /* CameraManager.swift */,
 				BCB67FAE2C5B271100DAA32B /* SpeedTestPage.swift */,
-				BCB67FB02C5B333300DAA32B /* TransitionPage.swift */,
-				BCEC50B42C5CCB3C00225EE5 /* StarListPage.swift */,
-				BCEC50B62C5CD89500225EE5 /* StarDetailsPage.swift */,
-				BCEC50BA2C609BEB00225EE5 /* TestResultDialogView.swift */,
 				BC12B07A2C65C155000445CB /* MainPage.swift */,
 				BC12B07C2C65E8E8000445CB /* ImageGridView.swift */,
 				BC12B07E2C65EC76000445CB /* ImageGridView2.swift */,
-				BC12B0802C65FF3F000445CB /* VPNPage.swift */,
-				BC12B0822C69AFF0000445CB /* SXListPage.swift */,
 				BC12B0C22C732533000445CB /* Base64ImageView.swift */,
 				BC12B0C42C7328E9000445CB /* CreateImagePage.swift */,
 				BC12B0CA2C744748000445CB /* AIImagePage.swift */,
@@ -459,13 +340,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BCB67FBD2C5B98E800DAA32B /* widget */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = widget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,16 +357,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC5039222C3F6DBC00EE2819 /* PBXTargetDependency */,
 			);
 			name = SmartVPN;
 			packageProductDependencies = (
-				BC5038FF2C3E6ED700EE2819 /* TunnelKit */,
 				BC5039332C3FAC5000EE2819 /* Lottie */,
-				BC5039B02C49248500EE2819 /* TunnelKitOpenVPN */,
-				BCB67F722C58875600DAA32B /* TunnelKit */,
-				BCB67F742C58875600DAA32B /* TunnelKitLZO */,
-				BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */,
 				BC12B08E2C69E4F1000445CB /* Scientist */,
 				BC12B0912C69E73E000445CB /* Kiri */,
 				BC12B0972C69E8B0000445CB /* AlgoChecker */,
@@ -511,29 +379,6 @@
 			productReference = BC50388C2C3E5D2D00EE2819 /* SmartVPN.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC5039192C3F6DBC00EE2819 /* SmartT */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC5039242C3F6DBC00EE2819 /* Build configuration list for PBXNativeTarget "SmartT" */;
-			buildPhases = (
-				B977A7096EC7507D1445F292 /* [CP] Check Pods Manifest.lock */,
-				BC5039162C3F6DBC00EE2819 /* Sources */,
-				BC5039172C3F6DBC00EE2819 /* Frameworks */,
-				BC5039182C3F6DBC00EE2819 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SmartT;
-			packageProductDependencies = (
-				BCB67F7E2C58880000DAA32B /* TunnelKit */,
-				BCB67F802C58880400DAA32B /* TunnelKitLZO */,
-				BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */,
-			);
-			productName = SmartT;
-			productReference = BC50391A2C3F6DBC00EE2819 /* SmartT.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -545,9 +390,6 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					BC50388B2C3E5D2D00EE2819 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					BC5039192C3F6DBC00EE2819 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -563,7 +405,6 @@
 			mainGroup = BC5038832C3E5D2D00EE2819;
 			packageReferences = (
 				BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */,
 				BC12B08D2C69E4F1000445CB /* XCRemoteSwiftPackageReference "scientist" */,
 				BC12B0902C69E73E000445CB /* XCRemoteSwiftPackageReference "Kiri" */,
 				BC12B0962C69E8B0000445CB /* XCRemoteSwiftPackageReference "algorithmchecker" */,
@@ -583,7 +424,6 @@
 			projectRoot = "";
 			targets = (
 				BC50388B2C3E5D2D00EE2819 /* SmartVPN */,
-				BC5039192C3F6DBC00EE2819 /* SmartT */,
 			);
 		};
 /* End PBXProject section */
@@ -598,13 +438,6 @@
 				BC5038942C3E5D3000EE2819 /* Assets.xcassets in Resources */,
 				BCB67F8B2C58888300DAA32B /* xh.json in Resources */,
 				BCB67FB32C5B55F600DAA32B /* speed.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC5039182C3F6DBC00EE2819 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,28 +483,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartVPN/Pods-SmartVPN-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B977A7096EC7507D1445F292 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmartT-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -679,18 +490,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEC50B32C5CCA7700225EE5 /* StarEntity.swift in Sources */,
 				BC12B0C72C7338A4000445CB /* AiImageEntity.swift in Sources */,
-				BC12B0832C69AFF0000445CB /* SXListPage.swift in Sources */,
 				BCB67F992C59E64700DAA32B /* LocationInfoEntity.swift in Sources */,
-				BC5038922C3E5D2E00EE2819 /* ContentView.swift in Sources */,
 				BC5039552C40FA6400EE2819 /* ChaterEntity.swift in Sources */,
 				BC5039622C411FF700EE2819 /* ChatBubble.swift in Sources */,
 				BC5039662C41270300EE2819 /* Toast.swift in Sources */,
 				BC50397E2C45264900EE2819 /* FbPage.swift in Sources */,
 				BC5039862C466B2900EE2819 /* CustomNavigationBar.swift in Sources */,
-				BCB67FB12C5B333300DAA32B /* TransitionPage.swift in Sources */,
-				BC5038902C3E5D2E00EE2819 /* SmartVPNApp.swift in Sources */,
+				BC5038902C3E5D2E00EE2819 /* AiChatBoxOnline.swift in Sources */,
 				BC12B0CF2C7477CC000445CB /* StylesPage.swift in Sources */,
 				BC1A16B32C4A06AE00C9C565 /* ChatResp.swift in Sources */,
 				BCB67F932C58DF9400DAA32B /* UploadSpeedTest.swift in Sources */,
@@ -698,7 +505,6 @@
 				BC12B0CD2C7473F5000445CB /* ImageSaver.swift in Sources */,
 				BC5039782C45051F00EE2819 /* SettingItem.swift in Sources */,
 				BC5039642C41200C00EE2819 /* ChatView.swift in Sources */,
-				BCEC50B92C606B9900225EE5 /* StarDetailsEntity.swift in Sources */,
 				BCB67FAD2C5B258F00DAA32B /* SpeedTest.swift in Sources */,
 				BCB67F912C58DE9200DAA32B /* DownloadSpeedTest.swift in Sources */,
 				BCB67FB82C5B8D5500DAA32B /* ComplexView.swift in Sources */,
@@ -708,15 +514,9 @@
 				BC50396A2C412D8500EE2819 /* ChaterListPage.swift in Sources */,
 				BC50394F2C3FCDC600EE2819 /* CarouselView.swift in Sources */,
 				BC12B0C32C732533000445CB /* Base64ImageView.swift in Sources */,
-				BC5039802C4609AF00EE2819 /* NodePage.swift in Sources */,
-				BC5039822C460A4E00EE2819 /* NodeItem.swift in Sources */,
 				BCB67FBA2C5B8DB400DAA32B /* UserViewModel.swift in Sources */,
-				BC50390F2C3E7A5100EE2819 /* NodeEntity.swift in Sources */,
 				BC5039312C3FA74100EE2819 /* LaunchPage.swift in Sources */,
-				BC12B0812C65FF3F000445CB /* VPNPage.swift in Sources */,
 				BC50390B2C3E760100EE2819 /* Dev.swift in Sources */,
-				BC50394B2C3FC6BD00EE2819 /* HomePage.swift in Sources */,
-				BC50392C2C3F850600EE2819 /* VPNStatusManager.swift in Sources */,
 				BCB67FA92C5A27F500DAA32B /* LoadingView.swift in Sources */,
 				BC12B0D12C747D3E000445CB /* ModelsPage.swift in Sources */,
 				BC12B0C52C7328E9000445CB /* CreateImagePage.swift in Sources */,
@@ -735,39 +535,16 @@
 				BCEC50AF2C5C730400225EE5 /* MarqueeView.swift in Sources */,
 				BCB67FAB2C5A313900DAA32B /* CameraManager.swift in Sources */,
 				BC5039682C4129C300EE2819 /* OverlappingImagesView.swift in Sources */,
-				BC50395B2C410C9A00EE2819 /* HomePageVIew.swift in Sources */,
-				BCEC50B52C5CCB3C00225EE5 /* StarListPage.swift in Sources */,
 				BC1A16B12C4A069700C9C565 /* ChatReq.swift in Sources */,
 				BC5039592C41045B00EE2819 /* ChatPage.swift in Sources */,
-				BCEC50B72C5CD89500225EE5 /* StarDetailsPage.swift in Sources */,
-				BCEC50BB2C609BEB00225EE5 /* TestResultDialogView.swift in Sources */,
-				BCB67F8D2C5892BB00DAA32B /* ConnectResultPage.swift in Sources */,
 				BC5039762C4504A300EE2819 /* SettingPage.swift in Sources */,
 				BC50395D2C411F3400EE2819 /* Message.swift in Sources */,
 				BCB67FAF2C5B271100DAA32B /* SpeedTestPage.swift in Sources */,
-				BC5039112C3E84CD00EE2819 /* Downloadx.swift in Sources */,
-				BC5039132C3E876200EE2819 /* Config.swift in Sources */,
 				BCB67FA52C5A258800DAA32B /* QRCodeDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC5039162C3F6DBC00EE2819 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC50391E2C3F6DBC00EE2819 /* PacketTunnelProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BC5039222C3F6DBC00EE2819 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC5039192C3F6DBC00EE2819 /* SmartT */;
-			targetProxy = BC5039212C3F6DBC00EE2819 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BC5038982C3E5D3000EE2819 /* Debug */ = {
@@ -906,6 +683,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AIChatBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to the photo library to save photos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
@@ -950,6 +728,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SmartVPN/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AIChatBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use the camera to read the QR code, please allow us to use the camera permission.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to the photo library to save photos.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need your permission to save images to your photo album.";
@@ -977,72 +756,6 @@
 			};
 			name = Release;
 		};
-		BC5039252C3F6DBC00EE2819 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FCF36D78D9A87DC6E7634E3 /* Pods-SmartT.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZRKM42D778;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmartT/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy.SmartT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		BC5039262C3F6DBC00EE2819 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9FE9D78A92FF8FAF7CB74B2 /* Pods-SmartT.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SmartT/SmartT.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZRKM42D778;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmartT/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SmartT;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.smartx.joy.SmartT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1060,15 +773,6 @@
 			buildConfigurations = (
 				BC50389B2C3E5D3000EE2819 /* Debug */,
 				BC50389C2C3E5D3000EE2819 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC5039242C3F6DBC00EE2819 /* Build configuration list for PBXNativeTarget "SmartT" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC5039252C3F6DBC00EE2819 /* Debug */,
-				BC5039262C3F6DBC00EE2819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1188,14 +892,6 @@
 				minimumVersion = 4.5.0;
 			};
 		};
-		BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CZ410/tunnelkit.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1264,48 +960,10 @@
 			package = BC12B0BF2C69FB0F000445CB /* XCRemoteSwiftPackageReference "AAChartKit-Swift" */;
 			productName = AAInfographics;
 		};
-		BC5038FF2C3E6ED700EE2819 /* TunnelKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TunnelKit;
-		};
 		BC5039332C3FAC5000EE2819 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BC5039322C3FAC5000EE2819 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		BC5039B02C49248500EE2819 /* TunnelKitOpenVPN */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TunnelKitOpenVPN;
-		};
-		BCB67F722C58875600DAA32B /* TunnelKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKit;
-		};
-		BCB67F742C58875600DAA32B /* TunnelKitLZO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitLZO;
-		};
-		BCB67F762C58875600DAA32B /* TunnelKitOpenVPN */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitOpenVPN;
-		};
-		BCB67F7E2C58880000DAA32B /* TunnelKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKit;
-		};
-		BCB67F802C58880400DAA32B /* TunnelKitLZO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitLZO;
-		};
-		BCB67F822C58880700DAA32B /* TunnelKitOpenVPNAppExtension */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BCB67F712C58875600DAA32B /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitOpenVPNAppExtension;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
