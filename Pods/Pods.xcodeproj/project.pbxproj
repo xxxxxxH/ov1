@@ -11,7 +11,6 @@
 		0E2725ECC916B3C06AED80ED4EDF442D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD641B7E33F357692A6A16ECA4B2D315 /* Networking.swift */; };
 		12AD68DBCBDE434E13C33F9C6F6A55EA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BF3E9C3ECE0E314F38600B1D13AD9 /* DateExtension.swift */; };
 		1CC5EEE808AAA14D9212C0AC2900FCAA /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F6739C4943FFC42A6D1FD0D8214DB /* WebSocket.swift */; };
-		1CF61C983C85D28431FE3FB28B1F4DED /* Pods-SmartT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A29C3B8C488AB3BAA71E3E2CD6C41E41 /* Pods-SmartT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28DC2850514D5043B9522FF390359677 /* Pods-SmartVPN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 144D919E4BA889E05EE91B2BCFB2CE11 /* Pods-SmartVPN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30CF2183CBD1D687263A9321008831D0 /* DebugConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9EF7B4FC74EAF836A93FF47511889 /* DebugConsoleLogger.swift */; };
 		347C22F73F817E9DAC65AEDFCDB98CA0 /* NDT7-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E81123C378ADC7E9234F0C90152AC4E /* NDT7-dummy.m */; };
@@ -30,8 +29,6 @@
 		D01DB4E5BEDD9C3BB1517AA4BD42A78F /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AF35D15E90A0C17580843DCE91313 /* WeakRef.swift */; };
 		DDB58CF908F95D3D516816235A5935C4 /* LogNDT7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C03DEAA7BFE5F4E61108E50EF91E528 /* LogNDT7.swift */; };
 		E0C9ED06C582FD24B284EF89CF9D5ACF /* WebSocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C809800C5614CBA05AF0BD7E70177 /* WebSocketWrapper.swift */; };
-		EF3632D855AD3C26EF055D494640E473 /* Pods-SmartT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C37A7F9E11D632ACFC610017A8FB011 /* Pods-SmartT-dummy.m */; };
-		FC4BC93F63411FAA8A20B032F7C85406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +46,6 @@
 		12485D36CE992A412DAEFB638E8E42E7 /* NDT7Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NDT7Settings.swift; path = Sources/NDT7Settings.swift; sourceTree = "<group>"; };
 		13CDB02A30E4B5FF2E16B2374E98A55A /* NDT7Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NDT7Test.swift; path = Sources/NDT7Test.swift; sourceTree = "<group>"; };
 		144D919E4BA889E05EE91B2BCFB2CE11 /* Pods-SmartVPN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartVPN-umbrella.h"; sourceTree = "<group>"; };
-		1B5E56B5CC5F12DFAB1DC025A4532DB0 /* Pods-SmartT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SmartT"; path = Pods_SmartT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB43035BF380061582B1471E744427C /* FileLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileLogger.swift; path = Sources/FileLogger.swift; sourceTree = "<group>"; };
 		1C03DEAA7BFE5F4E61108E50EF91E528 /* LogNDT7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogNDT7.swift; path = Sources/LogNDT7.swift; sourceTree = "<group>"; };
 		1E81123C378ADC7E9234F0C90152AC4E /* NDT7-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NDT7-dummy.m"; sourceTree = "<group>"; };
@@ -62,9 +58,9 @@
 		4E3A85088E62FB0110556A09B2610044 /* Pods-SmartVPN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartVPN-dummy.m"; sourceTree = "<group>"; };
 		50560FB28652CE6EBD2B374608EFDD3C /* Pods-SmartT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartT.modulemap"; sourceTree = "<group>"; };
 		5A87519BF3FE7CA7982F6C18C26B3696 /* Pods-SmartVPN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartVPN-acknowledgements.plist"; sourceTree = "<group>"; };
-		5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods-SmartVPN */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SmartVPN"; path = Pods_SmartVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods_SmartVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6713B3071EE738D089118C8F0C23AEE6 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Constants.swift; sourceTree = "<group>"; };
-		720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NDT7; path = NDT7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDT7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		77A195026A6A6A7D35F826771D836EA4 /* Pods-SmartVPN-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartVPN-frameworks.sh"; sourceTree = "<group>"; };
 		7B99E30A6B334307F02D9DD905C4D33D /* Pods-SmartT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartT.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +69,7 @@
 		883F6739C4943FFC42A6D1FD0D8214DB /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
 		969C74062ACBB3C48C7592E3293F1FAA /* NDT7.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NDT7.modulemap; sourceTree = "<group>"; };
 		9BE9F0710793AB361C911DFE8DCE1B5A /* Pods-SmartT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartT-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A29C3B8C488AB3BAA71E3E2CD6C41E41 /* Pods-SmartT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartT-umbrella.h"; sourceTree = "<group>"; };
 		A42BF3E9C3ECE0E314F38600B1D13AD9 /* DateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Sources/DateExtension.swift; sourceTree = "<group>"; };
 		ABBA22CA090D3F813CEDE5FACC4928DC /* NDT7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NDT7.swift; path = Sources/NDT7.swift; sourceTree = "<group>"; };
@@ -93,14 +89,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E00FAB98DA850C4D833E9B0F444932C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC4BC93F63411FAA8A20B032F7C85406 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		293683E82EEA8A028AC5EAAD9EA4EDEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,9 +143,8 @@
 		7F8BBD6E177FAF7CDC882BFA03996242 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7 */,
-				1B5E56B5CC5F12DFAB1DC025A4532DB0 /* Pods-SmartT */,
-				5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods-SmartVPN */,
+				720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7.framework */,
+				5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods_SmartVPN.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,7 +221,6 @@
 				389C809800C5614CBA05AF0BD7E70177 /* WebSocketWrapper.swift */,
 				CCB2808116CB3670C7DFC2611EA505D6 /* Support Files */,
 			);
-			name = NDT7;
 			path = NDT7;
 			sourceTree = "<group>";
 		};
@@ -258,14 +244,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70D610C960DA492DCAF2B316F60D997E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CF61C983C85D28431FE3FB28B1F4DED /* Pods-SmartT-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D92D49B5A8DDDFA622D689AF91997F6D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,24 +255,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		09C873D26B2F34AA6D28A68892E7CE8B /* Pods-SmartT */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98656734151A68669F09C8B68488E65C /* Build configuration list for PBXNativeTarget "Pods-SmartT" */;
-			buildPhases = (
-				70D610C960DA492DCAF2B316F60D997E /* Headers */,
-				5953EE6F0533C0F7D2BA5851B03939ED /* Sources */,
-				1E00FAB98DA850C4D833E9B0F444932C /* Frameworks */,
-				61B0975727E2508E0774B065147B631C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SmartT";
-			productName = Pods_SmartT;
-			productReference = 1B5E56B5CC5F12DFAB1DC025A4532DB0 /* Pods-SmartT */;
-			productType = "com.apple.product-type.framework";
-		};
 		0FCE3CFD07403856D6DDC4E3314AB1FF /* Pods-SmartVPN */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CD537305C8F41A20378EC1DCA06A974 /* Build configuration list for PBXNativeTarget "Pods-SmartVPN" */;
@@ -311,7 +271,7 @@
 			);
 			name = "Pods-SmartVPN";
 			productName = Pods_SmartVPN;
-			productReference = 5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods-SmartVPN */;
+			productReference = 5CFBFD52CD9FDF917E30824A57A4A6DD /* Pods_SmartVPN.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1610645CA7EA3F05E9B71D446DA67518 /* NDT7 */ = {
@@ -329,7 +289,7 @@
 			);
 			name = NDT7;
 			productName = NDT7;
-			productReference = 720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7 */;
+			productReference = 720A23B86CA4DDEE630394C6EA0DDFB4 /* NDT7.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -355,20 +315,12 @@
 			projectRoot = "";
 			targets = (
 				1610645CA7EA3F05E9B71D446DA67518 /* NDT7 */,
-				09C873D26B2F34AA6D28A68892E7CE8B /* Pods-SmartT */,
 				0FCE3CFD07403856D6DDC4E3314AB1FF /* Pods-SmartVPN */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61B0975727E2508E0774B065147B631C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E74BC0D15AE3F51E16D6BACE56793570 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,14 +359,6 @@
 				D01DB4E5BEDD9C3BB1517AA4BD42A78F /* WeakRef.swift in Sources */,
 				1CC5EEE808AAA14D9212C0AC2900FCAA /* WebSocket.swift in Sources */,
 				E0C9ED06C582FD24B284EF89CF9D5ACF /* WebSocketWrapper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5953EE6F0533C0F7D2BA5851B03939ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF3632D855AD3C26EF055D494640E473 /* Pods-SmartT-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -520,7 +464,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NDT7/NDT7-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NDT7/NDT7-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -693,7 +637,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NDT7/NDT7-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NDT7/NDT7-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,81 +650,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9C35AF0CBB138B86E36927693697D7EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B99E30A6B334307F02D9DD905C4D33D /* Pods-SmartT.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartT/Pods-SmartT-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartT/Pods-SmartT.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F190605A20C698D3DE3827E9A6751A55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42B42309E926AFC5433C6EAB456DA87A /* Pods-SmartT.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartT/Pods-SmartT-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartT/Pods-SmartT.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -813,15 +682,6 @@
 			buildConfigurations = (
 				2DF2C6A658623AB1B1A7F26D51A08250 /* Debug */,
 				19C1672E62E9D75A5612A18F98FD3F4A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98656734151A68669F09C8B68488E65C /* Build configuration list for PBXNativeTarget "Pods-SmartT" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F190605A20C698D3DE3827E9A6751A55 /* Debug */,
-				9C35AF0CBB138B86E36927693697D7EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
